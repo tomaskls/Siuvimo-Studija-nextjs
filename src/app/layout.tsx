@@ -1,4 +1,3 @@
-"use client"
 import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
@@ -13,6 +12,7 @@ const fontMerri= localFont({
   variable: "--font-merri",
   weight: "400",
 });
+
 
 export const metadata: Metadata = {
   title: "Studija",
