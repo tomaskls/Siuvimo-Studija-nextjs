@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import style from './Desktop.module.css';
 import Link from 'next/link';
@@ -35,25 +35,25 @@ export const HeaderD = () => {
             Neringos Siuvimo Studija
           </h2>
           <Link href="/" legacyBehavior>
-             <a className={style.link}><button className={style.navButton}>Studija</button></a>
+            <a className={style.link}><button className={style.navButton}>Studija</button></a>
           </Link>
           <Link href="/flisiniai-dzemperiai" legacyBehavior>
-             <a><button className={style.navButton}>Džemperiai</button></a>
+            <a><button className={style.navButton}>Džemperiai</button></a>
           </Link>
           <Link href="/drabuziu-taisymas" legacyBehavior>
-             <a><button className={style.navButton}>Taisymas</button></a>
+            <a><button className={style.navButton}>Taisymas</button></a>
           </Link>
           <Link href="/siuvykla" legacyBehavior>
-             <a><button className={style.navButton}>Siuvimas</button></a>
+            <a><button className={style.navButton}>Siuvimas</button></a>
           </Link>
           <Link href="/gallery" legacyBehavior>
-             <a><button className={style.navButton}>Galerija</button></a>
+            <a><button className={style.navButton}>Galerija</button></a>
           </Link>
           <Link href="/drabuziu-taisymo-kainos" legacyBehavior>
-             <a><button className={style.navButton}>Kainos</button></a>
+            <a><button className={style.navButton}>Kainos</button></a>
           </Link>
           <Link href="/kontaktai" legacyBehavior>
-             <a><button className={style.navButton}>Kontaktai</button></a>
+            <a><button className={style.navButton}>Kontaktai</button></a>
           </Link>
         </div>
       </nav>
