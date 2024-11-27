@@ -13,17 +13,16 @@ body {
   background-color: rgba(205, 140, 140, 0.323);
   color: var(--text-color);
 }
-body h2 {
+body h1 {
   color: var(--heading-color);
+  font-weight: 700;
 }
 
 
 body {
   background-color: white;
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  font-style: italic;
 }
+
 @media (max-width: 760px) {
   .mainContainer {
     width: 100%;

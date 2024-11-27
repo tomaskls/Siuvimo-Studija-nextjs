@@ -2,8 +2,31 @@ import React from 'react';
 import { Zirkles, Adata } from '../../components/svg';
 import style from './Sewing.module.css';
 import Image from 'next/image';
+import { Metadata } from 'next';
 
-export default function Page() {
+export const metadata: Metadata = {
+    title: "Siuvykla Šiauliuose",
+    description: "Ieškote siuvėjos Šiauliuose? Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.Stilingi ir kokybiški drabužiai už patrauklią kainą.",
+    openGraph: {
+        title: 'Siuvykla Šiauliuose', //  Sutampa su pagrindiniu title
+        description: 'Ieškote siuvėjos Šiauliuose? Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.Stilingi ir kokybiški drabužiai už patrauklią kainą.', // Sutampa su pagrindiniu description
+        url: 'https://www.neringos-siuvimo-studija.lt/siuvykla', // Pakeiskite į savo svetainės adresą
+        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        type: 'website',
+        images: [
+            {
+                url: 'https://www.neringos-siuvimo-studija.lt/images/rubu_siuvimas_900.webp', // Pakeiskite į savo paveikslėlio adresą
+                width: 900,
+                height: 1352,
+            },
+        ],
+    },
+    alternates: {
+        canonical: 'https://www.neringos-siuvimo-studija.lt/siuvykla',
+        }
+};
+
+export default function Sewing() {
 
     return (
         <>
@@ -13,6 +36,7 @@ export default function Page() {
                     alt="Siuvykla Šiauliuose"
                     width={900}
                     height={1350}
+                    priority={false}
                 />
                 <div className={style.content}>
                     <h1 className={style.h2}>Ateik su idėja, išeik su drabužiu!</h1>

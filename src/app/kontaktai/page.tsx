@@ -2,6 +2,30 @@ import React from 'react';
 import Image from 'next/image';
 import style from './Contacts.module.css';
 import {FbLink, InstLink, PinLink } from './SocialLinks';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+    title: "Kontaktai",
+    description: "Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316 ",
+    openGraph: {
+        title: 'Kontaktai', //  Sutampa su pagrindiniu title
+        description: 'Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316 ', // Sutampa su pagrindiniu description
+        url: 'https://www.neringos-siuvimo-studija.lt/kontaktai', // Pakeiskite į savo svetainės adresą
+        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        type: 'website',
+        images: [
+            {
+                url: 'https://www.neringos-siuvimo-studija.lt/imgGallery/suknele_su_ornamentais_2.webp', // Pakeiskite į savo paveikslėlio adresą
+                width: 900,
+                height: 1354,
+            },
+        ],
+    },
+    alternates: {
+        canonical: 'https://www.neringos-siuvimo-studija.lt/kontaktai',
+        }
+};
 
 export default function Page() {
    
