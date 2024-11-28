@@ -19,7 +19,8 @@ export default function Sewing1() {
                 />
             </div>
             <div >
-                <Image className={style.img2}
+                <h2>artisas</h2>
+                <Image className={style.img3}
                     src="/imgGallery/liemene.webp"
                     alt="Palto rankoviu trumpinimas"
                     width={900}
