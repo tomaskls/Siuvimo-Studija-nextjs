@@ -20,11 +20,11 @@ export default function Sewing1() {
             </div>
             <div >
                 <h2>artisas</h2>
-                <Image className={style.img3}
+                <Image className={style.img2}
                     src="/imgGallery/liemene.webp"
                     alt="Palto rankoviu trumpinimas"
-                    width={900}
-                    height={1600}
+                    width={450}
+                    height={800}
                     priority={false}
                 />
             </div>
