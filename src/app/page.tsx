@@ -18,7 +18,7 @@ export default function Page() {
             alt="Siuvykla Siauliuose"
             width={750}
             height={1350}
-            priority={false}>
+            priority={true}>
 
           </Image>
         </div>
@@ -34,6 +34,7 @@ export default function Page() {
           width={900}
           height={1350}
           alt="kelniu palenkimas šiauliuose"
+          priority={false}
         />
         <div className={style.content}>
           <h2 className={style.h2}>Paslaugos</h2>

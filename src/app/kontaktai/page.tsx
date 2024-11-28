@@ -75,6 +75,7 @@ export default function Page() {
         alt="Kavos pertraukele"
         width={500}
         height={300}
+        priority={false}
       />
             <iframe
                 className={style.map}

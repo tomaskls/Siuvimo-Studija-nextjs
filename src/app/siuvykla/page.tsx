@@ -36,7 +36,7 @@ export default function Sewing() {
                     alt="Siuvykla Šiauliuose"
                     width={900}
                     height={1350}
-                    priority={false}
+                    priority={true}
                 />
                 <div className={style.content}>
                     <h1 className={style.h2}>Ateik su idėja, išeik su drabužiu!</h1>
@@ -55,6 +55,7 @@ export default function Sewing() {
                     alt="Suknele su aplikacija"
                     width={900}
                     height={1718}
+                    priority={false}
                 />
                 <div className={style.content}>
                     <h1 className={style.h2}>Modeliavimas išskirtiniai drabužiai jums</h1>

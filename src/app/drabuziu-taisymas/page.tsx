@@ -40,6 +40,7 @@ export default function Repair() {
         alt="Drabužių taisymas Šiauliuose "
         width={900}
         height={1350}
+        priority={true}
       />
             <div className={style.content}>
                 <h1 className={style.h2}>Rūbų Taisymas</h1>

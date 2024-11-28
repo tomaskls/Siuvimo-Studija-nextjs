@@ -36,6 +36,7 @@ export default function Prices() {
                     alt="Pakabos su užrašu Neringos Siuvimo Studija"
                     width={1120}
                     height={750}
+                    priority={true}
                 />
                 <div className={style.content}>
                     <h1 className={style.h2}>Drabužių taisymo darbų kainoraštis</h1>
