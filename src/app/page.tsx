@@ -18,7 +18,7 @@ export default function Page() {
             alt="Siuvykla Siauliuose"
             width={750}
             height={1350}
-            priority={true}>
+            priority={false}>
           </Image>
         </div>
         <div className={style.content}>
