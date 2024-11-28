@@ -9,7 +9,7 @@ export const PictureMain = () => {
       alt="šiltas flisinis džemperis"
       width={900}
       height={1352}
-      priority={false}
+      priority={true}
     />
   )
 };
