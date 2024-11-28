@@ -43,7 +43,7 @@
     padding-top: 10px;
     gap: 80px;
   }
-  .container2{
+  .container2 {
     flex-direction: row;
   }
   .img {
@@ -66,7 +66,7 @@
   .svg {
     width: 100px;
   }
-  .h2{
+  .h2 {
     font-size: 1.7em;
   }
   @media (min-width: 761px) and (max-width: 1020px) {

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
     title: "Siuvykla Šiauliuose",
     description: "Ieškote siuvėjos Šiauliuose? Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.Stilingi ir kokybiški drabužiai už patrauklią kainą.",
     openGraph: {
-        title: 'Siuvykla Šiauliuose', //  Sutampa su pagrindiniu title
+        title: 'Siuvykla Šiauliuose',
         description: 'Ieškote siuvėjos Šiauliuose? Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.Stilingi ir kokybiški drabužiai už patrauklią kainą.', // Sutampa su pagrindiniu description
-        url: 'https://www.neringos-siuvimo-studija.lt/siuvykla', // Pakeiskite į savo svetainės adresą
-        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        url: 'https://www.neringos-siuvimo-studija.lt/siuvykla',
+        siteName: 'Neringos Siuvimo Studija',
         type: 'website',
         images: [
             {
@@ -23,11 +23,10 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://www.neringos-siuvimo-studija.lt/siuvykla',
-        }
+    }
 };
 
 export default function Sewing() {
-
     return (
         <>
             <div className={style.container}>

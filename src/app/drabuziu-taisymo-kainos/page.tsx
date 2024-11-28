@@ -8,14 +8,14 @@ export const metadata: Metadata = {
     title: "Drabužių taisymo kainos Šiauliuose",
     description: "Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis. Peržiūrėkite mūsų kainoraštį!",
     openGraph: {
-        title: 'Drabužių taisymo kainos Šiauliuose', //  Sutampa su pagrindiniu title
-        description: 'Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis. Peržiūrėkite mūsų kainoraštį!', // Sutampa su pagrindiniu description
-        url: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymo-kainos', // Pakeiskite į savo svetainės adresą
-        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        title: 'Drabužių taisymo kainos Šiauliuose',
+        description: 'Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis. Peržiūrėkite mūsų kainoraštį!',
+        url: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymo-kainos',
+        siteName: 'Neringos Siuvimo Studija',
         type: 'website',
         images: [
             {
-                url: 'https://www.neringos-siuvimo-studija.lt/imgGallery/pakabos.webp', // Pakeiskite į savo paveikslėlio adresą
+                url: 'https://www.neringos-siuvimo-studija.lt/imgGallery/pakabos.webp',
                 width: 1800,
                 height: 1200,
             },
@@ -23,11 +23,10 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymo-kainos',
-        }
+    }
 };
 
 export default function Prices() {
-
     return (
         <div className={style.container}>
             <div className={style.content1}>

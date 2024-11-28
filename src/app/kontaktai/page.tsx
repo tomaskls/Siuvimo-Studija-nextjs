@@ -1,18 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import style from './Contacts.module.css';
-import {FbLink, InstLink, PinLink } from './SocialLinks';
+import { FbLink, InstLink, PinLink } from './SocialLinks';
 import { Metadata } from 'next';
-
 
 export const metadata: Metadata = {
     title: "Kontaktai",
     description: "Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316 ",
     openGraph: {
-        title: 'Kontaktai', //  Sutampa su pagrindiniu title
+        title: 'Kontaktai',
         description: 'Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316 ', // Sutampa su pagrindiniu description
-        url: 'https://www.neringos-siuvimo-studija.lt/kontaktai', // Pakeiskite į savo svetainės adresą
-        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        url: 'https://www.neringos-siuvimo-studija.lt/kontaktai',
+        siteName: 'Neringos Siuvimo Studija',
         type: 'website',
         images: [
             {
@@ -24,11 +23,10 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://www.neringos-siuvimo-studija.lt/kontaktai',
-        }
+    }
 };
 
-export default function Page() {
-   
+export default function Contacts() {
     return (
         <div className={style.contactsContainer}>
             <div className={style.mainContainer}>
@@ -41,7 +39,7 @@ export default function Page() {
                     <h1>Kontaktai</h1>
                     <a href="tel:+37060055316">Skambinkite tel: +370 600 55316</a>
                     <p>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</p>
-                    <p>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br/>Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
+                    <p>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
                 </div>
             </div>
             <div className={style.hours}>
@@ -69,14 +67,13 @@ export default function Page() {
                     </tbody>
                 </table>
             </div>
-
             <Image className={style.img}
-        src="/Images/kava_900.webp"
-        alt="Kavos pertraukele"
-        width={500}
-        height={300}
-        priority={false}
-      />
+                src="/Images/kava_900.webp"
+                alt="Kavos pertraukele"
+                width={500}
+                height={300}
+                priority={false}
+            />
             <iframe
                 className={style.map}
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.234194280573!2d23.31294907676809!3d55.92797787848508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e5e330649f95bb%3A0x37e61039db777fb7!2sNERINGOS%20SIUVIMO%20STUDIJA!5e0!3m2!1slt!2slt!4v1727020354296!5m2!1slt!2slt"

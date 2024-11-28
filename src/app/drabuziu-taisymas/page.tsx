@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     title: "Rūbų Remonto Dirbtuvės",
     description: "Profesionalus drabužių taisymas  Šiauliuose.Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite ir suteikite savo drabužiams antrą gyvenimą!",
     openGraph: {
-        title: 'Rūbų Remonto Dirbtuvės', //  Sutampa su pagrindiniu title
+        title: 'Rūbų Remonto Dirbtuvės',
         description: 'Profesionalus drabužių taisymas  Šiauliuose.Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite ir suteikite savo drabužiams antrą gyvenimą!', // Sutampa su pagrindiniu description
-        url: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas', // Pakeiskite į savo svetainės adresą
-        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        url: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas',
+        siteName: 'Neringos Siuvimo Studija',
         type: 'website',
         images: [
             {
@@ -27,21 +27,19 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas',
-        }
+    }
 };
 
-
 export default function Repair() {
-
     return (
         <div className={style.container}>
-             <Image className={style.img}
-        src="/Images/rubu_taisymas_900.webp"
-        alt="Drabužių taisymas Šiauliuose "
-        width={900}
-        height={1350}
-        priority={true}
-      />
+            <Image className={style.img}
+                src="/Images/rubu_taisymas_900.webp"
+                alt="Drabužių taisymas Šiauliuose "
+                width={900}
+                height={1350}
+                priority={true}
+            />
             <div className={style.content}>
                 <h1 className={style.h2}>Rūbų Taisymas</h1>
                 <p className={style.p}>Ar jūsų mėgstamiausia suknelė prarado būrį sagų? O gal madingos kelnytės tapo per ilgos? Mūsų drabužių taisymas - tai lyg stebuklų dirbtuvės jūsų spintai! Ateikite pas mus ir mes paverčiame bet kokį &quot;oops&quot; į &quot;wow&quot;!</p>

@@ -4,8 +4,9 @@ import "./globals.css";
 import Footer from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 import { Space } from "../components/Space";
-import { SidebarMenu } from "../components/sideMenu/SideMenu"
-import { Roboto } from "next/font/google"
+import { SidebarMenu } from "../components/sideMenu/SideMenu";
+import { Roboto } from "next/font/google";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const font = Roboto({
   variable: "--font-merri",
@@ -14,21 +15,19 @@ const font = Roboto({
   subsets: ['latin'],
 });
 
-
 export const metadata: Metadata = {
   title: "Neringos Siuvimo Studija",
   description: "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas",
   icons: './icons/scissors.svg',
-
   openGraph: {
-    title: 'Neringos Siuvimo Studija', //  Sutampa su pagrindiniu title
+    title: 'Neringos Siuvimo Studija',
     description: 'Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas', // Sutampa su pagrindiniu description
-    url: 'https://www.neringos-siuvimo-studija.lt', // Pakeiskite į savo svetainės adresą
-    siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+    url: 'https://www.neringos-siuvimo-studija.lt',
+    siteName: 'Neringos Siuvimo Studija',
     type: 'website',
     images: [
       {
-        url: 'https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp', // Pakeiskite į savo paveikslėlio adresą
+        url: 'https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp',
         width: 900,
         height: 1600,
       },
@@ -47,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <GoogleTagManager gtmId="G-1HRYBXDSTR" />
         <Header />
         <SidebarMenu />
         <Space />

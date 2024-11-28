@@ -4,15 +4,14 @@ import { Smasina } from '../../components/svg';
 import { Picture1, Picture2, Picture3, Picture4, Picture5, PictureMain } from './ProductPictures';
 import { Metadata } from 'next';
 
-
 export const metadata: Metadata = {
     title: "Šilti flisiniai džemperiai",
     description: "Sušilkite stilingai su unikaliais, pagal užsakymą siuvamais flisiniais džemperiais Šiauliuose! Rinkitės ir pritaikykite dydį, spalvą ir detales. Užsisakykite ir mėgaukitės šiluma!",
     openGraph: {
-        title: 'Šilti flisiniai džemperiai', //  Sutampa su pagrindiniu title
+        title: 'Šilti flisiniai džemperiai',
         description: 'Sušilkite stilingai su unikaliais, pagal užsakymą siuvamais flisiniais džemperiais Šiauliuose! Rinkitės ir pritaikykite dydį, spalvą ir detales. Užsisakykite ir mėgaukitės šiluma!', // Sutampa su pagrindiniu description
-        url: 'https://www.neringos-siuvimo-studija.lt/flisiniai-dzemperiai', // Pakeiskite į savo svetainės adresą
-        siteName: 'Neringos Siuvimo Studija', // Pakeiskite į savo svetainės pavadinimą
+        url: 'https://www.neringos-siuvimo-studija.lt/flisiniai-dzemperiai',
+        siteName: 'Neringos Siuvimo Studija',
         type: 'website',
         images: [
             {
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: 'https://www.neringos-siuvimo-studija.lt/flisiniai-dzemperiai',
-        }
+    }
 };
 
 export default function Product() {

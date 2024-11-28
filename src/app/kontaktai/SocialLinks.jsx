@@ -14,7 +14,6 @@ export function FbLink() {
     </a>
   );
 }
-
 const InstIconPath = '/icons/instagram_logo.webp';
 const InstUrl = 'https://www.instagram.com/neringossiuvimostudija';
 
@@ -26,7 +25,6 @@ export function InstLink() {
     </a>
   );
 }
-
 const PinIconPath = '/icons/Pinterest.svg.png';
 const PinUrl = 'https://www.pinterest.com/neringossiuvimostudija';
 
@@ -38,21 +36,3 @@ export function PinLink() {
     </a>
   );
 }
-
-
-
-
-
-// export function PinLink() {
-//     const { isTouched: isInTouched, handleTouchStart: handleInTouchStart, handleTouchEnd: handleInTouchEnd } = useTouch();
-
-//     return (
-//         <a className={`${style.fbLink} ${isInTouched ? style.touched : ''}`}
-//             href="https://www.pinterest.com/neringossiuvimostudija/"
-//             target="_blank"
-//              rel="noreFerrer"
-//             onTouchStart={handleInTouchStart}
-//             onTouchEnd={handleInTouchEnd}>Pinterest<img src={Pinicon} alt="pinterest icon" />
-//         </a>
-//     )
-// }

@@ -19,7 +19,6 @@ export default function Page() {
             width={750}
             height={1350}
             priority={true}>
-
           </Image>
         </div>
         <div className={style.content}>

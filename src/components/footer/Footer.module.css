@@ -7,7 +7,7 @@
   padding-bottom: 5px;
 }
 @media (max-width: 760px) {
-  .footer{
+  .footer {
     margin-top: -9px;
   }
 }
