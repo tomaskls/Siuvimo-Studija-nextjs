@@ -9,7 +9,7 @@ export default function Sewing1() {
         <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
         <div className={style.container}>
             <div className={style.content}>
-                <h3 className={style.h3}>Liemenes kontravimas ir pasiūta liemenė</h3>
+                <h3 className={style.h3}>Liemenės konstravimas ir pasiūta liemenė</h3>
                 <Image className={style.img}
                     src="/imgGallery/liemenes_konstravimas.webp"
                     alt="Palto rankoviu trumpinimas"
