@@ -9,7 +9,11 @@ const Pictures = () => {
   }, []);
 
   const image = [
-    { path: '/imgGallery/peteliske.webp', name: 'peteliske', width: '900', height: '900' },
+    { path: '/imgGallery/eko_odos_palaidine.webp', name: 'eko odos palaidine', width: '900', height: '1600' },
+    { path: '/imgGallery/salikas.webp', name: 'Šalikas', width: '900', height: '1187' },
+    { path: '/imgGallery/liemenes_konstravimas.webp', name: 'liemenes konstravimas', width: '900', height: '1200' },
+    { path: '/imgGallery/liemene.webp', name: 'liemene', width: '900', height: '1600' },
+    { path: '/imgGallery/peteliske.webp', name: 'peteliške', width: '900', height: '900' },
     { path: '/imgGallery/suknele_su_ornamentais.webp', name: 'suknele_su_ornamentais', width: '900', height: '1350' },
     { path: '/imgGallery/pilkas_flisinis_dzemperis.webp', name: 'pilkas_flisinis_dzemperis', width: '900', height: '1350' },
     { path: '/imgGallery/bliuzonas_intelektas.webp', name: 'bliuzonas_intelektas', width: '900', height: '1350' },

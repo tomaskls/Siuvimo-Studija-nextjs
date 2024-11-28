@@ -3,6 +3,7 @@ import { Zirkles, Adata } from '../../components/svg';
 import style from './Sewing.module.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import Sewing1 from '../../components/sewing/liemene'
 
 export const metadata: Metadata = {
     title: "Siuvykla Šiauliuose",
@@ -62,6 +63,7 @@ export default function Sewing() {
                     <div className={style.svg} ><Adata /></div>
                 </div>
             </div>
+                <Sewing1 />
         </>
     );
 }

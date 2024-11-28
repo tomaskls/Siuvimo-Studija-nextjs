@@ -5,10 +5,10 @@ import Footer from "../components/footer/Footer";
 import { Header } from "../components/header/Header";
 import { Space } from "../components/Space";
 import { SidebarMenu } from "../components/sideMenu/SideMenu";
-import { Roboto } from "next/font/google";
+import { Merriweather } from "next/font/google";
 import { GoogleTagManager } from '@next/third-parties/google';
 
-const font = Roboto({
+const font = Merriweather({
   variable: "--font-merri",
   style: "italic",
   weight: "400",

@@ -4,6 +4,12 @@
 .repairList {
   list-style: none;
 }
+.darbu{
+  background-color: var(--back-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (max-width: 760px) {
   .container {
     max-width: 100%;
@@ -35,6 +41,9 @@
   .svg {
     display: none;
   }
+  .darbu{
+    padding-top: 20px;
+  }
 }
 @media (min-width: 761px) {
   .container {
@@ -61,6 +70,17 @@
   }
   .h2 {
     font-size: 1.7em;
+  }
+  .repairContainer{
+    background-color: var(--back-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .darbu{
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
   @media (min-width: 761px) and (max-width: 1020px) {
     .container {
