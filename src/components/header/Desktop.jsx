@@ -22,7 +22,7 @@ export const HeaderD = () => {
 
   return (
     <header className={style.header}>
-      <h1 className={style.title}>Neringos Siuvimo Studija</h1>
+      <h2 className={style.title}>Neringos Siuvimo Studija</h2>
       <nav
         ref={navRef}
         className={`${style.nav} ${isSticky ? style.fixed : ''} ${isSticky ? style.scrolled : ''}`}
