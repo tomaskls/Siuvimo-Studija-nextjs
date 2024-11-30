@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: 'https://www.neringos-siuvimo-studija.lt/images/rubu_siuvimas_900.webp', // Pakeiskite į savo paveikslėlio adresą
+                url: 'https://www.neringos-siuvimo-studija.lt/Images/rubu_siuvimas_900.webp', // Pakeiskite į savo paveikslėlio adresą
                 width: 900,
                 height: 1352,
             },
