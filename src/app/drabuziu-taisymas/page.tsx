@@ -21,11 +21,13 @@ export const metadata: Metadata = {
         type: 'website',
         images: [
             {
-                url: 'https://www.neringos-siuvimo-studija.lt/Images/rubu_taisymas_900.webp', 
+                url: 'https://www.neringos-siuvimo-studija.lt/Images/rubu_taisymas_900.jpg', 
                 width: 900,
                 height: 1352,
+                 alt: 'Rūbų taisymas'
             },
         ],
+        locale: 'lt_LT' 
     },
     alternates: {
         canonical: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas',
