@@ -1,30 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Neringos Siuvimo Studija
 
-## Getting Started
+This project is to create a website for a Sewing Studio that provides high-quality clothing repair and sewing services in Šiauliai. The website offers the possibility to review sewing services, see examples of completed work, and get in touch for inquiries.
 
-First, run the development server:
+## Project Goals
 
+- To provide a convenient and informative platform for clients.
+- To present information about the services offered and the price list.
+- To showcase examples of clients' completed work.
+- To allow clients to easily contact the studio.
 
-npm run dev
+## Technologies:
 
+The web portfolio was built using HTML5, CSS3, JavaScript, React, Vite and has  been migrated to Next.js later for enhanced performance and features. The original Vite version can be found https://siuvimo-studija-3.vercel.app/ 
 
- [http://localhost:3000](http://localhost:3000) with your browser to se
+## Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tomas: [Github](https://github.com/tomaskls/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is the property of the author and cannot be used, copied, modified, or distributed without the explicit written permission of the author. All rights reserved.
