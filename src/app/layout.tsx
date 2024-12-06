@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <GoogleTagManager gtmId="G-1HRYBXDSTR" />
+        <GoogleTagManager gtmId="GTM-KKX37SJG" />
         <Header />
         <SidebarMenu />
         <Space />
