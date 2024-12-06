@@ -6,7 +6,7 @@ import { Header } from "../components/header/Header";
 import { Space } from "../components/Space";
 import { SidebarMenu } from "../components/sideMenu/SideMenu";
 import { Merriweather } from "next/font/google";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const font = Merriweather({
   variable: "--font-merri",
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <GoogleTagManager gtmId="GTM-KKX37SJG" />
+        <GoogleAnalytics gaId="G-1HRYBXDSTR" />
         <Header />
         <SidebarMenu />
         <Space />
