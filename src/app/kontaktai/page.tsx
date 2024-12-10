@@ -57,12 +57,20 @@ export default function Contacts() {
                             <td className={style.eilute}>9:00 - 18:00</td>
                         </tr>
                         <tr>
+                            <td className={style.eilute}>Antradienis</td>
+                            <td className={style.eilute}>10:00 - 15:00</td>
+                        </tr>
+                        <tr>
                             <td className={style.eilute}>Trečiadienis</td>
                             <td className={style.eilute}>9:00 - 18:00</td>
                         </tr>
                         <tr>
+                            <td className={style.eilute}>Ketvirtadienis</td>
+                            <td className={style.eilute}>10:00 - 15:00</td>
+                        </tr>
+                        <tr>
                             <td className={style.eilute}>Penktadienis</td>
-                            <td className={style.eilute}>9:00 - 18:00</td>
+                            <td className={style.eilute}>9:00 - 17:00</td>
                         </tr>
                     </tbody>
                 </table>
