@@ -16,7 +16,7 @@ export default function Page() {
           <Image className={style.img}
             src="/Images/siuvykla_siauliai_900.webp"
             alt="Siuvykla Siauliuose"
-            width={750}
+            width={900}
             height={1350}
             priority={true}>
           </Image>
