@@ -9,6 +9,7 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/idejos_kaledoms.webp', name: 'idejos kaledoms', width: '900', height: '1600' },
     { path: '/imgGallery/eko_odos_palaidine.webp', name: 'eko odos palaidine', width: '900', height: '1600' },
     { path: '/imgGallery/salikas.webp', name: 'Šalikas', width: '900', height: '1187' },
     { path: '/imgGallery/liemenes_konstravimas.webp', name: 'liemenes konstravimas', width: '900', height: '1200' },
