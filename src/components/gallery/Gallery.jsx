@@ -80,6 +80,7 @@ const Pictures = () => {
   return (
     <>
       <div className={style.picturesContainer}>
+        <h1 className={style.title}>Mūsų Darbų Galerija</h1>
         <div className={style.imageGrid}>
           {image.map((image, index) => (
             <img

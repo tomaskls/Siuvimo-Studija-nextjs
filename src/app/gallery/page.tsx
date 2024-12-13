@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: "Neringos Siuvimo Studijos galerija: Peržiūrėkite mūsų sukurtų drabužių nuotraukas. Įkvėpkite savo stilių!",
   openGraph: {
     title: 'Neringos Siuvimo Studijos Galerija',
-    description: 'Neringos Siuvimo Studijos galerija: Peržiūrėkite mūsų sukurtų drabužių nuotraukas. Įkvėpkite savo stilių!', // Sutampa su pagrindiniu description
+    description: 'Neringos Siuvimo Studijos galerija: Peržiūrėkite mūsų sukurtų drabužių nuotraukas. Įkvėpkite savo stilių!', 
     url: 'https://www.neringos-siuvimo-studija.lt/gallery',
     siteName: 'Neringos Siuvimo Studija',
     type: 'website',
     images: [
       {
-        url: 'https://www.neringos-siuvimo-studija.lt/imgGallery/medvilninis_laisvalaikio_bliuzonas.webp', // Pakeiskite į savo paveikslėlio adresą
+        url: 'https://www.neringos-siuvimo-studija.lt/imgGallery/medvilninis_laisvalaikio_bliuzonas.webp', 
         width: 900,
         height: 1200,
       },
