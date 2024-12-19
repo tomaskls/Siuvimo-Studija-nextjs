@@ -27,7 +27,7 @@ const Pictures = () => {
     { path: '/imgGallery/kasmyro_puspaltis.webp', name: 'kasmyro_puspaltis', width: '900', height: '1350' },
     { path: '/imgGallery/kilpinio_trikotazo_suknele.webp', name: 'kilpinio_trikotazo_suknele', width: '900', height: '1350' },
     { path: '/imgGallery/medvilninis_laisvalaikio_bliuzonas.webp', name: 'medvilninis_laisvalaikio_bliuzonas', width: '900', height: '1350' },
-    { path: 'images/siltas_flisinis_dzemperis_900.webp', name: 'siltas_flisinis_dzemperis', width: '900', height: '1350' },
+    { path: 'Images/siltas_flisinis_dzemperis_900.webp', name: 'siltas_flisinis_dzemperis', width: '900', height: '1350' },
     { path: '/imgGallery/kavos_pertraukele.webp', name: 'kavos_pertraukele', width: '900', height: '1350' },
     { path: '/imgGallery/papludimio_suknele.webp', name: 'papludimio_suknele', width: '900', height: '1350' },
     { path: '/imgGallery/placios_kelnes.webp', name: 'placios_kelnes', width: '900', height: '1350' },
