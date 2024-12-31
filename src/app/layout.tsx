@@ -8,6 +8,8 @@ import { SidebarMenu } from "../components/sideMenu/SideMenu";
 import { Merriweather } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ConsentManager } from "../components/ConsentManager";
+import JsonLd from '../components/JsonLd';
+import { OrganizationSchema } from "@/types/schema";
 
 const font = Merriweather({
   variable: "--font-merri",
@@ -16,13 +18,35 @@ const font = Merriweather({
   subsets: ['latin'],
 });
 
+const organizationSchema: OrganizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Neringos Siuvimo Studija",
+  url: "https://www.neringos-siuvimo-studija.lt",
+  logo: "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
+  description: "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas. Aplikacijos ant drabužių. Vienetinių lekalų konstravimas",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+37060055316",
+      contactType: "customer service",
+      areaServed: "LT"
+    }
+  ],
+  sameAs: [
+    "https://www.facebook.com/neringossiuvimostudija",
+    "https://www.instagram.com/neringossiuvimostudija",
+    "https://www.instagram.com/neringossiuvimostudija"
+  ]
+};
+
 export const metadata: Metadata = {
   title: "Neringos Siuvimo Studija",
   description: "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas",
   icons: './icons/scissors.svg',
   openGraph: {
     title: 'Neringos Siuvimo Studija',
-    description: 'Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas', // Sutampa su pagrindiniu description
+    description: 'Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas',
     url: 'https://www.neringos-siuvimo-studija.lt',
     siteName: 'Neringos Siuvimo Studija',
     type: 'website',
@@ -46,6 +70,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <JsonLd data={organizationSchema} />
+      </head>
+
       <body className={font.className}>
         <GoogleAnalytics gaId="G-1HRYBXDSTR" />
         <Header />

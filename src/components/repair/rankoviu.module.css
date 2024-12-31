@@ -15,6 +15,10 @@
     max-width: 100%;
     height: auto;
   }
+  .p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
  
 }
 @media (min-width: 761px) {
@@ -31,6 +35,9 @@
     width: 450px;
     height: 675px;
     margin-bottom: 30px;
+  }
+  .p{
+    padding-left: 15px;
   }
 
   @media (min-width: 761px) and (max-width: 1020px) {

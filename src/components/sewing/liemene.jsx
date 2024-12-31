@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './liemene.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Sewing1() {
     return (
@@ -9,7 +8,8 @@ export default function Sewing1() {
         <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
         <div className={style.container}>
             <div className={style.content}>
-                <h3 className={style.h3}>Liemenės konstravimas ir pasiūta liemenė</h3>
+                <h3 className={style.h3}>✨ Liemenės siuvimo paslauga</h3>
+                <p className={style.p}>Pagal kliento išmatavimus sukonstruota ir pasiūta originali liemenė. Kruopščiai parinktos medžiagos ir pritaikytas dizainas užtikrina tobulą gulėjimą.</p>
                 <Image className={style.img}
                     src="/imgGallery/liemenes_konstravimas.webp"
                     alt="Palto rankoviu trumpinimas"
@@ -28,12 +28,7 @@ export default function Sewing1() {
                 />
             </div>
         </div>
-        <div className={style.link}>
-            <span>Daugiau pavyzdžių rasite čia &gt;</span>
-        <Link  href="/gallery" legacyBehavior>
-            <a><button className={style.button}>Galerija</button></a>
-          </Link>
-          </div>
+        
         </>
     )
 }

@@ -38,8 +38,12 @@ export default function Page() {
         <div className={style.content}>
           <h2 className={style.h2}>Paslaugos</h2>
           <ul className={style.repairList}>
-            <li><ScissorsIcon /> Drabužių taisymas</li>
             <li><ScissorsIcon /> Individualus siuvimas</li>
+            <li><ScissorsIcon /> Drabužių taisymas</li>
+            <li><ScissorsIcon /> Užtrauktukų keitimas</li>
+            <li><ScissorsIcon /> Pamušalo keitimas</li>
+            <li><ScissorsIcon /> Paltų ir striukių taisymas</li>
+            <li><ScissorsIcon /> Kelnių siaurinimas, trumpinimas</li>
             <li><ScissorsIcon /> Aplikacijos ant drabužių</li>
             <li><ScissorsIcon /> Konsultacijos dėl drabužių modelio ir medžiagų pasirinkimo</li>
             <li><ScissorsIcon /> Vienetinių lekalų konstravimas</li>
