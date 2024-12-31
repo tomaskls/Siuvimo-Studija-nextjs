@@ -15,6 +15,10 @@
     max-width: 100%;
     height: auto;
   }
+  .h3{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .p{
     padding-left: 10px;
     padding-right: 10px;
