@@ -3,17 +3,17 @@
 export interface SchemaBase {
   "@context": "https://schema.org";
   "@type": string;
- }
- 
- export interface ContactPoint {
+}
+
+export interface ContactPoint {
   "@type": "ContactPoint";
   telephone: string;
   contactType: string;
   email?: string;
   areaServed?: string;
- }
- 
- export interface OrganizationSchema extends SchemaBase {
+}
+
+export interface OrganizationSchema extends SchemaBase {
   "@type": "Organization";
   name: string;
   url: string;
@@ -21,40 +21,31 @@ export interface SchemaBase {
   description?: string;
   contactPoint?: ContactPoint[];
   sameAs?: string[];
- }
- 
- export interface PostalAddress {
+}
+
+export interface PostalAddress {
   "@type": "PostalAddress";
   streetAddress: string;
   addressLocality: string;
   postalCode: string;
   addressCountry: string;
   addressRegion: string;
- }
- 
- export interface GeoCoordinates {
+}
+
+export interface GeoCoordinates {
   "@type": "GeoCoordinates";
   latitude: string;
   longitude: string;
- }
- 
- export interface OpeningHoursSpecification {
+}
+
+export interface OpeningHoursSpecification {
   "@type": "OpeningHoursSpecification";
   dayOfWeek: string[];
   opens: string;
   closes: string;
- }
- 
- export interface LocalBusiness {
-  "@type": "LocalBusiness";
-  name: string;
-  image: string;
-  telephone: string;
-  priceRange: string;
-  address: PostalAddress;
- }
- 
- export interface LocalBusinessSchema extends SchemaBase {
+}
+
+export interface LocalBusinessSchema extends SchemaBase {
   "@type": "LocalBusiness";
   "@id": string;
   name: string;
@@ -72,35 +63,41 @@ export interface SchemaBase {
   mainEntityOfPage: string;
   hasMap: string;
   isAccessibleForFree: boolean;
- }
- 
- export interface ServiceOffered {
+}
+
+export interface ServiceOffered {
   "@type": "Service";
   name: string;
   description: string;
- }
- 
- export interface ServiceOffer {
+}
+
+export interface ServiceOffer {
   "@type": "Offer";
   itemOffered: ServiceOffered;
- }
- 
- export interface ServiceCatalog {
+}
+
+export interface ServiceCatalog {
   "@type": "OfferCatalog";
   name: string;
   itemListElement: ServiceOffer[];
- }
- 
- export interface ServiceSchema extends SchemaBase {
+}
+
+export interface ServiceSchema extends SchemaBase {
   "@type": "Service";
   name: string;
   serviceType: string;
-  provider: LocalBusiness;
+  provider: {
+    "@type": "LocalBusiness";
+    name: string;
+  };
   areaServed: string;
   description: string;
   offers: {
     "@type": "Offer";
-    availableAtOrFrom: LocalBusiness;
+    availableAtOrFrom: {
+      "@type": "LocalBusiness";
+      address: PostalAddress;
+    };
   };
   hasOfferCatalog: ServiceCatalog;
- }
+}
