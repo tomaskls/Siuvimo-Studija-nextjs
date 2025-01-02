@@ -9,7 +9,7 @@ import { Merriweather } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ConsentManager } from "../components/ConsentManager";
 import JsonLd from '../components/JsonLd';
-import { OrganizationSchema } from "@/types/schema";
+import { organizationSchema, localBusinessSchema, servicesSchema } from '../../schemas/index';
 
 const font = Merriweather({
   variable: "--font-merri",
@@ -18,27 +18,6 @@ const font = Merriweather({
   subsets: ['latin'],
 });
 
-const organizationSchema: OrganizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Neringos Siuvimo Studija",
-  url: "https://www.neringos-siuvimo-studija.lt",
-  logo: "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
-  description: "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas. Aplikacijos ant drabužių. Vienetinių lekalų konstravimas",
-  contactPoint: [
-    {
-      "@type": "ContactPoint",
-      telephone: "+37060055316",
-      contactType: "customer service",
-      areaServed: "LT"
-    }
-  ],
-  sameAs: [
-    "https://www.facebook.com/neringossiuvimostudija",
-    "https://www.instagram.com/neringossiuvimostudija",
-    "https://www.instagram.com/neringossiuvimostudija"
-  ]
-};
 
 export const metadata: Metadata = {
   title: "Neringos Siuvimo Studija",
@@ -69,9 +48,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="lt">
       <head>
         <JsonLd data={organizationSchema} />
+        <JsonLd data={localBusinessSchema} />
+        <JsonLd data={servicesSchema} />
       </head>
 
       <body className={font.className}>

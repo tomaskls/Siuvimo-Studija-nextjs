@@ -23,34 +23,81 @@ export interface OrganizationSchema extends SchemaBase {
   sameAs?: string[];
 }
 
-export interface ProductReview {
-  "@type": "Review";
-  reviewRating: {
-    "@type": "Rating";
-    ratingValue: number;
-    bestRating: number;
-  };
-  author: {
-    "@type": "Person";
-    name: string;
-  };
-  reviewBody?: string;
+export interface PostalAddress {
+  "@type": "PostalAddress";
+  streetAddress: string;
+  addressLocality: string;
+  postalCode: string;
+  addressCountry: string;
+  addressRegion: string;
 }
 
-export interface ProductSchema extends SchemaBase {
-  "@type": "Product";
+export interface GeoCoordinates {
+  "@type": "GeoCoordinates";
+  latitude: string;
+  longitude: string;
+}
+
+export interface OpeningHoursSpecification {
+  "@type": "OpeningHoursSpecification";
+  dayOfWeek: string[];
+  opens: string;
+  closes: string;
+}
+
+export interface LocalBusinessSchema extends SchemaBase {
+  "@type": "LocalBusiness";
+  "@id": string;
+  name: string;
+  image: string;
+  description: string;
+  priceRange: string;
+  address: PostalAddress;
+  geo: GeoCoordinates;
+  openingHoursSpecification: OpeningHoursSpecification[];
+  telephone: string;
+  email: string;
+  url: string;
+  paymentAccepted: string[];
+  currenciesAccepted: string;
+  mainEntityOfPage: string;
+  hasMap: string;
+  isAccessibleForFree: boolean;
+}
+
+export interface ServiceOffered {
+  "@type": "Service";
   name: string;
   description: string;
-  image?: string[];
-  brand?: {
-    "@type": "Brand";
+}
+
+export interface ServiceOffer {
+  "@type": "Offer";
+  itemOffered: ServiceOffered;
+}
+
+export interface ServiceCatalog {
+  "@type": "OfferCatalog";
+  name: string;
+  itemListElement: ServiceOffer[];
+}
+
+export interface ServiceSchema extends SchemaBase {
+  "@type": "Service";
+  name: string;
+  serviceType: string;
+  provider: {
+    "@type": "LocalBusiness";
     name: string;
   };
-  offers?: {
+  areaServed: string;
+  description: string;
+  offers: {
     "@type": "Offer";
-    price: number;
-    priceCurrency: string;
-    availability: string;
+    availableAtOrFrom: {
+      "@type": "LocalBusiness";
+      address: PostalAddress;
+    };
   };
-  review?: ProductReview[];
+  hasOfferCatalog: ServiceCatalog;
 }
