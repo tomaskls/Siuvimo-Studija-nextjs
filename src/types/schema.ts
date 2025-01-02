@@ -1,5 +1,3 @@
-// types/Schema.types.ts
-
 export interface SchemaBase {
   "@context": "https://schema.org";
   "@type": string;
@@ -65,39 +63,19 @@ export interface LocalBusinessSchema extends SchemaBase {
   isAccessibleForFree: boolean;
 }
 
-export interface ServiceOffered {
-  "@type": "Service";
+export interface ServiceProvider {
+  "@type": "LocalBusiness";
   name: string;
-  description: string;
-}
-
-export interface ServiceOffer {
-  "@type": "Offer";
-  itemOffered: ServiceOffered;
-}
-
-export interface ServiceCatalog {
-  "@type": "OfferCatalog";
-  name: string;
-  itemListElement: ServiceOffer[];
+  address?: PostalAddress;
 }
 
 export interface ServiceSchema extends SchemaBase {
   "@type": "Service";
   name: string;
   serviceType: string;
-  provider: {
-    "@type": "LocalBusiness";
-    name: string;
-  };
+  provider: ServiceProvider;
   areaServed: string;
   description: string;
-  offers: {
-    "@type": "Offer";
-    availableAtOrFrom: {
-      "@type": "LocalBusiness";
-      address: PostalAddress;
-    };
-  };
-  hasOfferCatalog: ServiceCatalog;
+  mainEntityOfPage?: string;
+  url?: string;
 }
