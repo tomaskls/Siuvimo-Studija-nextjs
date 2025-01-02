@@ -67,7 +67,7 @@ export const localBusinessSchema: LocalBusinessSchema = {
       closes: "17:00",
     },
   ],
-  telephone: "+37061516141",
+  telephone: "+37060055316",
   email: "neringos.siuvimo.studija@gmail.com",
   url: "https://www.neringos-siuvimo-studija.lt",
   paymentAccepted: ["Cash", "BankTransfer"],
