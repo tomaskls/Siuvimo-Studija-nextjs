@@ -93,7 +93,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
       addressCountry: "LT",
       addressRegion: "Šiaulių apskritis",
     },
-    telephone: "+37061516141",
+    telephone: "+37060055316",
     priceRange: "€€",
     image:
       "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
@@ -123,7 +123,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
         itemOffered: {
           "@type": "Service", 
           name: "Aplikacijos ant drabužių",
-          description: "Aplikacijų siuvimas ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal jūsų pageidavimus."
+          description: "Aplikacijos ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal jūsų pageidavimus."
         }
       },
       {
