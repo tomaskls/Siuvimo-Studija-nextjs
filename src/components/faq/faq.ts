@@ -154,58 +154,39 @@ export async function getFAQs() {
       },
       {
         id: '10',
-        question: 'Ar siūvate proginiais drabužiais?',
-        answer: 'Specializuojamės vestuviniuose, išleistuvių, jubiliejiniuose ir kituose ypatingų progų drabužiuose.'
-      },
-      {
-        id: '11',
         question: 'Ar taikote individualų požiūrį į kiekvieną klientą?',
         answer: 'Kiekvienam klientui skiriame individualų dėmesį, atsižvelgiame į jo pageidavimus, figūros ypatumus ir stilių.'
       },
       {
-        id: '12',
+        id: '11',
         question: 'Ar galite pritaikyti drabužį nestandartinės figūros žmogui?',
         answer: 'Taip, mes specializuojamės individualių drabužių siuvime, pritaikant juos bet kokios figūros žmonėms.'
       },
       {
-        id: '13',
-        question: 'Ar dirbate su specialiomis užsakomis?',
-        answer: 'Priimame individualius užsakymus, įskaitant sudėtingus, unikalius ir specialius drabužių modelius.'
-      },
-      {
-        id: '14',
+        id: '12',
         question: 'Kiek kainuoja konsultacija?',
         answer: 'Pirminė konsultacija yra nemokama. Jos metu aptarsime jūsų pageidavimus ir numatysime tolimesnius veiksmus.'
       },
       {
-        id: '15',
+        id: '13',
         question: 'Ar galite pakeisti drabužio dizainą?',
         answer: 'Taip, galime modernizuoti drabužį, pakeisti jo stilių, pritaikyti pagal šiuolaikines madas, išsaugant originalią medžiagą.'
       },
       {
-        id: '16',
-        question: 'Ar dirbate su uniformomis?',
-        answer: 'Taip, siuvame ir taisome darbo, mokyklines ir kitas uniformas.'
-      },
-      {
-        id: '17',
+        id: '14',
         question: 'Kiek laiko reikia pasiūti individualų drabužį?',
         answer: 'Priklausomai nuo sudėtingumo: paprastas modelis - 1-2 savaitės, sudėtingas - 3-4 savaitės, vestuviniai drabužiai - iki 6 savaičių.'
       },
       {
-        id: '18',
+        id: '15',
         question: 'Ar galite atkurti senus ar vintage drabužius?',
         answer: 'Taip, turime patirties atkurti ir restauruoti senus drabužius, išsaugant jų autentiškumą.'
       },
       {
-        id: '19',
+        id: '16',
         question: 'Ar dirbate su specialiomis medžiagomis?',
         answer: 'Turime patirties dirbti su oda, šilku, nėriniu, kailio gaminiais ir kitomis specifinėmis medžiagomis.'
       },
-      {
-        id: '20',
-        question: 'Ar teikiate paslaugas po drabužio pagaminimo?',
-        answer: 'Taip, atliekame papildomus pritaikymus, konsultuojame dėl drabužio priežiūros ir galimų pakeitimų.'
-      }
+      
     ];
   }
