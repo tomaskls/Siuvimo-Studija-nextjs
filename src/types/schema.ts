@@ -91,3 +91,14 @@ export interface IndividualServiceSchema extends SchemaBase {
   areaServed: string;
   description: string;
 }
+
+export interface ServiceOffer extends SchemaBase {
+  "@type": "Offer";
+  itemOffered: {
+    "@type": "Service";
+    name: string;
+    description: string;
+    provider: ServiceProvider;
+    areaServed: string;
+  };
+}

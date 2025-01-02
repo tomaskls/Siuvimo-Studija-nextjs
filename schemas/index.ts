@@ -1,8 +1,8 @@
 import {
   OrganizationSchema,
   LocalBusinessSchema,
-  ServiceSchema,
-  IndividualServiceSchema
+  ServiceOffer
+  
 } from "../src/types/schema";
 
 const baseAddress = {
@@ -76,141 +76,140 @@ export const localBusinessSchema: LocalBusinessSchema = {
   isAccessibleForFree: true,
 };
 
-export const servicesSchema: ServiceSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Siuvimo paslaugos",
-  "serviceType": "Siuvimo paslaugos",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Neringos Siuvimo Studija",
-    "address": baseAddress,
-    "telephone": "+37061516141",
-    "priceRange": "€€",
-    "image": "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp"
-  },
-  "areaServed": "Šiauliai",
-  "description": "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas. Aplikacijos ant drabužių. Vienetinių lekalų konstravimas",
-  "mainEntityOfPage": "https://www.neringos-siuvimo-studija.lt",
-  "url": "https://www.neringos-siuvimo-studija.lt"
-};
-
-export const individualServicesSchemas: IndividualServiceSchema[] = [
+export const individualServicesSchemas: ServiceOffer[] = [
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Drabužių taisymas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Drabužių taisymas",
-    "description": "Profesionalus drabužių taisymas ir persiuvimas. Atliekame įvairių drabužių taisymo darbus: suknelių, marškinių, švarkų koregavimą pagal figūrą.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Drabužių taisymas",
+      "description": "Profesionalus drabužių taisymas ir persiuvimas. Atliekame įvairių drabužių taisymo darbus: suknelių, marškinių, švarkų koregavimą pagal figūrą.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Individualus siuvimas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Individualus siuvimas",
-    "description": "Individualus drabužių siuvimas pagal kliento pageidavimus ir išmatavimus. Siuvame sukneles, sijonus, kelnes, švarkus ir kitus drabužius.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Individualus siuvimas",
+      "description": "Individualus drabužių siuvimas pagal kliento pageidavimus ir išmatavimus. Siuvame sukneles, sijonus, kelnes, švarkus ir kitus drabužius iš kliento arba mūsų siūlomų audinių.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Aplikacijos ant drabužių",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Aplikacijos ant drabužių",
-    "description": "Aplikacijų siuvimas ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Aplikacijos ant drabužių",
+      "description": "Aplikacijų siuvimas ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal jūsų pageidavimus.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Vienetinių lekalų konstravimas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Lekalų konstravimas",
-    "description": "Individualių lekalų kūrimas ir konstravimas pagal kliento matmenis. Pritaikome pagal individualius kūno ypatumus.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Vienetinių lekalų konstravimas",
+      "description": "Individualių lekalų kūrimas ir konstravimas pagal kliento matmenis. Paruošiame lekalus tolimesniam drabužių siuvimui, pritaikome pagal individualius kūno ypatumus.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Užtrauktukų keitimas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Užtrauktukų keitimas",
-    "description": "Profesionalus užtrauktukų keitimas įvairiuose drabužiuose. Naudojame kokybišką furnitūrą ir garantuojame ilgalaikį rezultatą.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Užtrauktukų keitimas",
+      "description": "Profesionalus užtrauktukų keitimas įvairiuose drabužiuose: kelnėse, striukėse, suknelėse, sijonuose. Naudojame kokybišką furnitūrą ir garantuojame ilgalaikį rezultatą.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Pamušalo keitimas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Pamušalo keitimas",
-    "description": "Profesionalus drabužių pamušalo keitimas striukėms, paltams, švarkams. Naudojame kokybišką pamušalinį audinį.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Pamušalo keitimas",
+      "description": "Profesionalus drabužių pamušalo keitimas striukėms, paltams, švarkams ir kt. Naudojame kokybišką pamušalinį audinį, atliekame kruopštų siuvimą ir užtikriname kokybišką rezultatą.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Paltų ir striukių taisymas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Paltų taisymas",
-    "description": "Profesionalus paltų ir striukių taisymas, įskaitant rankovių trumpinimą, užtrauktukų keitimą, pamušalo atnaujinimą.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Paltų ir striukių taisymas",
+      "description": "Profesionalus paltų ir striukių taisymas, įskaitant rankovių trumpinimą, užtrauktukų keitimą, pamušalo atnaujinimą. Pataisyti drabužiai atrodo kaip nauji.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Kelnių taisymas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Kelnių taisymas",
-    "description": "Kelnių siaurinimas, trumpinimas ir kiti taisymo darbai. Pritaikome kelnes pagal figūrą.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Kelnių taisymas",
+      "description": "Kelnių siaurinimas, trumpinimas ir kiti taisymo darbai. Pritaikome kelnes pagal jūsų figūrą, atliekame džinsų ir klasikinių kelnių taisymą, patobuliname pagal jūsų pageidavimus.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   },
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Sijonų taisymas",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija",
-      "address": baseAddress,
-    },
-    "serviceType": "Sijonų taisymas",
-    "description": "Profesionalus sijonų taisymas, įskaitant siaurinimą, trumpinimą, juosmens koregavimą.",
-    "areaServed": "Šiauliai"
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Sijonų taisymas",
+      "description": "Profesionalus sijonų taisymas, įskaitant siaurinimą, trumpinimą, juosmens koregavimą. Pritaikome sijonus pagal jūsų figūrą ir pageidavimus.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Neringos Siuvimo Studija",
+        "address": baseAddress
+      },
+      "areaServed": "Šiauliai"
+    }
   }
 ];

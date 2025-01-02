@@ -9,7 +9,7 @@ import { Merriweather } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ConsentManager } from "../components/ConsentManager";
 import JsonLd from '../components/JsonLd';
-import { servicesSchema, individualServicesSchemas } from '../../schemas/index';
+import { individualServicesSchemas } from '../../schemas/index';
 
 const font = Merriweather({
   variable: "--font-merri",
@@ -52,11 +52,8 @@ export default function RootLayout({
       <head>
         {/* <JsonLd data={organizationSchema} /> */}
         {/* <JsonLd data={localBusinessSchema} /> */}
-        <JsonLd data={servicesSchema} />
-        <JsonLd data={servicesSchema} />
-        {individualServicesSchemas.map((schema, index) => (
-          <JsonLd key={`service-${index}`} data={schema} />
-        ))}
+        <JsonLd data={individualServicesSchemas[0]} />
+       
       </head>
 
       <body className={font.className}>
