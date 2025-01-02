@@ -74,6 +74,23 @@ export interface ServiceProvider {
   image?: string;
 }
 
+export interface ServiceOffered {
+  "@type": "Service";
+  name: string;
+  description: string;
+}
+
+export interface ServiceOffer {
+  "@type": "Offer";
+  itemOffered: ServiceOffered;
+}
+
+export interface ServiceCatalog {
+  "@type": "OfferCatalog";
+  name: string;
+  itemListElement: ServiceOffer[];
+}
+
 export interface ServiceSchema extends SchemaBase {
   "@type": "Service";
   name: string;
@@ -83,4 +100,5 @@ export interface ServiceSchema extends SchemaBase {
   description: string;
   mainEntityOfPage?: string;
   url?: string;
+  hasOfferCatalog?: ServiceCatalog;
 }
