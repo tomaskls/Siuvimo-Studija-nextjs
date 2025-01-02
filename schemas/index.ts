@@ -3,6 +3,7 @@ import {
   LocalBusinessSchema,
   ServiceSchema,
 } from "../src/types/schema";
+import { reviews } from "./reviews";
 
 const baseAddress = {
   "@type": "PostalAddress" as const,
@@ -93,11 +94,13 @@ export const siuvimoPaslaugos: ServiceSchema = {
       addressCountry: "LT",
       addressRegion: "Šiaulių apskritis",
     },
+    
     telephone: "+37060055316",
     priceRange: "€€",
     image:
       "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
   },
+  review: reviews,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Siuvimo paslaugos",

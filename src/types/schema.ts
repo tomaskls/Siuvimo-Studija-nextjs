@@ -1,3 +1,5 @@
+import { ReviewSchema } from "../../schemas/reviews";
+
 export interface SchemaBase {
   "@context": "https://schema.org";
   "@type": string;
@@ -76,6 +78,7 @@ export interface ServiceSchema extends SchemaBase {
   "@type": "Service";
   name: string;
   description: string;
+  review?: ReviewSchema[];
   url?: string;
   provider: ServiceProvider;
   areaServed?: string;
