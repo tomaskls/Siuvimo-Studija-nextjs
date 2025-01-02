@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* kiti esami nustatymai */
+  /* CSS optimizacijos nustatymai */
+  experimental: {
+    optimizeCss: true
+  },
+  
+  /* Esami redirects nustatymai */
   async redirects() {
     return [
       {
@@ -29,7 +34,6 @@ const nextConfig: NextConfig = {
         destination: '/drabuziu-taisymo-kainos',
         permanent: true,
       },
-     
     ]
   },
 };
