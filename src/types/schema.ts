@@ -82,10 +82,16 @@ export interface ServiceSchema extends SchemaBase {
   category?: string;
   priceRange?: string;
   image?: string;
-  offers?: {
-    "@type": "Offer";
-    price?: string;
-    priceCurrency?: string;
-    availability?: string;
-  }[];
+  hasOfferCatalog?: {
+    "@type": "OfferCatalog";
+    name: string;
+    itemListElement: {
+      "@type": "Offer";
+      itemOffered: {
+        "@type": "Service";
+        name: string;
+        description: string;
+      };
+    }[];
+  };
 }
