@@ -75,30 +75,17 @@ export interface ServiceProvider {
 export interface ServiceSchema extends SchemaBase {
   "@type": "Service";
   name: string;
-  serviceType: string;
-  provider: ServiceProvider;
-  areaServed: string;
   description: string;
-  mainEntityOfPage?: string;
   url?: string;
-}
-
-export interface IndividualServiceSchema extends SchemaBase {
-  "@type": "Service";
-  name: string;
-  serviceType: string;
   provider: ServiceProvider;
-  areaServed: string;
-  description: string;
-}
-
-export interface ServiceOffer extends SchemaBase {
-  "@type": "Offer";
-  itemOffered: {
-    "@type": "Service";
-    name: string;
-    description: string;
-    provider: ServiceProvider;
-    areaServed: string;
-  };
+  areaServed?: string;
+  category?: string;
+  priceRange?: string;
+  image?: string;
+  offers?: {
+    "@type": "Offer";
+    price?: string;
+    priceCurrency?: string;
+    availability?: string;
+  }[];
 }
