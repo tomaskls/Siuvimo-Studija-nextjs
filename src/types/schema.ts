@@ -63,10 +63,15 @@ export interface LocalBusinessSchema extends SchemaBase {
   isAccessibleForFree: boolean;
 }
 
+// ... kiti tipai lieka tokie patys ...
+
 export interface ServiceProvider {
   "@type": "LocalBusiness";
   name: string;
-  address?: PostalAddress;
+  address: PostalAddress;  // Dabar privalomas
+  telephone?: string;
+  priceRange?: string;
+  image?: string;
 }
 
 export interface ServiceSchema extends SchemaBase {

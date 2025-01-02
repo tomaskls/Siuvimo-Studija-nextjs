@@ -81,7 +81,18 @@ import {
     "serviceType": "Siuvimo paslaugos",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Neringos Siuvimo Studija"
+      "name": "Neringos Siuvimo Studija",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Vytauto g. 80",
+        "addressLocality": "Šiauliai",
+        "postalCode": "77154",
+        "addressCountry": "LT",
+        "addressRegion": "Šiaulių apskritis"
+      },
+      "telephone": "+37061516141",
+      "priceRange": "€€",
+      "image": "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp"
     },
     "areaServed": "Šiauliai",
     "description": "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas. Aplikacijos ant drabužių. Vienetinių lekalų konstravimas",
