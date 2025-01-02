@@ -74,14 +74,25 @@ export const localBusinessSchema: LocalBusinessSchema = {
   isAccessibleForFree: true,
 };
 
-export const servicesSchema: ServiceSchema  = {
+export const servicesSchema: ServiceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Siuvimo paslaugos",
     serviceType: "Siuvimo paslaugos",
     provider: {
       "@type": "LocalBusiness",
-      name: "Neringos Siuvimo Studija"
+      name: "Neringos Siuvimo Studija",
+      image: "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
+      telephone: "+37061516141",
+      priceRange: "€€",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Vytauto g. 80",
+        addressLocality: "Šiauliai",
+        postalCode: "77154",
+        addressCountry: "LT",
+        addressRegion: "Šiaulių apskritis"
+      }
     },
     areaServed: "Šiauliai",
     description: "Profesionalios siuvimo paslaugos Šiauliuose",
@@ -89,13 +100,17 @@ export const servicesSchema: ServiceSchema  = {
       "@type": "Offer",
       availableAtOrFrom: {
         "@type": "LocalBusiness",
+        name: "Neringos Siuvimo Studija",
+        image: "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
+        telephone: "+37061516141",
+        priceRange: "€€",
         address: {
-            "@type": "PostalAddress",
-            streetAddress: "Vytauto g. 80",
-            addressLocality: "Šiauliai",
-            postalCode: "77154",
-            addressCountry: "LT",
-            addressRegion: "Šiaulių apskritis"
+          "@type": "PostalAddress",
+          streetAddress: "Vytauto g. 80",
+          addressLocality: "Šiauliai",
+          postalCode: "77154",
+          addressCountry: "LT",
+          addressRegion: "Šiaulių apskritis"
         }
       }
     },
