@@ -63,32 +63,13 @@ export interface LocalBusinessSchema extends SchemaBase {
   isAccessibleForFree: boolean;
 }
 
-// ... kiti tipai lieka tokie patys ...
-
 export interface ServiceProvider {
   "@type": "LocalBusiness";
   name: string;
-  address: PostalAddress;  // Dabar privalomas
+  address: PostalAddress;
   telephone?: string;
   priceRange?: string;
   image?: string;
-}
-
-export interface ServiceOffered {
-  "@type": "Service";
-  name: string;
-  description: string;
-}
-
-export interface ServiceOffer {
-  "@type": "Offer";
-  itemOffered: ServiceOffered;
-}
-
-export interface ServiceCatalog {
-  "@type": "OfferCatalog";
-  name: string;
-  itemListElement: ServiceOffer[];
 }
 
 export interface ServiceSchema extends SchemaBase {
@@ -100,5 +81,13 @@ export interface ServiceSchema extends SchemaBase {
   description: string;
   mainEntityOfPage?: string;
   url?: string;
-  hasOfferCatalog?: ServiceCatalog;
+}
+
+export interface IndividualServiceSchema extends SchemaBase {
+  "@type": "Service";
+  name: string;
+  serviceType: string;
+  provider: ServiceProvider;
+  areaServed: string;
+  description: string;
 }
