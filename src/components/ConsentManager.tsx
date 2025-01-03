@@ -6,6 +6,7 @@ import styles from './ConsentManager.module.css';
 
 export function ConsentManager() {
   const [showConsent, setShowConsent] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
 
   useEffect(() => {
     const hasConsent = localStorage.getItem('cookieConsent');
@@ -67,30 +68,92 @@ export function ConsentManager() {
 
       <div className={styles.consentContainer}>
         <div className={styles.consentContent}>
-          <p className={styles.text}>
-            Mes naudojame slapukus svetainės analitikai ir reklamai. 
-            Jūs galite pasirinkti su kuriais slapukais sutinkate.
-          </p>
-          <div className={styles.buttonsContainer}>
-            <button
-              onClick={handleDecline}
-              className={`${styles.button} ${styles.declineButton}`}
-            >
-              Atmesti visus
-            </button>
-            <button
-              onClick={handleAcceptAnalytics}
-              className={`${styles.button} ${styles.analyticsButton}`}
-            >
-              Tik analitika
-            </button>
-            <button
-              onClick={handleAcceptAll}
-              className={`${styles.button} ${styles.acceptButton}`}
-            >
-              Sutinku su visais
-            </button>
-          </div>
+          {!showDetails ? (
+            <>
+              <p className={styles.text}>
+                Mes naudojame slapukus svetainės analitikai ir reklamai. 
+                Jūs galite pasirinkti su kuriais slapukais sutinkate.
+              </p>
+              <div className={styles.buttonsContainer}>
+                <button
+                  onClick={() => setShowDetails(true)}
+                  className={`${styles.button} ${styles.infoButton}`}
+                >
+                  Daugiau informacijos
+                </button>
+                <button
+                  onClick={handleDecline}
+                  className={`${styles.button} ${styles.declineButton}`}
+                >
+                  Atmesti visus
+                </button>
+                <button
+                  onClick={handleAcceptAnalytics}
+                  className={`${styles.button} ${styles.analyticsButton}`}
+                >
+                  Tik analitika
+                </button>
+                <button
+                  onClick={handleAcceptAll}
+                  className={`${styles.button} ${styles.acceptButton}`}
+                >
+                  Sutinku su visais
+                </button>
+              </div>
+            </>
+          ) : (
+            <div className={styles.detailsContainer}>
+              <h2 className={styles.detailsTitle}>Apie slapukus</h2>
+              <div className={styles.detailsContent}>
+                <div className={styles.detailsSection}>
+                  <h3 className={styles.detailsSectionTitle}>Būtinieji slapukai</h3>
+                  <p className={styles.detailsSectionText}>
+                    Šie slapukai yra būtini svetainės veikimui ir negali būti išjungti.
+                  </p>
+                </div>
+                <div className={styles.detailsSection}>
+                  <h3 className={styles.detailsSectionTitle}>Analitiniai slapukai</h3>
+                  <p className={styles.detailsSectionText}>
+                    Padeda mums suprasti, kaip lankytojai naudojasi svetaine. 
+                    Naudojame Google Analytics.
+                  </p>
+                </div>
+                <div className={styles.detailsSection}>
+                  <h3 className={styles.detailsSectionTitle}>Reklaminiai slapukai</h3>
+                  <p className={styles.detailsSectionText}>
+                    Naudojami rodyti jums pritaikytą reklamą. 
+                    Šie slapukai seka jūsų naršymą skirtingose svetainėse.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.buttonsContainer}>
+                <button
+                  onClick={() => setShowDetails(false)}
+                  className={`${styles.button} ${styles.infoButton}`}
+                >
+                  Grįžti
+                </button>
+                <button
+                  onClick={handleDecline}
+                  className={`${styles.button} ${styles.declineButton}`}
+                >
+                  Atmesti visus
+                </button>
+                <button
+                  onClick={handleAcceptAnalytics}
+                  className={`${styles.button} ${styles.analyticsButton}`}
+                >
+                  Tik analitika
+                </button>
+                <button
+                  onClick={handleAcceptAll}
+                  className={`${styles.button} ${styles.acceptButton}`}
+                >
+                  Sutinku su visais
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>
