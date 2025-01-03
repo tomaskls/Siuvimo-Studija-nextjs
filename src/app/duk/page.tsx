@@ -11,7 +11,7 @@ export default async function FAQPage() {
   
   return (
     <div className={styles.block}>
-      <h1 className={styles.h1}>Drabužių Taisymo ir Pritaikymo Paslaugos - Dažniausi Klausimai</h1>
+      <h1 className={styles.h1}>Drabužių Taisymo Paslaugos - Dažniausi Klausimai</h1>
       <FAQList faqs={faqs} />
       <h2 className={styles.h1}>Drabužių Siuvimo Paslaugos - Dažniausi Klausimai</h2>
       <FAQList faqs={faqs2} />
