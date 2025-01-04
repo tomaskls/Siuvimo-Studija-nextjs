@@ -94,6 +94,12 @@ useEffect(() => {
             </li>
             <li className={style.liGallery}>
               <Scissors />
+              <Link href="/duk" legacyBehavior>
+                <a onClick={closeMenu}><span>D.U.K.</span></a>
+              </Link>
+            </li>
+            <li className={style.liGallery}>
+              <Scissors />
               <Link href="/gallery" legacyBehavior>
                 <a onClick={closeMenu}><span>Galerija</span></a>
               </Link>

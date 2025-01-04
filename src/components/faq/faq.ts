@@ -148,11 +148,6 @@ export async function getFAQs2() {
       answer: 'Procesas apima: pirminę konsultaciją ir idėjų aptarimą, eskizų kūrimą, medžiagų ir detalių parinkimą, matmenų nuėmimą, bandomąjį išbandymą ir galutinį pritaikymą.'
     },
     {
-      id: '5',
-      question: 'Ar galima keisti pasiūtą drabužį?',
-      answer: 'Taip, atliekame papildomus pritaikymus. Galimi tiek smulkūs, tiek esminiai pakeitimai, kurių kaina priklauso nuo sudėtingumo.'
-    },
-    {
       id: '6',
       question: 'Kokius drabužius siuvate?',
       answer: 'Siuvame moteriškus, vyriškus, vaikiškus drabužius, oficialius kostiumus, sceninius ir kitus specialius drabužius.'
