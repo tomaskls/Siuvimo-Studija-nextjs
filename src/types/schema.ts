@@ -70,6 +70,8 @@ export interface LocalBusinessSchema extends SchemaBase {
   mainEntityOfPage: string;
   hasMap: string;
   isAccessibleForFree: boolean;
+  review?: ReviewSchema[];
+  aggregateRating?: AggregateRatingSchema;
 }
 
 export interface ServiceProvider {

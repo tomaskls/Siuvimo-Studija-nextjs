@@ -4,7 +4,8 @@ import {
   ServiceSchema,
   AggregateRatingSchema,
 } from "../src/types/schema";
-import {ReviewSchema, reviews } from "./reviews";
+import type { ReviewSchema } from "./reviews";
+import { reviews } from "./reviews";
 
 const baseAddress = {
   "@type": "PostalAddress" as const,
@@ -15,19 +16,23 @@ const baseAddress = {
   addressRegion: "Šiaulių apskritis",
 };
 
-// Funkcija agregavimo reitingui apskaičiuoti
-function calculateAggregateRating(reviewsArray: ReviewSchema[]): AggregateRatingSchema {
-  const totalRating = reviewsArray.reduce((sum: number, review: ReviewSchema) => {
-    return sum + review.reviewRating.ratingValue;
-  }, 0);
-  
+function calculateAggregateRating(
+  reviewsArray: ReviewSchema[]
+): AggregateRatingSchema {
+  const totalRating = reviewsArray.reduce(
+    (sum: number, review: ReviewSchema) => {
+      return sum + review.reviewRating.ratingValue;
+    },
+    0
+  );
+
   const averageRating = totalRating / reviewsArray.length;
 
   return {
     "@type": "AggregateRating",
     ratingValue: averageRating,
     reviewCount: reviewsArray.length,
-    bestRating: 5
+    bestRating: 5,
   };
 }
 
@@ -92,6 +97,8 @@ export const localBusinessSchema: LocalBusinessSchema = {
   mainEntityOfPage: "https://www.neringos-siuvimo-studija.lt",
   hasMap: "https://www.google.com/maps?q=55.92782411660252,23.315946062172443",
   isAccessibleForFree: true,
+  review: reviews,
+  aggregateRating: calculateAggregateRating(reviews),
 };
 
 export const siuvimoPaslaugos: ServiceSchema = {
@@ -109,8 +116,6 @@ export const siuvimoPaslaugos: ServiceSchema = {
     image:
       "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
   },
-  aggregateRating: calculateAggregateRating(reviews),
-  review: reviews,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Siuvimo paslaugos",
