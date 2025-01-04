@@ -13,6 +13,13 @@ export interface ContactPoint {
   areaServed?: string;
 }
 
+export interface AggregateRatingSchema {
+  "@type": "AggregateRating";
+  ratingValue: number;
+  reviewCount: number;
+  bestRating: number;
+}
+
 export interface OrganizationSchema extends SchemaBase {
   "@type": "Organization";
   name: string;
@@ -79,6 +86,7 @@ export interface ServiceSchema extends SchemaBase {
   name: string;
   description: string;
   review?: ReviewSchema[];
+  aggregateRating?: AggregateRatingSchema;
   url?: string;
   provider: ServiceProvider;
   areaServed?: string;
