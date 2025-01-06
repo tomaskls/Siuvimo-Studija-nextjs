@@ -56,7 +56,7 @@ export default function RootLayout({
         <JsonLd data={localBusinessSchema} />
         <JsonLd data={siuvimoPaslaugos} />
         <JsonLd data={faqSchema} />
-         <JsonLd data={priceListSchema} />
+        <JsonLd data={priceListSchema} />
       </head>
 
       <body className={font.className}>

@@ -1,35 +1,50 @@
 import { ReviewSchema } from "../../schemas/reviews";
 
-// src/types/schema.ts
-
-interface PriceSpecificationType {
-  "@type": "PriceSpecification";
-  minPrice: string;
-  maxPrice: string;
-  priceCurrency: string;
-}
-
-// Pakeičiame OfferType, kad priceCurrency būtų neprivalomas kai yra priceSpecification
-interface OfferType {
+export interface ServiceOfferType {
   "@type": "Offer";
-  name: string;
   price?: string;
-  priceCurrency?: string;  // Padarome neprivalomą
-  priceSpecification?: PriceSpecificationType;
+  priceCurrency?: string;
+  priceSpecification?: {
+    "@type": "PriceSpecification";
+    minPrice: string;
+    maxPrice: string;
+    priceCurrency: string;
+  };
 }
 
-interface SubCatalogType {
-  "@type": "OfferCatalog";
+export interface ServiceProviderType {
+  "@type": "LocalBusiness";
   name: string;
-  itemListElement: OfferType[];
+  address?: {
+    "@type": "PostalAddress";
+    streetAddress: string;
+    addressLocality: string;
+    postalCode: string;
+    addressCountry: string;
+  };
+}
+
+export interface ServiceType {
+  "@type": "Service";
+  name: string;
+  description: string;
+  provider: ServiceProviderType;
+  offers: ServiceOfferType;
+  url: string;
+  areaServed?: string;
+  category?: string;
 }
 
 export interface OfferCatalogSchema {
   "@context": "https://schema.org";
-  "@type": "OfferCatalog";
-  name: string;
-  itemListElement: SubCatalogType[];
+  "@type": "ItemList";
+  itemListElement: {
+    "@type": "ListItem";
+    position: number;
+    item: ServiceType;
+  }[];
 }
+
 
 interface AnswerType {
   "@type": "Answer";
