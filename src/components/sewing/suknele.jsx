@@ -21,8 +21,8 @@ export default function Sewing2() {
                 <Image className={style.img2}
                     src="/Images/Suknele_dekoruota_aukso_sagomis.webp"
                     alt="Suknelė dekoruota aukso spalvos sagomis"
-                    width={900}
-                    height={1600}
+                    width={450}
+                    height={800}
                     priority={false}
                 />
             </div>
