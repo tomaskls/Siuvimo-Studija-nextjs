@@ -3,8 +3,6 @@ import style from './Price.module.css'
 import React from 'react';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import { priceListSchema } from '../../../schemas/prices';
-import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
     title: "Drabužių taisymo kainos Šiauliuose",
@@ -31,9 +29,6 @@ export const metadata: Metadata = {
 export default function Prices() {
     return (
         <>
-        <head>
-        <JsonLd data={priceListSchema} />
-        </head>
         <div className={style.container}>
             <div className={style.content1}>
                 <Image className={style.img}
@@ -85,41 +80,41 @@ export default function Prices() {
                 </div>
                 <div className={style.list}>
                     <h3 className={style.h3}>Vyr. kostiumų taisymas:</h3>
-                    <p className={style.p}>Švarko siaurinimas - 20€</p>
-                    <p className={style.p}>Švarko rankovių trumpinimas - 25€</p>
-                    <p className={style.p}>Švarko apačios trumpinimas - 20€</p>
-                    <p className={style.p}>Švarko rankovių perstatymas - 40€</p>
+                    <p className={style.p}>Vyr. švarko siaurinimas - 20€</p>
+                    <p className={style.p}>Vyr. švarko rankovių trumpinimas - 25€</p>
+                    <p className={style.p}>Vyr. švarko apačios trumpinimas - 20€</p>
+                    <p className={style.p}>Vyr. švarko rankovių perstatymas - 40€</p>
                     <p className={style.p}>Kelnių apačios lenkimas su juostele - 12€</p>
                     <p className={style.p}>Kelnių siaurinimas - 20-40€</p>
                 </div>
                 <div className={style.list}>
                     <h3 className={style.h3}>Paltų taisymas:</h3>
-                    <p className={style.p}>Apačios lenkimas - 30€</p>
-                    <p className={style.p}>Rankovių trumpinimas - 20€</p>
-                    <p className={style.p}>Rankovių perstatymas - 30€</p>
+                    <p className={style.p}>Palto apačios lenkimas - 30€</p>
+                    <p className={style.p}>Palto rankovių trumpinimas - 20€</p>
+                    <p className={style.p}>Palto rankovių perstatymas - 30€</p>
                     <p className={style.p}>Palto siaurinimas - 20-40 €</p>
-                    <p className={style.p}>Apykaklės persiuvimas - 20€</p>
+                    <p className={style.p}>Palto apykaklės persiuvimas - 20€</p>
                 </div>
                 <div className={style.list}>
                     <h3 className={style.h3}>Pamušalų keitimas:</h3>
-                    <p className={style.p}>Paltui - 35€</p>
-                    <p className={style.p}>Puspalčiui - 30€</p>
-                    <p className={style.p}>Švarkui - 30€</p>
-                    <p className={style.p}>Sijonui - 15€</p>
-                    <p className={style.p}>Suknelei - 15€</p>
-                    <p className={style.p}>Striukei - 25-35€</p>
-                    <p className={style.p}>Kailiniams - 50€</p>
+                    <p className={style.p}>Palto pamušalo keitimas - 35€</p>
+                    <p className={style.p}>Puspalčio pamušalo keitimas - 30€</p>
+                    <p className={style.p}>Švarko pamušalo keitimas - 30€</p>
+                    <p className={style.p}>Sijono pamušalo keitimas - 15€</p>
+                    <p className={style.p}>Suknelės pamušalo keitimas - 15€</p>
+                    <p className={style.p}>Striukės pamušalo keitimas - 25-35€</p>
+                    <p className={style.p}>Kailinių pamušalo keitimas - 50€</p>
                 </div>
                 <div className={style.list}>
                     <h3 className={style.h3}>Užtrauktukų keitimas:</h3>
-                    <p className={style.p}>Striukė (žieminė) - 25€</p>
-                    <p className={style.p}>Striukė (plona) - 20€</p>
-                    <p className={style.p}>Vaikiška striukė - 15€</p>
+                    <p className={style.p}>Žieminės striukės užtrauktuko keitimas - 25€</p>
+                    <p className={style.p}>Plonos striukės užtrauktuko keitimas- 20€</p>
+                    <p className={style.p}>Vaikiškos striukės užtrauktuko keitimas - 15€</p>
                     <p className={style.p}>Džinsų užtrauktuko keitimas - 10€</p>
                     <p className={style.p}>Sijono užtrauktuko keitimas - 10€</p>
-                    <p className={style.p}>Vyr. kelnių užtrauktukas - 15€</p>
-                    <p className={style.p}>Puspalčiui - 25€</p>
-                    <p className={style.p}>Paltui - 30€</p>
+                    <p className={style.p}>Vyr. kelnių užtrauktuko keitimas - 15€</p>
+                    <p className={style.p}>Puspalčio užtrauktuko keitimas - 25€</p>
+                    <p className={style.p}>Palto užtrauktuko keitimas - 30€</p>
                 </div>
                 <div className={style.svg}><Siulai /></div>
             </div>
