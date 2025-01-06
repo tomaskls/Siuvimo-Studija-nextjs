@@ -1,5 +1,36 @@
 import { ReviewSchema } from "../../schemas/reviews";
 
+// src/types/schema.ts
+
+interface PriceSpecificationType {
+  "@type": "PriceSpecification";
+  minPrice: string;
+  maxPrice: string;
+  priceCurrency: string;
+}
+
+// Pakeičiame OfferType, kad priceCurrency būtų neprivalomas kai yra priceSpecification
+interface OfferType {
+  "@type": "Offer";
+  name: string;
+  price?: string;
+  priceCurrency?: string;  // Padarome neprivalomą
+  priceSpecification?: PriceSpecificationType;
+}
+
+interface SubCatalogType {
+  "@type": "OfferCatalog";
+  name: string;
+  itemListElement: OfferType[];
+}
+
+export interface OfferCatalogSchema {
+  "@context": "https://schema.org";
+  "@type": "OfferCatalog";
+  name: string;
+  itemListElement: SubCatalogType[];
+}
+
 interface AnswerType {
   "@type": "Answer";
   text: string;
