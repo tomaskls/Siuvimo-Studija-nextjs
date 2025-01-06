@@ -1,5 +1,24 @@
 import { ReviewSchema } from "../../schemas/reviews";
 
+interface AnswerType {
+  "@type": "Answer";
+  text: string;
+}
+
+// Klausimo tipas
+interface QuestionType {
+  "@type": "Question";
+  name: string;
+  acceptedAnswer: AnswerType;
+}
+
+// Pagrindinis FAQ schema tipas
+export interface FAQPageSchema {
+  "@context": "https://schema.org";
+  "@type": "FAQPage";
+  mainEntity: QuestionType[];
+}
+
 export interface SchemaBase {
   "@context": "https://schema.org";
   "@type": string;
