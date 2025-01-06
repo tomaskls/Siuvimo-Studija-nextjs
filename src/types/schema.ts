@@ -1,8 +1,6 @@
 import { ReviewSchema } from "../../schemas/reviews";
 
-// types/schema.ts
-// types/schema.ts
-interface ServiceOffer {
+export interface ServiceOffer {
   "@type": "Offer";
   price?: string;
   priceCurrency?: string;
@@ -16,7 +14,7 @@ interface ServiceOffer {
   category?: string;
 }
 
-interface ServiceType {
+export interface ServiceType {
   "@type": "Service";
   name: string;
   description: string;
@@ -26,26 +24,20 @@ interface ServiceType {
   serviceType?: string;
 }
 
-export interface BusinessSchema {
-  "@context": "https://schema.org";
-  "@type": "LocalBusiness";
-  name: string;
-  hasOfferCatalog: {
-    "@type": "OfferCatalog";
-    itemListElement: ServiceType[];
-  }
-}
 
 export interface ServiceListSchema {
   "@context": "https://schema.org";
   "@type": "LocalBusiness";
   name: string;
+  address: PostalAddress;
+  telephone?: string;
+  priceRange?: string;
+  image?: string;
   hasOfferCatalog: {
     "@type": "OfferCatalog";
     itemListElement: ServiceType[];
   }
 }
-
 interface AnswerType {
   "@type": "Answer";
   text: string;
