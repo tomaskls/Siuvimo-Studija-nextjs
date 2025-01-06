@@ -1,43 +1,6 @@
-// src/types/schema/prices.ts
+import { ProductListSchema } from "@/types/schema";
 
-export interface ProductOfferType {
-  "@type": "Offer";
-  price?: string;
-  priceCurrency?: string;
-  priceSpecification?: {
-    "@type": "PriceSpecification";
-    minPrice: string;
-    maxPrice: string;
-    priceCurrency: string;
-  };
-  availability: string;
-}
-
-export interface ProductType {
-  "@type": "Product";
-  name: string;
-  description: string;
-  offers: ProductOfferType;
-  url: string;
-  category?: string;
-  brand?: {
-    "@type": "Brand";
-    name: string;
-  };
-}
-
-export interface OfferCatalogSchema {
-  "@context": "https://schema.org";
-  "@type": "ItemList";
-  itemListElement: {
-    "@type": "ListItem";
-    position: number;
-    item: ProductType;
-  }[];
-}
-
-// Testinė schema su keliais pavyzdžiais
-export const priceListSchema: OfferCatalogSchema = {
+export const priceListSchema: ProductListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   itemListElement: [
@@ -48,10 +11,10 @@ export const priceListSchema: OfferCatalogSchema = {
         "@type": "Product",
         name: "Džinsų trumpinimas",
         description: "Profesionalus džinsų trumpinimo paslauga su originaliu siūlės išsaugojimu",
-        url: "https://jusu-svetaines-url.lt/paslaugos/dzinsu-trumpinimas",
+        url: "https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas",
         brand: {
           "@type": "Brand",
-          name: "Jūsų įmonės pavadinimas"
+          name: "Neringos Siuvimo Studija"
         },
         offers: {
           "@type": "Offer",
@@ -69,20 +32,20 @@ export const priceListSchema: OfferCatalogSchema = {
         "@type": "Product",
         name: "Kelnių siaurinimas",
         description: "Profesionalus kelnių siaurinimas pagal kliento pageidavimus",
-        url: "https://jusu-svetaines-url.lt/paslaugos/kelniu-siaurinimas",
+        url: "https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas",
         brand: {
           "@type": "Brand",
-          name: "Jūsų įmonės pavadinimas"
+          name: "Neringos Siuvimo Studija"
         },
         offers: {
           "@type": "Offer",
+          availability: "https://schema.org/InStock",
           priceSpecification: {
             "@type": "PriceSpecification",
             minPrice: "20.00",
             maxPrice: "30.00",
             priceCurrency: "EUR"
-          },
-          availability: "https://schema.org/InStock"
+          }
         },
         category: "Kelnių taisymas"
       }

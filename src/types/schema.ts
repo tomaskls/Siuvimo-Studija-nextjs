@@ -1,6 +1,6 @@
 import { ReviewSchema } from "../../schemas/reviews";
 
-export interface ServiceOfferType {
+export interface ProductOfferType {
   "@type": "Offer";
   price?: string;
   priceCurrency?: string;
@@ -10,41 +10,31 @@ export interface ServiceOfferType {
     maxPrice: string;
     priceCurrency: string;
   };
+  availability: string;
 }
 
-export interface ServiceProviderType {
-  "@type": "LocalBusiness";
+export interface ProductType {
+  "@type": "Product";
   name: string;
-  address?: {
-    "@type": "PostalAddress";
-    streetAddress: string;
-    addressLocality: string;
-    postalCode: string;
-    addressCountry: string;
+  description: string;
+  offers: ProductOfferType;
+  url: string;
+  category?: string;
+  brand: {
+    "@type": "Brand";
+    name: string;
   };
 }
 
-export interface ServiceType {
-  "@type": "Service";
-  name: string;
-  description: string;
-  provider: ServiceProviderType;
-  offers: ServiceOfferType;
-  url: string;
-  areaServed?: string;
-  category?: string;
-}
-
-export interface OfferCatalogSchema {
+export interface ProductListSchema {
   "@context": "https://schema.org";
   "@type": "ItemList";
   itemListElement: {
     "@type": "ListItem";
     position: number;
-    item: ServiceType;
+    item: ProductType;
   }[];
 }
-
 
 interface AnswerType {
   "@type": "Answer";
