@@ -1,6 +1,7 @@
-import { ProductListSchema } from "@/types/schema";
+// lib/schema.ts
+import { ServiceListSchema } from "@/types/schema";
 
-export const priceListSchema: ProductListSchema = {
+export const priceListSchema: ServiceListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   itemListElement: [
@@ -8,10 +9,12 @@ export const priceListSchema: ProductListSchema = {
       "@type": "ListItem",
       position: 1,
       item: {
-        "@type": "Product",
+        "@type": "Service",
         name: "Džinsų trumpinimas",
-        description: "Profesionalus džinsų trumpinimo paslauga su originaliu siūlės išsaugojimu",
+        description: "Profesionalus džinsų trumpinimo paslauga",
         url: "https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas",
+        areaServed: "LT", // Pavyzdys
+        serviceType: "Drabužių taisymas", // Pavyzdys
         brand: {
           "@type": "Brand",
           name: "Neringos Siuvimo Studija"
@@ -20,35 +23,11 @@ export const priceListSchema: ProductListSchema = {
           "@type": "Offer",
           price: "10.00",
           priceCurrency: "EUR",
-          availability: "https://schema.org/InStock"
-        },
-        category: "Kelnių taisymas"
+          availability: "https://schema.org/InStock",
+          category: "Kelnių taisymas"
+        }
       }
     },
-    {
-      "@type": "ListItem",
-      position: 2,
-      item: {
-        "@type": "Product",
-        name: "Kelnių siaurinimas",
-        description: "Profesionalus kelnių siaurinimas pagal kliento pageidavimus",
-        url: "https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas",
-        brand: {
-          "@type": "Brand",
-          name: "Neringos Siuvimo Studija"
-        },
-        offers: {
-          "@type": "Offer",
-          availability: "https://schema.org/InStock",
-          priceSpecification: {
-            "@type": "PriceSpecification",
-            minPrice: "20.00",
-            maxPrice: "30.00",
-            priceCurrency: "EUR"
-          }
-        },
-        category: "Kelnių taisymas"
-      }
-    }
+    // ... kiti paslaugų įrašai
   ]
 };

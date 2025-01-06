@@ -1,40 +1,44 @@
 import { ReviewSchema } from "../../schemas/reviews";
 
-export interface ProductOfferType {
+// types/schema.ts
+interface ServiceOffer {
   "@type": "Offer";
   price?: string;
   priceCurrency?: string;
   priceSpecification?: {
     "@type": "PriceSpecification";
-    minPrice: string;
-    maxPrice: string;
-    priceCurrency: string;
+    lowPrice?: string;
+    highPrice?: string;
+    priceCurrency?: string;
   };
   availability: string;
+  category?: string;
 }
 
-export interface ProductType {
-  "@type": "Product";
+interface ServiceType {
+  "@type": "Service";
   name: string;
   description: string;
-  offers: ProductOfferType;
+  offers: ServiceOffer;
   url: string;
-  category?: string;
+  areaServed?: string;
+  serviceType?: string;
   brand: {
     "@type": "Brand";
     name: string;
   };
 }
 
-export interface ProductListSchema {
+export interface ServiceListSchema {
   "@context": "https://schema.org";
   "@type": "ItemList";
   itemListElement: {
     "@type": "ListItem";
     position: number;
-    item: ProductType;
+    item: ServiceType;
   }[];
 }
+
 
 interface AnswerType {
   "@type": "Answer";
