@@ -11,7 +11,6 @@ import { ConsentManager } from "../components/ConsentManager";
 import JsonLd from '../components/JsonLd';
 import { siuvimoPaslaugos, organizationSchema, localBusinessSchema } from "../../schemas/index";
 import { faqSchema } from "../../schemas/faq";
-import { priceListSchema } from "../../schemas/prices";
 
 const font = Merriweather({
   variable: "--font-merri",
@@ -56,7 +55,6 @@ export default function RootLayout({
         <JsonLd data={localBusinessSchema} />
         <JsonLd data={siuvimoPaslaugos} />
         <JsonLd data={faqSchema} />
-        <JsonLd data={priceListSchema} />
       </head>
 
       <body className={font.className}>
