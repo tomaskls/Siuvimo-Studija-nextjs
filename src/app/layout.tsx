@@ -42,6 +42,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.neringos-siuvimo-studija.lt',
   },
+  verification: {
+    yandex: '3bf97cbf3e4281de',
+  },
 };
 
 export default function RootLayout({
