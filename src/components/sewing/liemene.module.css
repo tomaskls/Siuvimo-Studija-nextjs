@@ -18,13 +18,7 @@
     max-width: 100%;
     height: auto;
   }
-  .darbu {
-    background-color: var(--back-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-  }
+ 
   .content {
     display: flex;
     flex-direction: column;
@@ -52,13 +46,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .darbu {
-    background-color: var(--back-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-  }
+ 
   .content {
     max-width: 50%;
     display: flex;

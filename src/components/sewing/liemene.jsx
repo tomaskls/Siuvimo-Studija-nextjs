@@ -5,7 +5,6 @@ import Image from 'next/image';
 export default function Sewing1() {
     return (
         <>
-        <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
         <div className={style.container}>
             <div className={style.content}>
                 <h3 className={style.h3}>✨ Liemenės siuvimo paslauga</h3>

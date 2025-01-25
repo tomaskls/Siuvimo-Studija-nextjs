@@ -50,6 +50,13 @@
     border-radius: 15px;
     padding: 5px 15px;
   }
+  .darbu {
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
 }
 @media (min-width: 761px) {
   .container {
@@ -107,6 +114,13 @@
     color: var(--back-color);
     transform: scale(1.15);
     border: 1px solid var(--back-color);
+  }
+  .darbu {
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
   }
   
   @media (min-width: 761px) and (max-width: 1020px) {

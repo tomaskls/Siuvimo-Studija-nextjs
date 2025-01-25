@@ -17,16 +17,17 @@ export default function Sewing4() {
                         priority={false}
                     />
                 </div>
-                {/* <div className={style.content} >
-                    <h3 className={style.h3}>Vilnonė suknelė</h3>
+                <div className={style.content} >
+                    <h3 className={style.h3}>✨ Liemenės siuvimo paslauga</h3>
+                    <p className={style.p}>Ši stilinga liemenė pasiūta iš reto audimo melanžinio audinio, kuris derina juodos, baltos ir pilkos spalvos siūlus, suteikdamas lengvumo ir subtilios tekstūros efektą.Visos siūlės yra kruopščiai apkantuotos, suteikiant gaminiui išbaigtumo ir ilgaamžiškumo.</p>
                     <Image className={style.img2}
-                        src="/Images/zalia_suknele.webp"
-                        alt="Žalia vilnonė suknelė"
+                        src="/imgGallery/kantuota_liemene.webp"
+                        alt="Kantuota liemene"
                         width={900}
-                        height={1200}
+                        height={1600}
                         priority={false}
                     />
-                </div> */}
+                </div>
             </div>
         </>
     )

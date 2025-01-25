@@ -6,7 +6,8 @@ import { Metadata } from 'next';
 import Sewing1 from "../../components/sewing/liemene";
 import Sewing2 from "../../components/sewing/suknele";
 import Sewing3 from '../../components/sewing/sukneles2';
-import Sewing4 from '../../components/sewing/sukneles3'
+import Sewing4 from '../../components/sewing/sukneles3';
+import Sewing5 from '../../components/sewing/sukneles4';
 import Link from 'next/link';
 
 
@@ -68,10 +69,13 @@ export default function Sewing() {
                     <div className={style.svg} ><Adata /></div>
                 </div>
             </div>
+        <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
+
+                <Sewing5 />
+                <Sewing4 />
                 <Sewing1 />
                 <Sewing2 />
                 <Sewing3 />
-                <Sewing4 />
                 <div className={style.link}>
             <span>Daugiau pavyzdžių rasite čia &gt;</span>
         <Link  href="/gallery" legacyBehavior>
