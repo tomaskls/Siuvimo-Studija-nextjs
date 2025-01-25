@@ -52,13 +52,6 @@
       padding-left: 10px;
       padding-right: 10px;
     }
-    .darbu {
-      background-color: var(--back-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 50px;
-    }
     .content {
       max-width: 49%;
       display: flex;
@@ -68,6 +61,7 @@
     }
     .h3 {
       padding-bottom: 50px;
+      padding-top: 20px;
     }
     .p{
       padding-bottom: 20px;

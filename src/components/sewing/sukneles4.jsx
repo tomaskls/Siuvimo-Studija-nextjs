@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './sukneles3.module.css';
+import style from './sukneles4.module.css';
 import Image from 'next/image';
 
 export default function Sewing5() {
