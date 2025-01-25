@@ -70,7 +70,6 @@ const Pictures = () => {
     { path: '/imgGallery/siulai.webp', name: 'siulai', width: '900', height: '1350' },
     { path: '/imgGallery/dzemperis.webp', name: 'dzemperis', width: '900', height: '1350' },
     { path: '/imgGallery/suknele_2.webp', name: 'suknele_2', width: '900', height: '1350' },
-    { path: '/imgGallery/vyriskas_dzemperis.webp', name: 'vyriskas_dzemperis', width: '900', height: '1200' },
   ];
   const [selectedImage, setSelectedImage] = useState(null);
   const handleImageClick = (image) => {
