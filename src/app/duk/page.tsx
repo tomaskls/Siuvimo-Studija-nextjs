@@ -7,8 +7,8 @@ import styles from './duk.module.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Šilti flisiniai džemperiai",
-  description: "Sušilkite stilingai su unikaliais, pagal užsakymą siuvamais flisiniais džemperiais Šiauliuose! Rinkitės ir pritaikykite dydį, spalvą ir detales!",
+  title: "Neringos Siuvimo Studija | DUK",
+  description: "Turite klausimų apie rūbų taisymą ar siuvimą? Mūsų DUK puslapyje rasite atsakymus apie drabužių korekcijas, užsakymų terminus ir kainas. Greita, aišku ir patogu!",
   openGraph: {
       title: 'Neringos Siuvimo Studija | DUK',
       description: 'Turite klausimų apie rūbų taisymą ar siuvimą? Mūsų DUK puslapyje rasite atsakymus apie drabužių korekcijas, užsakymų terminus ir kainas. Greita, aišku ir patogu!', 
