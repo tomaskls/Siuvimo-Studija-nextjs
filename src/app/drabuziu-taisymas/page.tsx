@@ -4,12 +4,15 @@ import style from './Repair.module.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import Repair1 from '../../components/repair/rankoviuTrump';
+import Repair9 from '../../components/repair/repair9';
 import Repair2 from '../../components/repair/uztrauktuko';
+import Repair8 from '../../components/repair/repair8';
 import Repair3 from '../../components/repair/striukesRankoviu';
 import Repair4 from '../../components/repair/suknelesTrumpi';
 import Repair5 from '../../components/repair/svarkoPeciu';
 import Repair6 from '../../components/repair/striukesUztrau';
-import Repair7 from '../../components/repair/pamusalo'
+import Repair7 from '../../components/repair/pamusalo';
+
 import Link from 'next/link';
 
 const ScissorsIcon = () => (
@@ -81,6 +84,8 @@ export default function Repair() {
                 <Repair5 />
                 <Repair6 />
                 <Repair7 />
+                <Repair8 />
+                <Repair9 />
             </div>
             <div className={style.dukContainer}>
     <p>Turite klausimų?</p>
