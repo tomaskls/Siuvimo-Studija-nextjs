@@ -78,14 +78,14 @@ export default function Repair() {
             <h2 className={style.darbu}>Darbų Pavyzdžiai</h2>
             <div className={style.repairContainer}>
                 <Repair1 />
+                <Repair8 />
                 <Repair2 />
                 <Repair3 />
+                <Repair9 />
                 <Repair4 />
                 <Repair5 />
                 <Repair6 />
                 <Repair7 />
-                <Repair8 />
-                <Repair9 />
             </div>
             <div className={style.dukContainer}>
     <p>Turite klausimų?</p>
