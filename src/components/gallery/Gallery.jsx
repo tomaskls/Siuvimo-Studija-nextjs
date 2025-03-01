@@ -9,6 +9,10 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/sportinis_padelio_kostiumelis.webp', name: 'sportinis_padelio_kostiumelis', width: '900', height: '1600' },
+    { path: '/imgGallery/juoda_klasikine_suknele.webp', name: 'juoda_klasikine_suknele.webp', width: '900', height: '1600' },
+    { path: '/imgGallery/palaidine_ir_klostuotas_sijonas.webp', name: 'palaidine_ir_klostuotas_sijonas.webp', width: '900', height: '1600' },
+    { path: '/imgGallery/pavasarinis_svarkas.webp', name: 'pavasarinis_svarkas', width: '900', height: '1600' },
     { path: '/imgGallery/dekoras.webp', name: 'dekoras', width: '900', height: '100' },
     { path: '/imgGallery/dzemperis_ir_sijonas.webp', name: 'dzemperis_ir_sijonas', width: '900', height: '1600' },
     { path: '/imgGallery/eko_odos_sijonkelnes.webp', name: 'eko_odos_sijonkelnes', width: '900', height: '1600' },
@@ -16,6 +20,7 @@ const Pictures = () => {
     { path: '/imgGallery/linine_suknele.webp', name: 'linine_suknele', width: '900', height: '1600' },
     { path: '/imgGallery/sceninis_rubas.webp', name: 'sceninis_rubas', width: '900', height: '1600' },
     { path: '/imgGallery/idejos_kaledoms.webp', name: 'idejos kaledoms', width: '900', height: '1600' },
+    { path: '/imgGallery/palaidine_ir_sijonkelnes.webp', name: 'palaidine_ir_sijonkelnes', width: '900', height: '1600' },
     { path: '/imgGallery/eko_odos_palaidine.webp', name: 'eko odos palaidine', width: '900', height: '1600' },
     { path: '/imgGallery/salikas.webp', name: 'Šalikas', width: '900', height: '1187' },
     { path: '/imgGallery/liemenes_konstravimas.webp', name: 'liemenes konstravimas', width: '900', height: '1200' },
