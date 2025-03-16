@@ -8,15 +8,7 @@ export const faqSchema: FAQPageSchema = {
     // Drabužių taisymas - svarbiausi klausimai
     {
       "@type": "Question",
-      name: "Kiek laiko užtrunka drabužių taisymas?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Priklauso nuo darbo sudėtingumo. Paprastas taisymas - 1-2 dienos, sudėtingesni darbai - kelios dienos."
-      }
-    },
-    {
-      "@type": "Question",
-      name: "Kokius užtrauktukus galite pakeisti?",
+      name: "Kokius užtrauktukus keičiate?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Keičiame visų tipų užtrauktukus, įskaitant specialius - pūkinėms striukėms, vandeniui atspariems drabužiams, storoms žieminėms striukėms."
@@ -24,18 +16,66 @@ export const faqSchema: FAQPageSchema = {
     },
     {
       "@type": "Question",
-      name: "Kaip pritaikote drabužius nestandartinės figūros žmonėms?",
+      name: "Kiek kainuoja pakeisti užtrauktuką?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Atliekame individualų drabužių pritaikymą, atsižvelgdami į kūno ypatumus. Galime koreguoti drabužio siūles, pakeisti rankovių ilgį, paplatinti ar susiaurinti."
+        text: "Visos kainos nurodytos kainoraštyje."
       }
     },
     {
       "@type": "Question",
-      name: "Ar dirbate su įvairiomis medžiagomis?",
+      name: "Ar trumpinate kelnes ir džinsus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Dirbame su natūraliomis ir sintetinėmis medžiagomis, įskaitant šilką, vilną, medvilnę, liną ir kitas aukštos kokybės medžiagas."
+        text: "Taip, trumpiname kelnes ir džinsus, išlaikant originalų dizainą. Trumpiname su originaliais atvartais, juostelėmis ar paslėptu dygsniu."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Kiek kainuoja?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Visos kainos nurodytos kainoraštyje."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar taisote sijonus? Ar taisote švarkus? Ar taisote sukneles? Ar taisote vyriškus kostiumus? Ar taisote paltus? Kiek kainuoja?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, taisome. Kainos nurodytos kainoraštyje. Jei kainoraštyje kainos nėra, ji nustatoma individualiai."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar siuvate naujus drabužius?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, siuvame įvairius drabužius pagal individualius užsakymus ir kliento pageidavimus."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar atliekate skubius užsakymus?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, atliekame skubius užsakymus. Gali būti imamas papildomas mokestis."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar galima užsisakyti individualų konsultavimą?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, teikiame individualias konsultacijas dėl drabužių siuvimo, taisymo ir stiliaus formavimo."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar pritaikote drabužius nestandartinės figūros žmonėms?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, atliekame individualų drabužių pritaikymą. Galime pakoreguoti drabužio siūles, pakeisti rankovių ilgį, paplatinti ar susiaurinti."
       }
     },
     {
@@ -48,18 +88,58 @@ export const faqSchema: FAQPageSchema = {
     },
     {
       "@type": "Question",
-      name: "Kaip elgiatės su vintage ar antikvariniais drabužiais?",
+      name: "Ar keičiate pamušalus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Turime specialią patirtį atkurti senus drabužius, išsaugant jų autentiškumą ir originalią estetiką."
+        text: "Taip, keičiame pamušalus išsaugant originalią drabužio konstrukciją."
       }
     },
     {
       "@type": "Question",
-      name: "Ar tausojate originalų drabužio dizainą?",
+      name: "Ar galite atkurti suplyšusius drabužių elementus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Visada stengiamės išlaikyti originalų drabužio charakterį, stilių ir dizaino ypatubes."
+        text: "Taip, galime atkurti suplyšusias vietas, įsiūti naujas detales."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar taisote sportinę aprangą?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, taisome sportines kelnes, striukes, specialią sportinę aprangą."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar taisote vintage ar antikvarinius drabužius?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, turime specialios patirties atkuriant senus drabužius."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar taisote uniformas?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, taisome darbo, karines, mokyklines uniformas."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Kiek laiko užtrunka drabužių taisymas?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Priklauso nuo darbo sudėtingumo. Paprastas taisymas - 1-2 dienos, sudėtingesni darbai - kelios dienos."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar teikiate garantiją savo darbams?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, visiems mūsų atliktiems darbams taikome kokybės garantiją."
       }
     },
     // Individualus siuvimas - svarbiausi klausimai
@@ -73,6 +153,14 @@ export const faqSchema: FAQPageSchema = {
     },
     {
       "@type": "Question",
+      name: "Kiek kainuoja individualus drabužio siuvimas?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Kaina priklauso nuo modelio sudėtingumo, pasirinktos medžiagos ir reikalingų detalių. Tikslią kainą nustatome individualios konsultacijos metu."
+      }
+    },
+    {
+      "@type": "Question",
       name: "Kiek laiko užtrunka drabužio siuvimas?",
       acceptedAnswer: {
         "@type": "Answer",
@@ -81,18 +169,10 @@ export const faqSchema: FAQPageSchema = {
     },
     {
       "@type": "Question",
-      name: "Kaip vyksta individualaus drabužio kūrimo procesas?",
+      name: "Ar reikalinga išankstinė registracija?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Procesas apima: pirminę konsultaciją ir idėjų aptarimą, eskizų kūrimą, medžiagų ir detalių parinkimą, matmenų nuėmimą, bandomąjį išbandymą ir galutinį pritaikymą."
-      }
-    },
-    {
-      "@type": "Question",
-      name: "Ar galite kopijuoti jau turimo drabužio modelį?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Taip, galime sukurti naują drabužį pagal jūsų mėgstamo drabužio modelį, pritaikydami jį pagal jūsų pageidavimus."
+        text: "Rekomenduojame iš anksto užsiregistruoti konsultacijai, kad nereiketų laukti."
       }
     },
     {
@@ -105,18 +185,34 @@ export const faqSchema: FAQPageSchema = {
     },
     {
       "@type": "Question",
-      name: "Ar dirbate su specialiomis medžiagomis?",
+      name: "Ar galite kopijuoti jau turimo drabužio modelį?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Turime patirties dirbti su oda, šilku, nėriniu, kailio gaminiais ir kitomis specifinėmis medžiagomis."
+        text: "Taip, galime sukurti naują drabužį pagal jūsų mėgstamo drabužio modelį, pritaikydami jį pagal jūsų pageidavimus."
       }
     },
     {
       "@type": "Question",
-      name: "Ar taikote individualų požiūrį į kiekvieną klientą?",
+      name: "Kokias medžiagas naudojate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Kiekvienam klientui skiriame individualų dėmesį, atsižvelgiame į jo pageidavimus, figūros ypatumus ir stilių."
+        text: "Dirbame su natūraliomis ir sintetinėmis medžiagomis, įskaitant šilką, vilną, medvilnę, liną ir kitas aukštos kokybės medžiagas."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Kiek kainuoja konsultacija?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pirminė konsultacija yra nemokama. Jos metu aptarsime jūsų pageidavimus ir numatysime tolimesnius veiksmus."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "Ar siuvate sceninę aprangą?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Taip, siuvame įvairią sceninę aprangą, kostiumus teatrui, šokiams ir kitiems scenos menams."
       }
     }
   ]
