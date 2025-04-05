@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Neringos Siuvimo Studija | DUK",
-  description: "Turite klausimų apie rūbų taisymą ar siuvimą? Mūsų DUK puslapyje rasite atsakymus apie drabužių korekcijas, užsakymų terminus ir kainas. Greita, aišku ir patogu!",
+  description: "Turite klausimų apie rūbų taisymą ar siuvimą? Mūsų DUK puslapyje rasite atsakymus apie drabužių korekcijas ir kainas",
   openGraph: {
       title: 'Neringos Siuvimo Studija | DUK',
       description: 'Turite klausimų apie rūbų taisymą ar siuvimą? Mūsų DUK puslapyje rasite atsakymus apie drabužių korekcijas, užsakymų terminus ir kainas. Greita, aišku ir patogu!', 
