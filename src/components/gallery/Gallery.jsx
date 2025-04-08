@@ -91,6 +91,7 @@ const Pictures = () => {
     <>
       <div className={style.picturesContainer}>
         <h1 className={style.title}>Mūsų Darbų Galerija</h1>
+        <p className={style.descr}>Siuvimo darbų pavyzdžiai. Pamatykite, kokius drabužius pasiuvome mūsų klientams</p>
         <div className={style.imageGrid}>
           {image.map((image, index) => (
             <img

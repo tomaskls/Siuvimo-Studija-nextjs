@@ -2,6 +2,10 @@
   padding: 1rem;
   background-color: var(--back-color);
 }
+.descr {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
 .noScroll {
   overflow: hidden;
 }

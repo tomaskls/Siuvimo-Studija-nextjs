@@ -49,18 +49,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host',
-            value: 'http://neringos-siuvimo-studija.lt',
-          },
-        ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/robots.txt',
-        permanent: true,
-      },
-      {
-        source: '/robots.txt',
-        has: [
-          {
-            type: 'host',
-            value: 'http://www.neringos-siuvimo-studija.lt',
+            value: 'www.neringos-siuvimo-studija.lt',
           },
         ],
         destination: 'https://www.neringos-siuvimo-studija.lt/robots.txt',
