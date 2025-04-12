@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
       
       // Nauji nukreipimai nukreipimų grandinėms išvengti
       
-      // Tiesioginiai robots.txt nukreipimai
+      // Pataisytas robots.txt nukreipimas - panaikintas nukreipimas į pačią save
       {
         source: '/robots.txt',
         has: [
@@ -41,18 +41,7 @@ const nextConfig: NextConfig = {
             value: 'neringos-siuvimo-studija.lt',
           },
         ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/robots.txt',
-        permanent: true,
-      },
-      {
-        source: '/robots.txt',
-        has: [
-          {
-            type: 'host',
-            value: 'www.neringos-siuvimo-studija.lt',
-          },
-        ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/robots.txt',
+        destination: 'https://www.neringos-siuvimo-studija.lt',
         permanent: true,
       },
       
