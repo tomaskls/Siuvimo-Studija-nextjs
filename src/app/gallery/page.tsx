@@ -3,7 +3,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Neringos Siuvimo Studijos Galerija",
+  title: "Neringos Siuvimo Studijos Galerija - Kokybiško siuvimo pavyzdžiai",
   description: "Neringos Siuvimo Studijos galerija: Peržiūrėkite mūsų sukurtų drabužių nuotraukas. Įkvėpkite savo stilių!",
   openGraph: {
     title: 'Neringos Siuvimo Studijos Galerija',

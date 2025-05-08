@@ -22,7 +22,7 @@ const font = Merriweather({
 
 
 export const metadata: Metadata = {
-  title: "Neringos Siuvimo Studija",
+  title: "Neringos Siuvimo Studija | Drabužių taisymas ir siuvimas Šiauliuose",
   description: "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas",
   icons: './icons/scissors.svg',
   openGraph: {
