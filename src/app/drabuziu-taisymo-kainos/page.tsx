@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Drabužių taisymo kainos Šiauliuose",
+    title: "Drabužių taisymo kainos Šiauliuose - 2025 m. įkainiai",
     description: "Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis.",
     openGraph: {
         title: 'Drabužių taisymo kainos Šiauliuose',

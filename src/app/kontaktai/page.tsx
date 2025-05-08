@@ -5,7 +5,7 @@ import { FbLink, InstLink, PinLink } from './SocialLinks';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: "Kontaktai | Neringos Siuvimo Studija",
+    title: "Kontaktai | Neringos Siuvimo Studija Šiauliuose",
     description: "Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316. Reikalinga profesionali konsultacija? Susisiekite su mumis jau šiandien! ",
     openGraph: {
         title: 'Kontaktai',
