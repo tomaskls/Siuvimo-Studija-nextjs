@@ -7,7 +7,7 @@ import styles from './duk.module.css';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Neringos Siuvimo Studija | DUK",
+  title: "Neringos Siuvimo Studija | DUK apie drabužių taisymą Šiauliuose",
   description: "Turite klausimų apie rūbų taisymą ar siuvimą? Mūsų DUK puslapyje rasite atsakymus apie drabužių korekcijas ir kainas",
   openGraph: {
       title: 'Neringos Siuvimo Studija | DUK',
