@@ -8,7 +8,7 @@ export default function Sewing2() {
         <div className={style.container}>
             <div className={style.content}>
                 <h3 className={style.h3}>✨ Suknelės siuvimo paslauga</h3>
-                <p className={style.p}>Elegantiška Chanel stiliaus suknelė, pasiūta iš klasikinio vilnos audinio. Dizainą pabrėžia prabangios aukso spalvos sagos. Kiekviena detalė kruopščiai apgalvota, sukuriant klasikinį, bet kartu šiuolaikišką įvaizdį.</p>
+                <p className={style.p}>Elegantiška suknelė, pasiūta iš klasikinio vilnos audinio. Dizainą pabrėžia prabangios aukso spalvos sagos. Kiekviena detalė kruopščiai apgalvota, sukuriant klasikinį, bet kartu šiuolaikišką įvaizdį.</p>
                 <Image className={style.img}
                     src="/Images/Suknele_dekoruota_aukso_spalvomis.webp"
                     alt="Suknelė dekoruota aukso spalvos sagomis"
