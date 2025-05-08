@@ -20,7 +20,7 @@ const ScissorsIcon = () => (
 );
 
 export const metadata: Metadata = {
-    title: "Rūbų Remonto Dirbtuvės|Drabužių taisymas",
+    title: "Rūbų Remonto Dirbtuvės|Rūbų taisykla",
     description: "Profesionalus drabužių taisymas  Šiauliuose.Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite!",
     openGraph: {
         title: 'Rūbų Remonto Dirbtuvės',

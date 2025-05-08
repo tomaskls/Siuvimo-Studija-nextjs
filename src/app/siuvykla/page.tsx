@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 
 export const metadata: Metadata = {
-    title: "Siuvykla Šiauliuose",
+    title: "Drabužių siuvykla Šiauliuose",
     description: "|Siuvykla Šiauliuose. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.",
     openGraph: {
         title: 'Siuvykla Šiauliuose',
