@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Nustatykite kanoninį domeną
+  // Nustatome, kad visi URL būtų tik HTTPS ir tik su www
   async headers() {
     return [
       {
@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
   
   async redirects() {
     return [
-      // Esami jūsų nukreipimai
+      // ------- ESAMI NUKREIPIMAI -------
       {
         source: '/repair',
         destination: '/drabuziu-taisymas',
@@ -45,20 +45,27 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       
-      // HTTP -> HTTPS nukreipimas su www
+      // ------- NUKREIPIMŲ GRANDINĖS SPRENDIMAI -------
+      
+      // 1. http://www.neringos-siuvimo-studija.lt -> https://www.neringos-siuvimo-studija.lt (tiesioginis 308 -> 200)
       {
         source: "/:path*",
         has: [
           {
             type: "host",
-            value: "neringos-siuvimo-studija.lt",
+            value: "www.neringos-siuvimo-studija.lt",
+          },
+          {
+            type: "header",
+            key: "x-forwarded-proto",
+            value: "http",
           },
         ],
         destination: "https://www.neringos-siuvimo-studija.lt/:path*",
         permanent: true,
       },
       
-      // HTTP -> HTTPS nukreipimas be www
+      // 2. http://neringos-siuvimo-studija.lt -> https://www.neringos-siuvimo-studija.lt (tiesioginis, vietoj grandinės 308 -> 301 -> 200)
       {
         source: "/:path*",
         has: [
@@ -76,36 +83,87 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       
-      // robots.txt tiesioginis nukreipimas
+      // 3. https://neringos-siuvimo-studija.lt -> https://www.neringos-siuvimo-studija.lt (tiesioginis 301 -> 200)
       {
-        source: '/robots.txt',
+        source: "/:path*",
         has: [
           {
-            type: 'host',
-            value: 'neringos-siuvimo-studija.lt',
+            type: "host",
+            value: "neringos-siuvimo-studija.lt",
           },
         ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/robots.txt',
+        destination: "https://www.neringos-siuvimo-studija.lt/:path*",
         permanent: true,
       },
       
-      // sitemap.xml tiesioginis nukreipimas
+      // ------- SPECIFINIŲ FAILŲ NUKREIPIMAI -------
+      
+      // robots.txt: https://neringos-siuvimo-studija.lt/robots.txt -> https://www.neringos-siuvimo-studija.lt/robots.txt (tiesioginis)
       {
-        source: '/sitemap.xml',
+        source: "/robots.txt",
         has: [
           {
-            type: 'host',
-            value: 'neringos-siuvimo-studija.lt',
+            type: "host",
+            value: "neringos-siuvimo-studija.lt",
           },
         ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/sitemap.xml',
+        destination: "https://www.neringos-siuvimo-studija.lt/robots.txt",
         permanent: true,
       },
       
-      // Sutvarkytas sitemap.xml/ -> sitemap.xml nukreipimas
+      // http://www.neringos-siuvimo-studija.lt/robots.txt -> https://www.neringos-siuvimo-studija.lt/robots.txt (tiesioginis)
       {
-        source: '/sitemap.xml/',
-        destination: '/sitemap.xml',
+        source: "/robots.txt",
+        has: [
+          {
+            type: "host",
+            value: "www.neringos-siuvimo-studija.lt",
+          },
+          {
+            type: "header",
+            key: "x-forwarded-proto",
+            value: "http",
+          },
+        ],
+        destination: "https://www.neringos-siuvimo-studija.lt/robots.txt",
+        permanent: true,
+      },
+      
+      // sitemap.xml: https://neringos-siuvimo-studija.lt/sitemap.xml -> https://www.neringos-siuvimo-studija.lt/sitemap.xml (tiesioginis)
+      {
+        source: "/sitemap.xml",
+        has: [
+          {
+            type: "host",
+            value: "neringos-siuvimo-studija.lt",
+          },
+        ],
+        destination: "https://www.neringos-siuvimo-studija.lt/sitemap.xml",
+        permanent: true,
+      },
+      
+      // http://www.neringos-siuvimo-studija.lt/sitemap.xml -> https://www.neringos-siuvimo-studija.lt/sitemap.xml (tiesioginis)
+      {
+        source: "/sitemap.xml",
+        has: [
+          {
+            type: "host",
+            value: "www.neringos-siuvimo-studija.lt",
+          },
+          {
+            type: "header",
+            key: "x-forwarded-proto",
+            value: "http",
+          },
+        ],
+        destination: "https://www.neringos-siuvimo-studija.lt/sitemap.xml",
+        permanent: true,
+      },
+      
+      // sitemap.xml/ -> sitemap.xml (pataisome slash pabaigoje)
+      {
+        source: "/sitemap.xml/",
+        destination: "/sitemap.xml",
         permanent: true,
       },
     ]
