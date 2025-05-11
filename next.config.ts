@@ -1,6 +1,21 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Nustatykite kanoninį domeną
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Canonical-Host",
+            value: "www.neringos-siuvimo-studija.lt",
+          },
+        ],
+      },
+    ];
+  },
+  
   async redirects() {
     return [
       // Esami jūsų nukreipimai
@@ -30,9 +45,38 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       
-      // Nauji nukreipimai nukreipimų grandinėms išvengti
+      // HTTP -> HTTPS nukreipimas su www
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "neringos-siuvimo-studija.lt",
+          },
+        ],
+        destination: "https://www.neringos-siuvimo-studija.lt/:path*",
+        permanent: true,
+      },
       
-      // Pataisytas robots.txt nukreipimas - panaikintas nukreipimas į pačią save
+      // HTTP -> HTTPS nukreipimas be www
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "neringos-siuvimo-studija.lt",
+          },
+          {
+            type: "header",
+            key: "x-forwarded-proto",
+            value: "http",
+          },
+        ],
+        destination: "https://www.neringos-siuvimo-studija.lt/:path*",
+        permanent: true,
+      },
+      
+      // robots.txt tiesioginis nukreipimas
       {
         source: '/robots.txt',
         has: [
@@ -41,11 +85,11 @@ const nextConfig: NextConfig = {
             value: 'neringos-siuvimo-studija.lt',
           },
         ],
-        destination: 'https://www.neringos-siuvimo-studija.lt',
+        destination: 'https://www.neringos-siuvimo-studija.lt/robots.txt',
         permanent: true,
       },
       
-      // Tiesioginiai sitemap.xml nukreipimai
+      // sitemap.xml tiesioginis nukreipimas
       {
         source: '/sitemap.xml',
         has: [
@@ -57,24 +101,13 @@ const nextConfig: NextConfig = {
         destination: 'https://www.neringos-siuvimo-studija.lt/sitemap.xml',
         permanent: true,
       },
+      
+      // Sutvarkytas sitemap.xml/ -> sitemap.xml nukreipimas
       {
         source: '/sitemap.xml/',
         destination: '/sitemap.xml',
         permanent: true,
       },
-      
-      // Tiesioginis pagrindinio domeno nukreipimas
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'neringos-siuvimo-studija.lt',
-          },
-        ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/:path*',
-        permanent: true,
-      }
     ]
   },
 };
