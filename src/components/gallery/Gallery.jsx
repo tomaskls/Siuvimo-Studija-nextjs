@@ -9,6 +9,15 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/Baltas_kostiumelis.webp', name: 'Baltas_kostiumelis', width: '900', height: '1850' },
+    { path: '/imgGallery/dvisluoksnes_kelnes.webp', name: 'dvisluoksnes_kelnes', width: '900', height: '1600' },
+    { path: '/imgGallery/progine_suknele_juoda_balta.webp', name: 'progine_suknele_juoda_balta', width: '900', height: '1186' },
+    { path: '/imgGallery/silkinis_sijonas.webp', name: 'silkinis_sijonas', width: '900', height: '1600' },
+    { path: '/imgGallery/lininiai_drabuziai.webp', name: 'lininiai_drabuziai', width: '900', height: '1186' },
+    { path: '/imgGallery/silkine_palaidine.webp', name: 'silkine_palaidine', width: '900', height: '1600' },
+    { path: '/imgGallery/stilinga_palaidine.webp', name: 'stilinga_palaidine', width: '900', height: '1600' },
+    { path: '/imgGallery/dzemperis_suknele.webp', name: 'dzemperis_suknele', width: '900', height: '1600' },
+    { path: '/imgGallery/vilnonis_kostiumelis.webp', name: 'vilnonis_kostiumelis', width: '900', height: '1600' },
     { path: '/imgGallery/sportinis_padelio_kostiumelis.webp', name: 'sportinis_padelio_kostiumelis', width: '900', height: '1600' },
     { path: '/imgGallery/juoda_klasikine_suknele.webp', name: 'juoda_klasikine_suknele.webp', width: '900', height: '1600' },
     { path: '/imgGallery/palaidine_ir_klostuotas_sijonas.webp', name: 'palaidine_ir_klostuotas_sijonas.webp', width: '900', height: '1600' },

@@ -4,6 +4,10 @@ import style from './Repair.module.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import Repair1 from '../../components/repair/rankoviuTrump';
+import Repair10 from '../../components/repair/dzinsutrumpinimas';
+import Repair11 from '../../components/repair/ekoodostaisymas';
+import Repair12 from '../../components/repair/proginiuissukneliutaisymas';
+import Repair13 from '../../components/repair/suknelesmodeliavimas';
 import Repair9 from '../../components/repair/repair9';
 import Repair2 from '../../components/repair/uztrauktuko';
 import Repair8 from '../../components/repair/repair8';
@@ -77,6 +81,10 @@ export default function Repair() {
             </div>
             <h2 className={style.darbu}>Darbų Pavyzdžiai</h2>
             <div className={style.repairContainer}>
+                <Repair11 />
+                <Repair10 />
+                <Repair12 />
+                <Repair13 />
                 <Repair1 />
                 <Repair8 />
                 <Repair2 />

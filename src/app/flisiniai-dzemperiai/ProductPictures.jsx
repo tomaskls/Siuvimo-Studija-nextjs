@@ -63,7 +63,29 @@ export const Picture5 = () => {
       src="/Images/pilkas_flisinis_dzemperis.webp"
       alt="pilkas flisinis džemperis"
       width={900}
-      height={135}
+      height={1352}
+      priority={false}
+    />
+  )
+};
+export const Picture6 = () => {
+  return (
+    <Image className={style.img}
+      src="/Images/dzemperis_suknele_su_gobtuvu.webp"
+      alt="dzemperis_suknele_su_gobtuvu"
+      width={900}
+      height={1352}
+      priority={false}
+    />
+  )
+};
+export const Picture7 = () => {
+  return (
+    <Image className={style.img}
+      src="/Images/dzemperis_suknele.webp"
+      alt="dzemperis_suknele"
+      width={900}
+      height={1352}
       priority={false}
     />
   )

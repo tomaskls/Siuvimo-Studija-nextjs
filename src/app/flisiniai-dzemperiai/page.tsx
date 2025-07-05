@@ -1,7 +1,7 @@
 import style from './Product.module.css';
 import React from 'react';
 import { Smasina } from '../../components/svg';
-import { Picture1, Picture2, Picture3, Picture4, PictureMain } from './ProductPictures';
+import { Picture1, Picture2, Picture3, Picture4,Picture5,Picture6,Picture7, PictureMain } from './ProductPictures';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -40,10 +40,13 @@ export default function Product() {
                 </div>
             </div>
             <div className={style.fotoContainer}>
+                <Picture6 />
+                <Picture7 />
                 <Picture1 />
                 <Picture2 />
                 <Picture3 />
                 <Picture4 />
+                <Picture5 />
             </div>
         </>
     );
