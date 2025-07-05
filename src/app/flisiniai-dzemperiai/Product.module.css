@@ -13,6 +13,11 @@
     height: auto;
     aspect-ratio: 9/13.5;
   }
+  .img1 {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 9/18;
+  }
   .contentNewItems {
     display: flex;
     flex-direction: column;
@@ -56,6 +61,10 @@
   .img {
     width: 450px;
     height: 675px;
+  }
+  .img1 {
+    width: 450px;
+    height: 891px;
   }
   .imgvyr {
     display: none;
@@ -103,6 +112,10 @@
     .img {
       width: 400px;
       height: 525px;
+    }
+    .img1 {
+      width: 400px;
+      height: 792px;
     }
     .content {
       width: 300px;

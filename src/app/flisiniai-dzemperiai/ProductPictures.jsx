@@ -59,11 +59,11 @@ export const Picture4 = () => {
 };
 export const Picture5 = () => {
   return (
-    <Image className={style.img}
-      src="/Images/pilkas_flisinis_dzemperis.webp"
-      alt="pilkas flisinis džemperis"
-      width={900}
-      height={1352}
+    <Image className={style.img1}
+      src="/imgGallery/bliuzonas_intelektas.webp"
+      alt="chat gpt bliuzonas"
+      width={1200}
+      height={2375}
       priority={false}
     />
   )

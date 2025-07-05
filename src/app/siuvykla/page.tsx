@@ -8,6 +8,9 @@ import Sewing2 from "../../components/sewing/suknele";
 import Sewing3 from '../../components/sewing/sukneles2';
 import Sewing4 from '../../components/sewing/sukneles3';
 import Sewing5 from '../../components/sewing/sukneles4';
+import Sewing6 from '../../components/sewing/baltaskostiumelis';
+import Sewing7 from '../../components/sewing/sewing7';
+import Sewing8 from '../../components/sewing/sewing8';
 import Link from 'next/link';
 
 
@@ -57,10 +60,10 @@ export default function Sewing() {
             </div>
             <div className={`${style.container} ${style.container2}`}>
                 <Image className={style.img2}
-                    src="/Images/design_900.webp"
+                    src="/imgGallery/stilizuotas_vilnonis_kostiumas.webp"
                     alt="Suknele su aplikacija"
                     width={900}
-                    height={1718}
+                    height={1600}
                     priority={false}
                 />
                 <div className={style.content}>
@@ -71,6 +74,9 @@ export default function Sewing() {
             </div>
         <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
 
+                <Sewing8 />
+                <Sewing6 />
+                <Sewing7 />
                 <Sewing5 />
                 <Sewing4 />
                 <Sewing1 />

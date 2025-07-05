@@ -7,7 +7,7 @@ export default function Sewing4() {
         <>
             <div className={style.container}>
                 <div className={style.content}>
-                    <h3 className={style.h3}>✨ Suknelės siuvimo paslauga</h3>
+                    <h3 className={style.h3}>✨Vilnonė suknelė</h3>
                     <p className={style.p}>Kokybiška vilnonė suknelė su pilnu pamušalu. Kruopščiai parinktos medžiagos užtikrina komfortą ir ilgaamžiškumą - vilnonis audinys suteikia šilumą, o pamušalas - malonų pojūtį dėvint.</p>
                     <Image className={style.img}
                         src="/Images/plytines_spalvos_suknele.webp"
@@ -18,7 +18,7 @@ export default function Sewing4() {
                     />
                 </div>
                 <div className={style.content} >
-                    <h3 className={style.h3}>✨ Liemenės siuvimo paslauga</h3>
+                    <h3 className={style.h3}>✨ Liemenė</h3>
                     <p className={style.p}>Ši stilinga liemenė pasiūta iš reto audimo melanžinio audinio, kuris derina juodos, baltos ir pilkos spalvos siūlus, suteikdamas lengvumo ir subtilios tekstūros efektą.Visos siūlės yra kruopščiai apkantuotos, suteikiant gaminiui išbaigtumo ir ilgaamžiškumo.</p>
                     <Image className={style.img2}
                         src="/imgGallery/kantuota_liemene.webp"

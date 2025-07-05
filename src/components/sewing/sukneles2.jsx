@@ -7,7 +7,7 @@ export default function Sewing3() {
         <>
             <div className={style.container}>
                 <div className={style.content}>
-                    <h3 className={style.h3}>✨ Palaidinės ir sijono siuvimo paslauga</h3>
+                    <h3 className={style.h3}>✨ Palaidinė ir sijonas</h3>
                     <p className={style.p}>Stilingas komplektas: moderni palaidinė iš eko odos ir prabangus veliūrinis sijonas. Kruopščiai parinktos medžiagos ir apgalvotas dizainas sukuria elegantišką ir puošnų derinį.</p>
                     <Image className={style.img}
                         src="/Images/sventinis_kostiumas.webp"
@@ -18,7 +18,7 @@ export default function Sewing3() {
                     />
                 </div>
                 <div className={style.content} >
-                    <h3 className={style.h3}>✨ Vilnonės suknelės siuvimo paslauga</h3>
+                    <h3 className={style.h3}>✨ Vilnonės suknelė</h3>
                     <p className={style.p}>Elegantiška žalios spalvos suknelė, pasiūta iš kokybiško vilnonio audinio. Natūrali vilna užtikrina komfortą ir šilumą, o klasikinis dizainas pabrėžia audinio grožį.</p>
                     <Image className={style.img2}
                         src="/Images/zalia_suknele.webp"
