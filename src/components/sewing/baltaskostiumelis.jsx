@@ -8,7 +8,7 @@ export default function Sewing6() {
             <div className={style.container}>
                 <div className={style.content}>
                     <h3 className={style.h3}>✨ Kostiumėlio siuvimas</h3>
-                    <p className={style.p}>Pasiūtas proginis kostiumėlis. Panaudotos skirtingų faktūrų medžago, to paties atspalvio.</p>
+                    <p className={style.p}>Pasiūtas proginis kostiumėlis. Panaudotos skirtingų faktūrų medžiagos, to paties atspalvio.</p>
                     <Image className={style.img}
                         src="/imgGallery/Baltas_kostiumelis.webp"
                         alt="baltas kostiumelis"
