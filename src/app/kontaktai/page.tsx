@@ -72,6 +72,23 @@ export default function Contacts() {
                             <td className={style.eilute}>Penktadienis</td>
                             <td className={style.eilute}>9:00 - 17:00</td>
                         </tr>
+                        <tr>
+                            <td className={style.eilute}>Pietų pertrauka</td>
+                            <td className={style.eilute}>13:00 - 13:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table className={style.table} style={{marginTop: '10px'}}>
+                    <thead>
+                        <tr>
+                            <th className={style.eilute}>Pietų pertrauka</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td className={style.eilute}>13:00 - 13:30</td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
