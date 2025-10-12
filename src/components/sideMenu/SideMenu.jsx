@@ -74,6 +74,12 @@ useEffect(() => {
                 <a onClick={closeMenu}><span>Apie mus</span></a>
               </Link>
             </li>
+                        <li className={style.liGallery}>
+              <Scissors />
+              <Link href="/drabuziu-taisymo-kainos" legacyBehavior>
+                <a onClick={closeMenu}><span>Kainos</span></a>
+              </Link>
+            </li>
             <li className={style.liGallery}>
               <Scissors />
               <Link href="/drabuziu-taisymas" legacyBehavior>
@@ -82,14 +88,14 @@ useEffect(() => {
             </li>
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/flisiniai-dzemperiai" legacyBehavior>
-                <a onClick={closeMenu}><span>Džemperiai</span></a>
-              </Link>
-            </li>
-            <li className={style.liGallery}>
-              <Scissors />
               <Link href="/siuvykla" legacyBehavior>
                 <a onClick={closeMenu}><span>Siuvimas</span></a>
+              </Link>
+            </li>
+                      <li className={style.liGallery}>
+              <Scissors />
+              <Link href="/flisiniai-dzemperiai" legacyBehavior>
+                <a onClick={closeMenu}><span>Džemperiai</span></a>
               </Link>
             </li>
             <li className={style.liGallery}>
@@ -104,12 +110,7 @@ useEffect(() => {
                 <a onClick={closeMenu}><span>Galerija</span></a>
               </Link>
             </li>
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/drabuziu-taisymo-kainos" legacyBehavior>
-                <a onClick={closeMenu}><span>Kainos</span></a>
-              </Link>
-            </li>
+
             <li className={style.liGallery}>
               <Scissors />
               <Link href="/kontaktai" legacyBehavior>

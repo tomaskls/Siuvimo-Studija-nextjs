@@ -9,8 +9,14 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/1000004708.webp', name: 'Baltas_kostiumelis', width: '1200', height: '1600' },
+    { path: '/imgGallery/1000004764.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
+    { path: '/imgGallery/1000005084.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
+    { path: '/imgGallery/1000005208.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
+    { path: '/imgGallery/1000005305.webp', name: 'Baltas_kostiumelis', width: '900', height: '1600' },
     { path: '/imgGallery/Baltas_kostiumelis.webp', name: 'Baltas_kostiumelis', width: '900', height: '1850' },
     { path: '/imgGallery/dvisluoksnes_kelnes.webp', name: 'dvisluoksnes_kelnes', width: '900', height: '1600' },
+    { path: '/imgGallery/1000005089.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
     { path: '/imgGallery/progine_suknele_juoda_balta.webp', name: 'progine_suknele_juoda_balta', width: '900', height: '1186' },
     { path: '/imgGallery/silkinis_sijonas.webp', name: 'silkinis_sijonas', width: '900', height: '1600' },
     { path: '/imgGallery/lininiai_drabuziai.webp', name: 'lininiai_drabuziai', width: '900', height: '1186' },
