@@ -37,9 +37,6 @@ export const HeaderD = () => {
           <Link href="/" legacyBehavior>
             <a className={style.link}><button className={style.navButton}>Studija</button></a>
           </Link>
-          <Link href="/flisiniai-dzemperiai" legacyBehavior>
-            <a><button className={style.navButton}>Džemperiai</button></a>
-          </Link>
           <Link href="/drabuziu-taisymas" legacyBehavior>
             <a><button className={style.navButton}>Taisymas</button></a>
           </Link>

@@ -92,12 +92,6 @@ useEffect(() => {
                 <a onClick={closeMenu}><span>Siuvimas</span></a>
               </Link>
             </li>
-                      <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/flisiniai-dzemperiai" legacyBehavior>
-                <a onClick={closeMenu}><span>Džemperiai</span></a>
-              </Link>
-            </li>
             <li className={style.liGallery}>
               <Scissors />
               <Link href="/duk" legacyBehavior>
