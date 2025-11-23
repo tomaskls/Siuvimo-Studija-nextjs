@@ -101,10 +101,10 @@ export default function Repair() {
     <p>Turite klausimų?</p>
     <p>Skambinkite: <a className={style.phone} href="tel:+37060055316">+370 600 55316</a></p>
     <p>Taip pat galite peržiūrėti</p>
-         <Link href="/duk" legacyBehavior>
-        <a><button className={style.button}>Dažnai užduodamus klausimus</button></a>
+         <Link href="/duk">
+        <button className={style.button}>Dažnai užduodamus klausimus</button>
     </Link>
 </div>
         </>
-    )
+    );
 }

@@ -34,23 +34,23 @@ export const HeaderD = () => {
           >
             Neringos Siuvimo Studija
           </h2>
-          <Link href="/" legacyBehavior>
-            <a className={style.link}><button className={style.navButton}>Studija</button></a>
+          <Link href="/" className={style.link}>
+            <button className={style.navButton}>Studija</button>
           </Link>
-          <Link href="/drabuziu-taisymas" legacyBehavior>
-            <a><button className={style.navButton}>Taisymas</button></a>
+          <Link href="/drabuziu-taisymas">
+            <button className={style.navButton}>Taisymas</button>
           </Link>
-          <Link href="/siuvykla" legacyBehavior>
-            <a><button className={style.navButton}>Siuvimas</button></a>
+          <Link href="/siuvykla">
+            <button className={style.navButton}>Siuvimas</button>
           </Link>
-          <Link href="/gallery" legacyBehavior>
-            <a><button className={style.navButton}>Galerija</button></a>
+          <Link href="/gallery">
+            <button className={style.navButton}>Galerija</button>
           </Link>
-          <Link href="/drabuziu-taisymo-kainos" legacyBehavior>
-            <a><button className={style.navButton}>Kainos</button></a>
+          <Link href="/drabuziu-taisymo-kainos">
+            <button className={style.navButton}>Kainos</button>
           </Link>
-          <Link href="/kontaktai" legacyBehavior>
-            <a><button className={style.navButton}>Kontaktai</button></a>
+          <Link href="/kontaktai">
+            <button className={style.navButton}>Kontaktai</button>
           </Link>
         </div>
       </nav>

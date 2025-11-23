@@ -61,7 +61,6 @@ useEffect(() => {
           <MenuIcon />
         </button>
       )}
-
       <div ref={sidebarRef} className={`${style.sidebar} ${isOpen ? style.open : ''}`}>
         <button onClick={closeMenu} className={style.sidebarClose} aria-label="Uždaryti šoninį meniu">
           <CloseIcon />
@@ -70,45 +69,45 @@ useEffect(() => {
           <ul>
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/" legacyBehavior>
-                <a onClick={closeMenu}><span>Apie mus</span></a>
+              <Link href="/" onClick={closeMenu}>
+                <span>Apie mus</span>
               </Link>
             </li>
                         <li className={style.liGallery}>
               <Scissors />
-              <Link href="/drabuziu-taisymo-kainos" legacyBehavior>
-                <a onClick={closeMenu}><span>Kainos</span></a>
+              <Link href="/drabuziu-taisymo-kainos" onClick={closeMenu}>
+                <span>Kainos</span>
               </Link>
             </li>
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/drabuziu-taisymas" legacyBehavior>
-                <a onClick={closeMenu}><span>Taisymas</span></a>
+              <Link href="/drabuziu-taisymas" onClick={closeMenu}>
+                <span>Taisymas</span>
               </Link>
             </li>
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/siuvykla" legacyBehavior>
-                <a onClick={closeMenu}><span>Siuvimas</span></a>
+              <Link href="/siuvykla" onClick={closeMenu}>
+                <span>Siuvimas</span>
               </Link>
             </li>
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/duk" legacyBehavior>
-                <a onClick={closeMenu}><span>D.U.K.</span></a>
+              <Link href="/duk" onClick={closeMenu}>
+                <span>D.U.K.</span>
               </Link>
             </li>
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/gallery" legacyBehavior>
-                <a onClick={closeMenu}><span>Galerija</span></a>
+              <Link href="/gallery" onClick={closeMenu}>
+                <span>Galerija</span>
               </Link>
             </li>
 
             <li className={style.liGallery}>
               <Scissors />
-              <Link href="/kontaktai" legacyBehavior>
-                <a onClick={closeMenu}><span>Kontaktai</span></a>
+              <Link href="/kontaktai" onClick={closeMenu}>
+                <span>Kontaktai</span>
               </Link>
             </li>
           </ul>

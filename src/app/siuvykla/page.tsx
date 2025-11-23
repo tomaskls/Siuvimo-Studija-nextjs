@@ -72,22 +72,21 @@ export default function Sewing() {
                     <div className={style.svg} ><Adata /></div>
                 </div>
             </div>
-        <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
-
-                <Sewing8 />
-                <Sewing6 />
-                <Sewing7 />
-                <Sewing5 />
-                <Sewing4 />
-                <Sewing1 />
-                <Sewing2 />
-                <Sewing3 />
-                <div className={style.link}>
-            <span>Daugiau pavyzdžių rasite čia &gt;</span>
-        <Link  href="/gallery" legacyBehavior>
-            <a><button className={style.button}>Galerija</button></a>
-          </Link>
-          </div>
+            <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
+            <Sewing8 />
+            <Sewing6 />
+            <Sewing7 />
+            <Sewing5 />
+            <Sewing4 />
+            <Sewing1 />
+            <Sewing2 />
+            <Sewing3 />
+            <div className={style.link}>
+        <span>Daugiau pavyzdžių rasite čia &gt;</span>
+    <Link href="/gallery">
+        <button className={style.button}>Galerija</button>
+      </Link>
+      </div>
         </>
     );
 }
