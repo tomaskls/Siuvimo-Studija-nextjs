@@ -17,6 +17,8 @@ import Repair5 from '../../components/repair/svarkoPeciu';
 import Repair6 from '../../components/repair/striukesUztrau';
 import Repair7 from '../../components/repair/pamusalo';
 import Repair14 from '../../components/repair/taisymas14'
+import Repair15 from '../../components/repair/taisymas15'
+import Repair16 from '../../components/repair/taisymas16'
 
 import Link from 'next/link';
 
@@ -82,6 +84,8 @@ export default function Repair() {
             </div>
             <h2 className={style.darbu}>Darbų Pavyzdžiai</h2>
             <div className={style.repairContainer}>
+                <Repair15 />
+                <Repair16 />
                 <Repair14 />
                 <Repair11 />
                 <Repair10 />
