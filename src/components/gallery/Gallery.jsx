@@ -9,10 +9,12 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/1000005211.webp', name: 'Tautinių rūbų siuvimas', width: '900', height: '100' },
+    { path: '/imgGallery/1000005316.webp', name: 'Trikotažinis džemperis', width: '900', height: '1200' },
+    { path: '/imgGallery/1000005397.webp', name: 'kostiumelis', width: '900', height: '1600' },
     { path: '/imgGallery/1000004708.webp', name: 'Baltas_kostiumelis', width: '1200', height: '1600' },
     { path: '/imgGallery/1000004764.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
     { path: '/imgGallery/1000005084.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
-    { path: '/imgGallery/1000005208.webp', name: 'Baltas_kostiumelis', width: '1200', height: '2133' },
     { path: '/imgGallery/1000005305.webp', name: 'Baltas_kostiumelis', width: '900', height: '1600' },
     { path: '/imgGallery/Baltas_kostiumelis.webp', name: 'Baltas_kostiumelis', width: '900', height: '1850' },
     { path: '/imgGallery/dvisluoksnes_kelnes.webp', name: 'dvisluoksnes_kelnes', width: '900', height: '1600' },
