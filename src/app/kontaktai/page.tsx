@@ -39,11 +39,10 @@ export default function Contacts() {
                     <h1>Kontaktai</h1>
                     <a href="tel:+37060055316">Skambinkite tel: +370 600 55316</a>
                     <p>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</p>
-                    <p style={{ color: 'red' }}>Šventiniu laikotarpiu nauji užsakymai nepriimami.<br/>Mielai kviečiame apsilankyti sausio mėnesį</p>
-                    {/* <p>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p> */}
+                    <p>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
                 </div>
             </div>
-            {/* <div className={style.hours}>
+            <div className={style.hours}>
                 <h3>Darbo laikas</h3>
                 <table className={style.table}>
                     <thead>
@@ -92,7 +91,7 @@ export default function Contacts() {
                         
                     </tbody>
                 </table>
-            </div> */}
+            </div>
             <Image className={style.img}
                 src="/Images/kava_900.webp"
                 alt="Kavos pertraukele"
