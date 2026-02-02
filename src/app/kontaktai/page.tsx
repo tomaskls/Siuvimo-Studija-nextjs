@@ -40,7 +40,8 @@ export default function Contacts() {
                     <a href="tel:+37060055316">Skambinkite tel: +370 600 55316</a>
                     <p>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</p>
                     <p>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
-                </div>
+                    <p style={{ color: 'red', fontWeight: 'bold' }}>Dėmesio, dėl šalčio darbo laikas gali skirtis. Prieš vizitą, prašom butinai paskambinti!</p>
+                    </div>
             </div>
             <div className={style.hours}>
                 <h3>Darbo laikas</h3>
