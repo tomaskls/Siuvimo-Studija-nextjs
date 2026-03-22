@@ -12,12 +12,16 @@ import Sewing6 from '../../components/sewing/baltaskostiumelis';
 import Sewing7 from '../../components/sewing/sewing7';
 import Sewing8 from '../../components/sewing/sewing8';
 import Sewing9 from '../../components/sewing/sewing9';
+import Sewing10 from '../../components/sewing/sewing10';
+import Sewing11 from '../../components/sewing/sewing11';
+import Sewing12 from '../../components/sewing/sewing12';
+import Sewing13 from '../../components/sewing/sewing13';
 import Link from 'next/link';
 
 
 export const metadata: Metadata = {
     title: "Drabužių siuvykla Šiauliuose - Kokybiškos siuvimo paslaugos",
-    description: "|Siuvykla Šiauliuose. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.",
+    description: "Siuvimas Šiauliai. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.",
     openGraph: {
         title: 'Siuvykla Šiauliuose',
         description: 'Siuvykla Šiauliuose. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.Stilingi ir kokybiški drabužiai.',
@@ -74,6 +78,10 @@ export default function Sewing() {
                 </div>
             </div>
             <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
+            <Sewing13 />
+            <Sewing12 />
+            <Sewing11 />
+            <Sewing10 />
             <Sewing9 />
             <Sewing8 />
             <Sewing6 />
