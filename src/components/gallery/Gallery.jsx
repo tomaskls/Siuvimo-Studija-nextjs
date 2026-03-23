@@ -9,6 +9,13 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/2026/IMG_20260304_170627.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG_20250724_200643.webp', name: 'Palaidinė su šilko detalėmis', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG_20251209_182018.webp', name: 'Puošni Palaidinė', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG_20260308_194120.webp', name: 'Proginis kostiumėlis', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20250616163816.webp', name: 'suknelė', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20251205100602.webp', name: 'liemenė', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260309163832.webp', name: 'rankovės', width: '900', height: '1600' },
     { path: '/imgGallery/1000005211.webp', name: 'Tautinių rūbų siuvimas', width: '900', height: '100' },
     { path: '/imgGallery/1000005316.webp', name: 'Trikotažinis džemperis', width: '900', height: '1200' },
     { path: '/imgGallery/1000005397.webp', name: 'kostiumelis', width: '900', height: '1600' },
