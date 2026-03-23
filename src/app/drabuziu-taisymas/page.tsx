@@ -19,6 +19,16 @@ import Repair7 from '../../components/repair/pamusalo';
 import Repair14 from '../../components/repair/taisymas14'
 import Repair15 from '../../components/repair/taisymas15'
 import Repair16 from '../../components/repair/taisymas16'
+import Repair17 from '../../components/repair/taisymas17'
+import Repair18 from '../../components/repair/taisymas18'
+import Repair19 from '../../components/repair/taisymas19'
+import Repair20 from '../../components/repair/taisymas20'
+import Repair21 from '../../components/repair/taisymas21'
+import Repair22 from '../../components/repair/taisymas22'
+import Repair23 from '../../components/repair/taisymas23'
+import Repair24 from '../../components/repair/taisymas24'
+import Repair25 from '../../components/repair/taisymas25'
+import Repair26 from '../../components/repair/taisymas26'
 
 import Link from 'next/link';
 
@@ -84,6 +94,16 @@ export default function Repair() {
             </div>
             <h2 className={style.darbu}>Darbų Pavyzdžiai</h2>
             <div className={style.repairContainer}>
+                <Repair17 />
+                <Repair22 />
+                <Repair18 />
+                <Repair24 />
+                <Repair21 />
+                <Repair23 />
+                <Repair20 />
+                <Repair19 />
+                <Repair26 />
+                <Repair25 />
                 <Repair15 />
                 <Repair16 />
                 <Repair14 />
