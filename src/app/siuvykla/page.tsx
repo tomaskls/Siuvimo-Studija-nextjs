@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: "Siuvimas Šiauliai. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.",
     openGraph: {
         title: 'Siuvykla Šiauliuose',
-        description: 'Siuvykla Šiauliuose. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.Stilingi ir kokybiški drabužiai.',
+        description: 'Siuvykla Šiauliuose.Individualus siuvimas.Eksliuzyviniai rūbai. Tvarus siuvimas. Funkcionalus siuvimas. Ergonomiška apranga. Drabužių dizainas',
         url: 'https://www.neringos-siuvimo-studija.lt/siuvykla',
         siteName: 'Neringos Siuvimo Studija',
         type: 'website',
@@ -56,9 +56,9 @@ export default function Sewing() {
                     <h1 className={style.h2}>Ateik su idėja, išeik su drabužiu!</h1>
                     <p className={style.p}>Kiekvienas turi savo unikalų stilių, bet ne visada lengva jį rasti parduotuvėje. Čia mes įžengiame į žaidimą - siuvame pagal jūsų norus ir poreikius. Nesvarbu, ar tai būtų kostiumas su per dideliais atlapais, suknelė, kuri privers suktis galvas kiekviename žingsnyje, ar džemperis, kuriame norėtumėt praleisti visą žiemą, mes pasirūpinsime, kad tai taptų realybe.</p>
                     <ul className={style.repairList}>
-                        <li>Moteriškų drabužių siuvimas</li>
-                        <li>Vyriškų drabužių siuvimas</li>
-                        <li>Vaikiškų drabužių siuvimas</li>
+                        <li>Drabužių modeliavimas ir siuvimas</li>
+                        <li>Apranga pagal užsakymą</li>
+                        <li>Funkcionalus siuvimas</li>
                     </ul>
                     <div className={style.svg}><Zirkles /></div>
                 </div>
