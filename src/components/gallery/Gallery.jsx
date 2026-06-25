@@ -9,6 +9,16 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/imgGallery/2026/IMG20260623103806.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG_20260608_074628.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG_20260610_200019.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260526163144.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260529173658.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260527095227.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260604121759.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260623103704.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG20260615092749.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/imgGallery/2026/IMG_20260608_074628.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/imgGallery/2026/IMG_20260304_170627.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/imgGallery/2026/IMG_20250724_200643.webp', name: 'Palaidinė su šilko detalėmis', width: '900', height: '1600' },
     { path: '/imgGallery/2026/IMG_20251209_182018.webp', name: 'Puošni Palaidinė', width: '900', height: '1600' },
