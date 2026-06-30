@@ -3,7 +3,7 @@ import style from './proginiu.module.css';
 import Image from 'next/image';
 
 
-export default function Repair27() {
+export default function Repair30() {
     return (
         <div className={style.container}>
             <h3 className={style.h3}>✂️ Proginių suknelių taisymas,trumpinimas,siaurinimas </h3>

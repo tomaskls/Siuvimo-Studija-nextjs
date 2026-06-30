@@ -33,6 +33,10 @@ import Repair27 from '../../components/repair/taisymas27'
 import Repair28 from '../../components/repair/taisymas28'
 import Repair29 from '../../components/repair/taisymas29'
 import Repair30 from '../../components/repair/taisymas30'
+import Repair31 from '../../components/repair/taisymas31'
+import Repair32 from '../../components/repair/taisymas32'
+import Repair33 from '../../components/repair/taisymas33'
+import Repair34 from '../../components/repair/taisymas34'
 
 import Link from 'next/link';
 
@@ -102,6 +106,10 @@ export default function Repair() {
                 <Repair28 />
                 <Repair29 />
                 <Repair30 />
+                <Repair31 />
+                <Repair32 />
+                <Repair33 />
+                <Repair34 />
                 <Repair17 />
                 <Repair22 />
                 <Repair18 />
