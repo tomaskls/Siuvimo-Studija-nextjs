@@ -107,7 +107,6 @@ export default function Repair() {
                 <Repair36 />
                 <Repair35 />
                 <Repair27 />
-                <Repair27 />
                 <Repair28 />
                 <Repair29 />
                 <Repair30 />
