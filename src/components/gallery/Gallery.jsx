@@ -9,6 +9,14 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/Images/2026/IMG20260526163334.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260529173709.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260615092808.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260623103455.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260629103703.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260629103856.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260701100549.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260701100840.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/imgGallery/2026/IMG20260623103806.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/imgGallery/2026/IMG_20260608_074628.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/imgGallery/2026/IMG_20260610_200019.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
