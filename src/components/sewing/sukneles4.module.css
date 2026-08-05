@@ -10,6 +10,14 @@
       gap: 10px;
       padding-top: 20px;
     }
+     .ul{
+    padding: left 20px;
+    margin-left: 20px;
+   }
+   .h4{
+    margin-left:20px;
+    margin-bottom:10px;
+   }
     .img {
       max-width: 100%;
       height: auto;
@@ -47,7 +55,14 @@
       padding-left: 10px;
       padding-right: 10px;
     }
-   
+   .ul{
+    padding: left 20px;
+    margin-left: 20px;
+   }
+    .h4{
+    margin-left:20px;
+    margin-bottom:10px;
+   }
     .content {
       max-width: 49%;
       display: flex;

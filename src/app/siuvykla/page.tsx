@@ -21,6 +21,8 @@ import Sewing15 from '../../components/sewing/sewing15';
 import Sewing16 from '../../components/sewing/sewing16';
 import Sewing17 from '../../components/sewing/sewing17';
 import Sewing18 from '../../components/sewing/sewing18';
+import Sewing19 from '../../components/sewing/sewing19';
+import Sewing20 from '../../components/sewing/sewing20';
 import Link from 'next/link';
 
 
@@ -83,6 +85,8 @@ export default function Sewing() {
                 </div>
             </div>
             <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
+            <Sewing19 />
+            <Sewing20 />
             <Sewing14 />
             <Sewing15 />
             <Sewing16 />
