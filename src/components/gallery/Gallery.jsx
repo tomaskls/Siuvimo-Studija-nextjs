@@ -9,6 +9,10 @@ const Pictures = () => {
   }, []);
 
   const image = [
+    { path: '/Images/2026/IMG20260804140627.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260804140259.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260728164955.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
+    { path: '/Images/2026/IMG20260804140833.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/Images/2026/IMG20260526163334.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/Images/2026/IMG20260529173709.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
     { path: '/Images/2026/IMG20260615092808.webp', name: 'Eksliuzivyniai rūbai', width: '900', height: '1600' },
