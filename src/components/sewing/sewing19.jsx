@@ -11,6 +11,9 @@ export default function Sewing19() {
                     <h3 className={style.h4}>Unikalus rūbas</h3>
                     <ul className={style.ul}>
                         <li>
+                            <strong>Tai individualus užsakymas</strong> ,kurtas  pasipuošri renginio vedėjai.
+                        </li>
+                        <li>
                             <strong>Saulės ir paukščio motyvas:</strong> Didysis ratas su spinduliais primena tradicinį saulės arba segmentinės žvaigždės simbolį, kuris baltų kultūroje reiškia gyvybę, šviesą ir pasaulio tvarką. Šalia esančios tamsios formos primena stilizuotus paukščius arba gyvybės medžio šakas, kurios dažnai sutinkamos lietuvių tautiniuose drabužiuose (prijuostėse, delmonuose) bei verpstėse.
                         </li>
                         <li>
