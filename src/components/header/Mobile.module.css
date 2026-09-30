@@ -24,8 +24,11 @@
   height: 60px;
   background-color: #f1d9ab;
 }
-.line2 h2 {
+.siteName {
   color: var(--text-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
 }
 .logoImg {
   width: 50px;

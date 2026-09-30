@@ -3,57 +3,46 @@ import React, { useEffect, useRef, useState } from 'react';
 import style from './Desktop.module.css';
 import Link from 'next/link';
 
+const navLinks = [
+  { href: '/', label: 'Studija' },
+  { href: '/drabuziu-taisymas', label: 'Taisymas' },
+  { href: '/siuvykla', label: 'Siuvimas' },
+  { href: '/gallery', label: 'Galerija' },
+  { href: '/drabuziu-taisymo-kainos', label: 'Kainos' },
+  { href: '/duk', label: 'D.U.K.' },
+  { href: '/kontaktai', label: 'Kontaktai' },
+];
+
 export const HeaderD = () => {
-  const navRef = useRef(null);
-  const neringosRef = useRef(null);
+  const titleRef = useRef(null);
   const [isSticky, setIsSticky] = useState(false);
 
+  // Meniu prilimpa prie viršaus, kai pavadinimas išslenka iš ekrano
   useEffect(() => {
-    const handleScroll = () => {
-      if (navRef.current) {
-        const navTop = navRef.current.getBoundingClientRect().top;
-        setIsSticky(window.scrollY > navTop);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const title = titleRef.current;
+    if (!title) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsSticky(!entry.isIntersecting && entry.boundingClientRect.top < 0);
+    });
+    observer.observe(title);
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <header className={style.header}>
-      <h2 className={style.title}>Neringos Siuvimo Studija</h2>
-      <nav
-        ref={navRef}
-        className={`${style.nav} ${isSticky ? style.fixed : ''} ${isSticky ? style.scrolled : ''}`}
-      >
+    <div className={style.header}>
+      <p ref={titleRef} className={style.title}>Neringos Siuvimo Studija</p>
+      <nav className={`${style.nav} ${isSticky ? `${style.fixed} ${style.scrolled}` : ''}`}>
         <div className={style.navContent}>
-          <h2
-            ref={neringosRef}
-            className={`${style.neringos} ${isSticky ? style.visible : ''}`}
-          >
+          <p className={`${style.neringos} ${isSticky ? style.visible : ''}`}>
             Neringos Siuvimo Studija
-          </h2>
-          <Link href="/" className={style.link}>
-            <button className={style.navButton}>Studija</button>
-          </Link>
-          <Link href="/drabuziu-taisymas">
-            <button className={style.navButton}>Taisymas</button>
-          </Link>
-          <Link href="/siuvykla">
-            <button className={style.navButton}>Siuvimas</button>
-          </Link>
-          <Link href="/gallery">
-            <button className={style.navButton}>Galerija</button>
-          </Link>
-          <Link href="/drabuziu-taisymo-kainos">
-            <button className={style.navButton}>Kainos</button>
-          </Link>
-          <Link href="/kontaktai">
-            <button className={style.navButton}>Kontaktai</button>
-          </Link>
+          </p>
+          {navLinks.map((link) => (
+            <Link key={link.href} href={link.href} className={style.navButton}>
+              {link.label}
+            </Link>
+          ))}
         </div>
       </nav>
-    </header>
+    </div>
   );
 };

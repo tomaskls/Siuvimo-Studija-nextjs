@@ -1,119 +1,64 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './SideMenu.module.css';
 import Link from 'next/link';
 import { MenuIcon, CloseIcon, Scissors } from '../svg';
 
+const menuLinks = [
+  { href: '/', label: 'Apie mus' },
+  { href: '/drabuziu-taisymo-kainos', label: 'Kainos' },
+  { href: '/drabuziu-taisymas', label: 'Taisymas' },
+  { href: '/siuvykla', label: 'Siuvimas' },
+  { href: '/duk', label: 'D.U.K.' },
+  { href: '/gallery', label: 'Galerija' },
+  { href: '/kontaktai', label: 'Kontaktai' },
+];
+
 export const SidebarMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const sidebarRef = useRef(null);
-  const [isMounted, setIsMounted] = useState(false);
 
+  const closeMenu = () => setIsOpen(false);
 
+  // Kol meniu atidarytas: užrakinamas puslapio slinkimas, Escape uždaro meniu.
+  // Paspaudimą šalia meniu pagauna .dimmer sluoksnis.
   useEffect(() => {
-    setIsMounted(true); // Nustatome, kad komponentas yra sumontuotas
-    const handleClickOutside = (event) => {
-      if (isMounted && sidebarRef.current && !sidebarRef.current.contains(event.target)) { // Tikriname isMounted
-          closeMenu();
-      }
+    if (!isOpen) return;
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') setIsOpen(false);
     };
-
-    if (isMounted) { // Pridedame event listener tik jei komponentas yra sumontuotas
-        document.addEventListener('mousedown', handleClickOutside);
-    }
-
+    document.body.classList.add('no-scroll');
+    document.addEventListener('keydown', handleKeyDown);
     return () => {
-      if (isMounted) { // Pašaliname event listener tik jei komponentas yra sumontuotas
-          document.removeEventListener('mousedown', handleClickOutside);
-      }
+      document.body.classList.remove('no-scroll');
+      document.removeEventListener('keydown', handleKeyDown);
     };
-
-  // Pridėjome isMounted prie priklausomybių masyvo
-}, [isMounted]);
-
-useEffect(() => {
-    if (typeof document !== 'undefined') {
-      if (isOpen) {
-        document.body.classList.add('no-scroll');
-      } else {
-        document.body.classList.remove('no-scroll');
-      }
-      return () => {
-        document.body.classList.remove('no-scroll');
-      };
-    }
   }, [isOpen]);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
-
-
 
   return (
     <div className={style.sideMenu}>
       {!isOpen && (
-        <button onClick={toggleMenu} className={style.sidebarToggle} aria-label="Atidaryti šoninį meniu">
+        <button onClick={() => setIsOpen(true)} className={style.sidebarToggle} aria-label="Atidaryti šoninį meniu">
           <MenuIcon />
         </button>
       )}
-      <div ref={sidebarRef} className={`${style.sidebar} ${isOpen ? style.open : ''}`}>
+      <div className={`${style.sidebar} ${isOpen ? style.open : ''}`}>
         <button onClick={closeMenu} className={style.sidebarClose} aria-label="Uždaryti šoninį meniu">
           <CloseIcon />
         </button>
         <nav className={style.sidebarNav}>
           <ul>
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/" onClick={closeMenu}>
-                <span>Apie mus</span>
-              </Link>
-            </li>
-                        <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/drabuziu-taisymo-kainos" onClick={closeMenu}>
-                <span>Kainos</span>
-              </Link>
-            </li>
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/drabuziu-taisymas" onClick={closeMenu}>
-                <span>Taisymas</span>
-              </Link>
-            </li>
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/siuvykla" onClick={closeMenu}>
-                <span>Siuvimas</span>
-              </Link>
-            </li>
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/duk" onClick={closeMenu}>
-                <span>D.U.K.</span>
-              </Link>
-            </li>
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/gallery" onClick={closeMenu}>
-                <span>Galerija</span>
-              </Link>
-            </li>
-
-            <li className={style.liGallery}>
-              <Scissors />
-              <Link href="/kontaktai" onClick={closeMenu}>
-                <span>Kontaktai</span>
-              </Link>
-            </li>
+            {menuLinks.map((link) => (
+              <li key={link.href} className={style.liGallery}>
+                <Scissors />
+                <Link href={link.href} onClick={closeMenu}>
+                  <span>{link.label}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
-      {isOpen && <div className={style.dimmer} onClick={closeMenu}></div>}
+      {isOpen && <div className={style.dimmer} onClick={closeMenu} aria-hidden="true"></div>}
     </div>
   );
 };

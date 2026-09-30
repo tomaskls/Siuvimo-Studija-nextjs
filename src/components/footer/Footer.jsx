@@ -5,7 +5,8 @@ import { CookieSettingsButton } from './CookieSettingsButton';
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
-        <div className={style.footer}>Sukurta
+        <footer className={style.footer}>
+            <span>Sukurta</span>
             <a 
                 className={style.tmh} 
                 href="https://www.tmh.lt" 
@@ -14,8 +15,8 @@ export default function Footer() {
             >
                 Tomorrow&apos;s Media House
             </a>
-            © {currentYear} Neringos Siuvimo Studija. Visos teisės saugomos.
+            <span>© {currentYear} Neringos Siuvimo Studija. Visos teisės saugomos.</span>
             <CookieSettingsButton />
-        </div>
+        </footer>
     );
 }

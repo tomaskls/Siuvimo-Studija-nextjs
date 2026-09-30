@@ -6,16 +6,16 @@ export function HeaderMobile() {
   return (
     <div className={style.mobileHeader}>
       <div className={style.sticky}>
-        <a className={style.line1} href="tel:+37060055316">Turite klausimu? +370 600 55316</a>
+        <a className={style.line1} href="tel:+37060055316">Turite klausimų? +370 600 55316</a>
         <div className={style.line2}>
           <Image className={style.logoImg}
             src="/Images/logo.webp"
             width={30}
             height={30}
-            alt="logo"
+            alt="Neringos Siuvimo Studija logotipas"
             priority={true}
           />
-          <h2>Neringos Siuvimo Studija</h2>
+          <p className={style.siteName}>Neringos Siuvimo Studija</p>
           <svg className={style.icon} stroke="currentColor" fill="none" strokeWidth="0" viewBox="0 0 512 512" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg>
         </div>
       </div>

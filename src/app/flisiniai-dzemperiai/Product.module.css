@@ -45,9 +45,6 @@
     margin-top: 8px;
     text-decoration: none;
   }
-  .touched {
-    background-color: var(--heading-color);
-  }
   .svg {
     display: none;
   }

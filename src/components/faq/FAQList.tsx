@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import styles from '../../app/duk/duk.module.css';
 
 interface FAQ {
@@ -11,23 +11,32 @@ interface FAQ {
 
 export default function FAQList({ faqs }: { faqs: FAQ[] }) {
   const [activeId, setActiveId] = useState<string | null>(null);
+  // Puslapyje yra du sąrašai su tais pačiais id, todėl reikia unikalaus prefikso
+  const idPrefix = useId();
 
   return (
     <div className={styles.faqList}>
-      {faqs.map((faq) => (
-        <div key={faq.id} className={styles.faqItem}>
-          <button
-            onClick={() => setActiveId(activeId === faq.id ? null : faq.id)}
-            className={`${styles.question} ${activeId === faq.id ? styles.active : ''}`}
-          >
-            {faq.question}
-            <span>{activeId === faq.id ? '−' : '+'}</span>
-          </button>
-          <div className={`${styles.answer} ${activeId === faq.id ? styles.show : ''}`}>
-            {faq.answer}
+      {faqs.map((faq) => {
+        const isOpen = activeId === faq.id;
+        const answerId = `${idPrefix}-answer-${faq.id}`;
+        return (
+          <div key={faq.id} className={styles.faqItem}>
+            <button
+              type="button"
+              onClick={() => setActiveId(isOpen ? null : faq.id)}
+              className={`${styles.question} ${isOpen ? styles.active : ''}`}
+              aria-expanded={isOpen}
+              aria-controls={answerId}
+            >
+              {faq.question}
+              <span aria-hidden="true">{isOpen ? '−' : '+'}</span>
+            </button>
+            <div id={answerId} className={`${styles.answer} ${isOpen ? styles.show : ''}`}>
+              {faq.answer}
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }
