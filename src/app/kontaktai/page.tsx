@@ -56,16 +56,16 @@ export default function Contacts() {
                         {openingHours.map((day) => (
                             <tr key={day.schemaDay}>
                                 <td className={style.eilute}>{day.name}</td>
-                                <td className={style.eilute}>{formatTime(day.opens)} - {formatTime(day.closes)}</td>
+                                <td className={`${style.eilute} ${style.time}`}>{formatTime(day.opens)} - {formatTime(day.closes)}</td>
                             </tr>
                         ))}
                         <tr>
-                            <td className={style.eilute}>Šeštadienis, sekmadienis</td>
+                            <td className={style.eilute}>Savaitgaliais</td>
                             <td className={style.eilute}>Nedirbame</td>
                         </tr>
                         <tr>
                             <td className={style.eilute}>Pietų pertrauka</td>
-                            <td className={style.eilute}>{formatTime(lunchBreak.start)} - {formatTime(lunchBreak.end)}</td>
+                            <td className={`${style.eilute} ${style.time}`}>{formatTime(lunchBreak.start)} - {formatTime(lunchBreak.end)}</td>
                         </tr>
                     </tbody>
                 </table>

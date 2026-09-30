@@ -160,7 +160,15 @@
   cursor: pointer;
 }
 .contacts a {
+  max-width: 100%;
   overflow-wrap: anywhere;
+}
+@media (min-width: 761px) {
+  /* Mygtukai bent 300px, bet ilgesnis tekstas (el. paštas) jų neperlaužia */
+  .contacts a {
+    width: fit-content;
+    min-width: 300px;
+  }
 }
 .address {
   font-style: inherit;
@@ -170,4 +178,7 @@
 }
 .hoursTitle {
   font-size: 1.17em;
+}
+.time {
+  white-space: nowrap;
 }
