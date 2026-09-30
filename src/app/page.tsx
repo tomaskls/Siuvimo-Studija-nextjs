@@ -12,7 +12,7 @@ export default function Page() {
         <div>
           <Image className={style.img}
             src="/Images/siuvykla_siauliai_900.webp"
-            alt="Siuvykla Siauliuose"
+            alt="Siuvykla Šiauliuose"
             width={900}
             height={1350}
             priority={true}>
@@ -29,7 +29,7 @@ export default function Page() {
           src="/Images/kelniu_palenkimas_900.webp"
           width={900}
           height={1350}
-          alt="kelniu palenkimas šiauliuose"
+          alt="Kelnių palenkimas Šiauliuose"
           priority={false}
         />
         <div className={style.content}>

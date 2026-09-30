@@ -22,7 +22,7 @@ export default function Sewing12() {
                     <p className={style.p}>Tvarus siuvimas. </p>
                     <Image className={style.img2}
                         src="/imgGallery/2026/IMG20250616163816.webp"
-                        alt="suknelė"
+                        alt="Suknelė"
                         width={900}
                         height={1600}
                         priority={false}

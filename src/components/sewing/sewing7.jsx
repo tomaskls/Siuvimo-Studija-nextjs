@@ -11,7 +11,7 @@ export default function Sewing7() {
                     <p className={style.p}>Dryžuoto šilko palaidinė.</p>
                     <Image className={style.img}
                         src="/imgGallery/silkine_palaidine.webp"
-                        alt="silkine palaidine"
+                        alt="Šilkinė palaidinė"
                         width={900}
                         height={1600}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing7() {
                     <p className={style.p}>Iš aukštos kokybės &#34;digital&#34; šilko pasiūtas sijonas. </p>
                     <Image className={style.img2}
                         src="/imgGallery/silkinis_sijonas.webp"
-                        alt="silkinis sijonas"
+                        alt="Šilkinis sijonas"
                         width={900}
                         height={1600}
                         priority={false}

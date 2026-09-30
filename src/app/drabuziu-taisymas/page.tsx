@@ -39,7 +39,7 @@ export default function Repair() {
             <div className={style.container}>
                 <Image className={style.img}
                     src="/Images/rubu_taisymas_900.webp"
-                    alt="Drabužių taisymas Šiauliuose "
+                    alt="Drabužių taisymas Šiauliuose"
                     width={900}
                     height={1350}
                     priority={true}
@@ -81,4 +81,4 @@ export default function Repair() {
 </div>
         </>
     );
-}
+}

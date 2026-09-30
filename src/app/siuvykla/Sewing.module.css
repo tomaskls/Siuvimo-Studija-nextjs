@@ -97,7 +97,7 @@
     padding-bottom: 30px;
     padding-right: 30px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 20px;
   }

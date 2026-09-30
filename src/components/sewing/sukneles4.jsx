@@ -11,7 +11,7 @@ export default function Sewing5() {
                     <p className={style.p}>Ši elegantiška suknelė pasiūta iš natūralaus lino audinio, dekoruota subtiliais nėriniais, kurie prideda romantikos ir išskirtinumo.</p>
                     <Image className={style.img}
                         src="/imgGallery/linine_suknele.webp"
-                        alt="linine suknele"
+                        alt="Lininė suknelė"
                         width={900}
                         height={1600}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing5() {
                     <p className={style.p}>Šios elegantiškos sijonkelnes yra pasiūtos iš aukštos kokybės eko odos. Ryškiai mėlyna spalva suteikia išskirtinumo, o platus klostuotas siluetas leidžia jaustis laisvai ir patogiai.</p>
                     <Image className={style.img2}
                         src="/imgGallery/eko_odos_sijonkelnes.webp"
-                        alt="eko odos sijonkelnes"
+                        alt="Eko odos sijonkelnės"
                         width={900}
                         height={1600}
                         priority={false}

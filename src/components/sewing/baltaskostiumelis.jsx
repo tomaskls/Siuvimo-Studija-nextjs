@@ -11,7 +11,7 @@ export default function Sewing6() {
                     <p className={style.p}>Pasiūtas proginis kostiumėlis. Panaudotos skirtingų faktūrų medžiagos, to paties atspalvio.</p>
                     <Image className={style.img}
                         src="/imgGallery/Baltas_kostiumelis.webp"
-                        alt="baltas kostiumelis"
+                        alt="Baltas kostiumėlis"
                         width={900}
                         height={1600}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing6() {
                     <p className={style.p}>Iš dviejų rušių audinių pasiūtos kelnės, suderinus audinių kritimą.</p>
                     <Image className={style.img2}
                         src="/imgGallery/dvisluoksnes_kelnes.webp"
-                        alt="dvisluoksnes kelnes"
+                        alt="Dvisluoksnės kelnės"
                         width={900}
                         height={1600}
                         priority={false}

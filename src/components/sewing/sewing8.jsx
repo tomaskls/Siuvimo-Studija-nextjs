@@ -11,7 +11,7 @@ export default function Sewing8() {
                     <p className={style.p}>Pagal klientės pateiktą nuotrauką, pasiūta suknelė. Pritaikyta klientės figūrai. </p>
                     <Image className={style.img}
                         src="/imgGallery/progine_suknele_juoda_balta.webp"
-                        alt="prohine suknele juoda balta"
+                        alt="Juodai balta proginė suknelė"
                         width={900}
                         height={1200}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing8() {
                     <p className={style.p}>Laisvalaikio komplektas - Šortai ir &#34;bomberis&#34;.</p>
                     <Image className={style.img2}
                         src="/imgGallery/lininiai_drabuziai.webp"
-                        alt="silkinis sijonas"
+                        alt="Šilkinis sijonas"
                         width={900}
                         height={1200}
                         priority={false}

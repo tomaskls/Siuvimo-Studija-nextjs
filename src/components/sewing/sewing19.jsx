@@ -38,7 +38,7 @@ export default function Sewing19() {
                 <div className={style.content} >
                     <Image className={style.img2}
                         src="/Images/2026/IMG20260728164955.webp"
-                        alt="suknelė"
+                        alt="Suknelė"
                         width={900}
                         height={1600}
                         priority={false}

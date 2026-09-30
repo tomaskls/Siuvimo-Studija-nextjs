@@ -22,7 +22,7 @@ export default function Sewing4() {
                     <p className={style.p}>Ši stilinga liemenė pasiūta iš reto audimo melanžinio audinio, kuris derina juodos, baltos ir pilkos spalvos siūlus, suteikdamas lengvumo ir subtilios tekstūros efektą.Visos siūlės yra kruopščiai apkantuotos, suteikiant gaminiui išbaigtumo ir ilgaamžiškumo.</p>
                     <Image className={style.img2}
                         src="/imgGallery/kantuota_liemene.webp"
-                        alt="Kantuota liemene"
+                        alt="Kantuota liemenė"
                         width={900}
                         height={1600}
                         priority={false}

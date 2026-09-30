@@ -22,7 +22,7 @@ export default function Sewing10() {
                     <p className={style.p}>Laisvo kritimo palaidinė. </p>
                     <Image className={style.img2}
                         src="/imgGallery/2026/IMG_20251209_182018.webp"
-                        alt="Puošni Palaidinė"
+                        alt="Puošni palaidinė"
                         width={900}
                         height={1600}
                         priority={false}

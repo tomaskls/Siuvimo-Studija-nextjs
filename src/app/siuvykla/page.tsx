@@ -73,7 +73,7 @@ export default function Sewing() {
             <div className={`${style.container} ${style.container2}`}>
                 <Image className={style.img2}
                     src="/imgGallery/stilizuotas_vilnonis_kostiumas.webp"
-                    alt="Suknele su aplikacija"
+                    alt="Suknelė su aplikacija"
                     width={900}
                     height={1600}
                     priority={false}
