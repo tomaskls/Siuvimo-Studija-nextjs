@@ -136,3 +136,29 @@
     margin-left: 20px;
   }
 }
+.mapPlaceholder {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--heading-color);
+}
+.mapPlaceholder a {
+  color: var(--heading-color);
+}
+.mapButton {
+  padding: 10px 20px;
+  font: inherit;
+  color: var(--heading-color);
+  background: none;
+  border: 1px solid var(--heading-color);
+  border-radius: 15px;
+  cursor: pointer;
+}

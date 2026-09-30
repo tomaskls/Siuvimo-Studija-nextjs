@@ -1,0 +1,39 @@
+'use client';
+import React, { useState } from 'react';
+import style from './Contacts.module.css';
+
+const MAP_SRC = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.234194280573!2d23.31294907676809!3d55.92797787848508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e5e330649f95bb%3A0x37e61039db777fb7!2sNERINGOS%20SIUVIMO%20STUDIJA!5e0!3m2!1slt!2slt!4v1727020354296!5m2!1slt!2slt";
+const MAP_LINK = "https://www.google.com/maps?q=55.92782411660252,23.315946062172443";
+
+// Google Maps įrašo trečiųjų šalių slapukus, todėl žemėlapis įkeliamas tik lankytojui paspaudus.
+export default function MapEmbed() {
+    const [showMap, setShowMap] = useState(false);
+
+    if (showMap) {
+        return (
+            <iframe
+                className={style.map}
+                src={MAP_SRC}
+                width={600}
+                height={400}
+                style={{ border: 0 }}
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                loading="lazy"
+                title="NERINGOS SIUVIMO STUDIJA žemėlapis"
+            ></iframe>
+        );
+    }
+
+    return (
+        <div className={`${style.map} ${style.mapPlaceholder}`}>
+            <p>Žemėlapis teikiamas „Google Maps“, kuris gali įrašyti slapukus.</p>
+            <button type="button" className={style.mapButton} onClick={() => setShowMap(true)}>
+                Rodyti žemėlapį
+            </button>
+            <a href={MAP_LINK} target="_blank" rel="noopener noreferrer">
+                Atidaryti Google Maps
+            </a>
+        </div>
+    );
+}

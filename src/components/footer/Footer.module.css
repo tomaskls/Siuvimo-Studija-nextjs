@@ -25,3 +25,12 @@
     margin-right: 5px;
   }
 }
+.cookieButton {
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}

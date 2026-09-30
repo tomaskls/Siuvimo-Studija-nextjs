@@ -6,6 +6,7 @@ import {
 } from "../src/types/schema";
 import type { ReviewSchema } from "./reviews";
 import { reviews } from "./reviews";
+import { getOpeningHoursSpecification } from "../src/data/openingHours";
 
 const baseAddress = {
   "@type": "PostalAddress" as const,
@@ -75,20 +76,7 @@ export const localBusinessSchema: LocalBusinessSchema = {
     latitude: "55.92782411660252",
     longitude: "23.315946062172443",
   },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Friday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-  ],
+  openingHoursSpecification: getOpeningHoursSpecification(),
   telephone: "+37060055316",
   email: "neringos.siuvimo.studija@gmail.com",
   url: "https://www.neringos-siuvimo-studija.lt",

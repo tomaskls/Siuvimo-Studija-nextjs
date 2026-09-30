@@ -1,5 +1,6 @@
 import style from './Footer.module.css';
 import React from 'react';
+import { CookieSettingsButton } from './CookieSettingsButton';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -14,6 +15,7 @@ export default function Footer() {
                 Tomorrow&apos;s Media House
             </a>
             © {currentYear} Neringos Siuvimo Studija. Visos teisės saugomos.
+            <CookieSettingsButton />
         </div>
     );
 }

@@ -8,6 +8,7 @@ import { SidebarMenu } from "../components/sideMenu/SideMenu";
 import { Merriweather } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ConsentManager } from "../components/ConsentManager";
+import { consentDefaultsScript } from "../components/consent";
 import JsonLd from '../components/JsonLd';
 import { siuvimoPaslaugos, organizationSchema, localBusinessSchema } from "../../schemas/index";
 import { faqSchema } from "../../schemas/faq";
@@ -53,6 +54,8 @@ export default function RootLayout({
   return (
     <html lang="lt">
       <head>
+        {/* Turi būti vykdomas prieš Google Analytics, kad sekimas nepradėtų veikti be sutikimo */}
+        <script dangerouslySetInnerHTML={{ __html: consentDefaultsScript }} />
         <JsonLd data={organizationSchema} />
         <JsonLd data={localBusinessSchema} />
         <JsonLd data={siuvimoPaslaugos} />

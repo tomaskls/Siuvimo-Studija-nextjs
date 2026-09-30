@@ -1,71 +1,53 @@
 'use client';
 import React from 'react';
-import Script from 'next/script';
 import { useEffect, useState } from 'react';
 import styles from './ConsentManager.module.css';
+import {
+  CONSENT_STORAGE_KEY,
+  OPEN_CONSENT_EVENT,
+  ConsentChoice,
+  getConsentState,
+} from './consent';
 
+// Numatytąjį sutikimą nustato consentDefaultsScript (layout.tsx <head>),
+// šis komponentas tik rodo banerį ir atnaujina pasirinkimą.
 export function ConsentManager() {
   const [showConsent, setShowConsent] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
 
   useEffect(() => {
-    const hasConsent = localStorage.getItem('cookieConsent');
+    let hasConsent: string | null = null;
+    try {
+      hasConsent = localStorage.getItem(CONSENT_STORAGE_KEY);
+    } catch {}
     if (!hasConsent) {
       setShowConsent(true);
     }
+
+    const openSettings = () => {
+      setShowDetails(false);
+      setShowConsent(true);
+    };
+    window.addEventListener(OPEN_CONSENT_EVENT, openSettings);
+    return () => window.removeEventListener(OPEN_CONSENT_EVENT, openSettings);
   }, []);
 
-  const handleAcceptAll = () => {
-    window.gtag('consent', 'update', {
-      'analytics_storage': 'granted',
-      'ad_storage': 'granted',
-      'ad_user_data': 'granted',
-      'ad_personalization': 'granted'
-    });
-    localStorage.setItem('cookieConsent', 'all');
+  const saveChoice = (choice: ConsentChoice) => {
+    window.gtag?.('consent', 'update', getConsentState(choice));
+    try {
+      localStorage.setItem(CONSENT_STORAGE_KEY, choice);
+    } catch {}
     setShowConsent(false);
   };
 
-  const handleAcceptAnalytics = () => {
-    window.gtag('consent', 'update', {
-      'analytics_storage': 'granted',
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied'
-    });
-    localStorage.setItem('cookieConsent', 'analytics');
-    setShowConsent(false);
-  };
-
-  const handleDecline = () => {
-    window.gtag('consent', 'update', {
-      'analytics_storage': 'denied',
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied'
-    });
-    localStorage.setItem('cookieConsent', 'declined');
-    setShowConsent(false);
-  };
+  const handleAcceptAll = () => saveChoice('all');
+  const handleAcceptAnalytics = () => saveChoice('analytics');
+  const handleDecline = () => saveChoice('declined');
 
   if (!showConsent) return null;
 
   return (
     <>
-      <Script id="gtm-consent" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-
-          gtag('consent', 'default', {
-            'analytics_storage': 'denied',
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied'
-          });
-        `}
-      </Script>
-
       <div className={styles.consentContainer}>
         <div className={styles.consentContent}>
           {!showDetails ? (

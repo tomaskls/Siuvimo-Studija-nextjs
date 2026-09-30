@@ -3,6 +3,8 @@ import Image from 'next/image';
 import style from './Contacts.module.css';
 import { FbLink, InstLink, PinLink } from './SocialLinks';
 import { Metadata } from 'next';
+import { openingHours, lunchBreak, formatTime } from '../../data/openingHours';
+import MapEmbed from './MapEmbed';
 
 export const metadata: Metadata = {
     title: "Kontaktai | Neringos Siuvimo Studija Šiauliuose",
@@ -52,43 +54,20 @@ export default function Contacts() {
                         </tr>
                     </thead>
                     <tbody>
+                        {openingHours.map((day) => (
+                            <tr key={day.schemaDay}>
+                                <td className={style.eilute}>{day.name}</td>
+                                <td className={style.eilute}>{formatTime(day.opens)} - {formatTime(day.closes)}</td>
+                            </tr>
+                        ))}
                         <tr>
-                            <td className={style.eilute}>Pirmadienis</td>
-                            <td className={style.eilute}>9:00 - 18:00</td>
-                        </tr>
-                        <tr>
-                            <td className={style.eilute}>Antradienis</td>
-                            <td className={style.eilute}>10:00 - 15:00</td>
-                        </tr>
-                        <tr>
-                            <td className={style.eilute}>Trečiadienis</td>
-                            <td className={style.eilute}>9:00 - 18:00</td>
-                        </tr>
-                        <tr>
-                            <td className={style.eilute}>Ketvirtadienis</td>
-                            <td className={style.eilute}>10:00 - 15:00</td>
-                        </tr>
-                        <tr>
-                            <td className={style.eilute}>Penktadienis</td>
-                            <td className={style.eilute}>9:00 - 17:00</td>
+                            <td className={style.eilute}>Šeštadienis, sekmadienis</td>
+                            <td className={style.eilute}>Nedirbame</td>
                         </tr>
                         <tr>
                             <td className={style.eilute}>Pietų pertrauka</td>
-                            <td className={style.eilute}>13:00 - 13:30</td>
+                            <td className={style.eilute}>{formatTime(lunchBreak.start)} - {formatTime(lunchBreak.end)}</td>
                         </tr>
-                    </tbody>
-                </table>
-                <table className={style.table} style={{marginTop: '10px'}}>
-                    <thead>
-                        <tr>
-                            <th className={style.eilute}>Pietų pertrauka</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className={style.eilute}>13:00 - 13:30</td>
-                        </tr>
-                        
                     </tbody>
                 </table>
             </div>
@@ -99,17 +78,7 @@ export default function Contacts() {
                 height={300}
                 priority={false}
             />
-            <iframe
-                className={style.map}
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.234194280573!2d23.31294907676809!3d55.92797787848508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e5e330649f95bb%3A0x37e61039db777fb7!2sNERINGOS%20SIUVIMO%20STUDIJA!5e0!3m2!1slt!2slt!4v1727020354296!5m2!1slt!2slt"
-                width={600}
-                height={400}
-                style={{ border: 0 }}
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                loading='lazy'
-                title="NERINGOS SIUVIMO STUDIJA žemėlapis"
-            ></iframe>
+            <MapEmbed />
         </div>
     );
 }
