@@ -2,13 +2,13 @@ import {
   OrganizationSchema,
   LocalBusinessSchema,
   ServiceSchema,
-  AggregateRatingSchema,
 } from "../src/types/schema";
-import type { ReviewSchema } from "./reviews";
-import { reviews } from "./reviews";
 import { getOpeningHoursSpecification } from "../src/data/openingHours";
 
-const baseAddress = {
+// Visos schemos nurodo tą patį verslą per šį @id, kad Google jas sujungtų į vieną objektą.
+export const BUSINESS_ID = "https://www.neringos-siuvimo-studija.lt";
+
+export const baseAddress = {
   "@type": "PostalAddress" as const,
   streetAddress: "Vytauto g. 80",
   addressLocality: "Šiauliai",
@@ -16,26 +16,6 @@ const baseAddress = {
   addressCountry: "LT",
   addressRegion: "Šiaulių apskritis",
 };
-
-function calculateAggregateRating(
-  reviewsArray: ReviewSchema[]
-): AggregateRatingSchema {
-  const totalRating = reviewsArray.reduce(
-    (sum: number, review: ReviewSchema) => {
-      return sum + review.reviewRating.ratingValue;
-    },
-    0
-  );
-
-  const averageRating = totalRating / reviewsArray.length;
-
-  return {
-    "@type": "AggregateRating",
-    ratingValue: averageRating,
-    reviewCount: reviewsArray.length,
-    bestRating: 5,
-  };
-}
 
 export const organizationSchema: OrganizationSchema = {
   "@context": "https://schema.org",
@@ -56,14 +36,14 @@ export const organizationSchema: OrganizationSchema = {
   sameAs: [
     "https://www.facebook.com/neringossiuvimostudija",
     "https://www.instagram.com/neringossiuvimostudija",
-    "https://www.pinterest.com/Neringossiuvimostudija",
+    "https://www.pinterest.com/neringossiuvimostudija",
   ],
 };
 
 export const localBusinessSchema: LocalBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://www.neringos-siuvimo-studija.lt",
+  "@id": BUSINESS_ID,
   name: "Neringos Siuvimo Studija",
   image:
     "https://www.neringos-siuvimo-studija.lt/neringos_siuvimo_studija.webp",
@@ -85,8 +65,6 @@ export const localBusinessSchema: LocalBusinessSchema = {
   mainEntityOfPage: "https://www.neringos-siuvimo-studija.lt",
   hasMap: "https://www.google.com/maps?q=55.92782411660252,23.315946062172443",
   isAccessibleForFree: true,
-  review: reviews,
-  aggregateRating: calculateAggregateRating(reviews),
 };
 
 export const siuvimoPaslaugos: ServiceSchema = {
@@ -97,6 +75,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
   "@type": "Service",
   provider: {
     "@type": "LocalBusiness",
+    "@id": BUSINESS_ID,
     name: "Neringos Siuvimo Studija",
     address: baseAddress,
     telephone: "+37060055316",

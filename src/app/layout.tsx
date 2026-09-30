@@ -11,8 +11,6 @@ import { ConsentManager } from "../components/ConsentManager";
 import { consentDefaultsScript } from "../components/consent";
 import JsonLd from '../components/JsonLd';
 import { siuvimoPaslaugos, organizationSchema, localBusinessSchema } from "../../schemas/index";
-import { faqSchema } from "../../schemas/faq";
-import { priceListSchema } from "../../schemas/prices";
 
 const font = Merriweather({
   variable: "--font-merri",
@@ -25,7 +23,8 @@ const font = Merriweather({
 export const metadata: Metadata = {
   title: "Neringos Siuvimo Studija | Drabužių taisymas ir siuvimas Šiauliuose",
   description: "Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas",
-  icons: './icons/scissors.svg',
+  metadataBase: new URL('https://www.neringos-siuvimo-studija.lt'),
+  icons: '/icons/scissors.svg',
   openGraph: {
     title: 'Neringos Siuvimo Studija',
     description: 'Profesionalios siuvimo paslaugos Šiauliuose. Siuvykla. Drabužių taisymas. Individualus siuvimas.Aplikacijos ant drabužių.Vienetinių lekalų konstravimas',
@@ -59,8 +58,6 @@ export default function RootLayout({
         <JsonLd data={organizationSchema} />
         <JsonLd data={localBusinessSchema} />
         <JsonLd data={siuvimoPaslaugos} />
-        <JsonLd data={faqSchema} />
-        <JsonLd data={priceListSchema} />
       </head>
 
       <body className={font.className}>

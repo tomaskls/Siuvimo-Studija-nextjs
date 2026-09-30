@@ -3,6 +3,8 @@ import style from './Price.module.css'
 import React from 'react';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import JsonLd from '../../components/JsonLd';
+import { priceListSchema } from '../../../schemas/prices';
 
 export const metadata: Metadata = {
     title: "Drabužių taisymo kainos Šiauliuose - 2025 m. įkainiai",
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
 export default function Prices() {
     return (
         <>
+        <JsonLd data={priceListSchema} />
         <div className={style.container}>
             <div className={style.content1}>
                 <Image className={style.img}

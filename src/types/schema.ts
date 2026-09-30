@@ -28,6 +28,7 @@ export interface ServiceType {
 export interface ServiceListSchema {
   "@context": "https://schema.org";
   "@type": "LocalBusiness";
+  "@id"?: string;
   name: string;
   address: PostalAddress;
   telephone?: string;
@@ -133,6 +134,7 @@ export interface LocalBusinessSchema extends SchemaBase {
 
 export interface ServiceProvider {
   "@type": "LocalBusiness";
+  "@id"?: string;
   name: string;
   address: PostalAddress;
   telephone?: string;

@@ -1,17 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import style from './Contacts.module.css';
-import { FbLink, InstLink, PinLink } from './SocialLinks';
+import { SocialLinks } from './SocialLinks';
 import { Metadata } from 'next';
 import { openingHours, lunchBreak, formatTime } from '../../data/openingHours';
 import MapEmbed from './MapEmbed';
 
 export const metadata: Metadata = {
     title: "Kontaktai | Neringos Siuvimo Studija Šiauliuose",
-    description: "Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316. Reikalinga profesionali konsultacija? Susisiekite su mumis jau šiandien! ",
+    description: "Mus rasite adresu: Vytauto g. 80, Šiauliai. Skambinkite tel: +370 600 55316. Reikalinga profesionali konsultacija? Susisiekite su mumis jau šiandien! ",
     openGraph: {
         title: 'Kontaktai',
-        description: 'Mus rasite adresu: Vytauto g. 8O Šiauliai. Skambinkite tel: +370 600 55316 ', 
+        description: 'Mus rasite adresu: Vytauto g. 80, Šiauliai. Skambinkite tel: +370 600 55316 ', 
         url: 'https://www.neringos-siuvimo-studija.lt/kontaktai',
         siteName: 'Neringos Siuvimo Studija',
         type: 'website',
@@ -33,19 +33,18 @@ export default function Contacts() {
         <div className={style.contactsContainer}>
             <div className={style.mainContainer}>
                 <div className={style.social}>
-                    <FbLink />
-                    <InstLink />
-                    <PinLink />
+                    <SocialLinks />
                 </div>
                 <div className={style.contacts}>
                     <h1>Kontaktai</h1>
                     <a href="tel:+37060055316">Skambinkite tel: +370 600 55316</a>
-                    <p>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</p>
-                    <p style={{ color: 'red' }}>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
-                    </div>
+                    <a href="mailto:neringos.siuvimo.studija@gmail.com">neringos.siuvimo.studija@gmail.com</a>
+                    <address className={style.address}>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</address>
+                    <p className={style.notice}>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
+                </div>
             </div>
             <div className={style.hours}>
-                <h3>Darbo laikas</h3>
+                <h2 className={style.hoursTitle}>Darbo laikas</h2>
                 <table className={style.table}>
                     <thead>
                         <tr>
@@ -73,7 +72,7 @@ export default function Contacts() {
             </div>
             <Image className={style.img}
                 src="/Images/kava_900.webp"
-                alt="Kavos pertraukele"
+                alt="Kavos pertraukėlė"
                 width={500}
                 height={300}
                 priority={false}

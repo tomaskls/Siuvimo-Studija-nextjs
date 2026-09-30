@@ -5,6 +5,8 @@ import { getFAQs } from '../../components/faq/faq';
 import { getFAQs2 } from '../../components/faq/faq';
 import styles from './duk.module.css';
 import { Metadata } from 'next';
+import JsonLd from '../../components/JsonLd';
+import type { FAQPageSchema } from '../../types/schema';
 
 export const metadata: Metadata = {
   title: "Neringos Siuvimo Studija | DUK apie drabužių taisymą Šiauliuose",
@@ -31,9 +33,24 @@ export const metadata: Metadata = {
 export default async function FAQPage() {
   const faqs = await getFAQs();
   const faqs2 = await getFAQs2();
-  
+
+  // Schema generuojama iš tų pačių duomenų, kurie rodomi puslapyje
+  const faqSchema: FAQPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [...faqs, ...faqs2].map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer.trim(),
+      },
+    })),
+  };
+
   return (
     <div className={styles.block}>
+      <JsonLd data={faqSchema} />
       <h1 className={styles.h1}>Drabužių Taisymo Paslaugos - Dažniausi Klausimai</h1>
       <FAQList faqs={faqs} />
       <h2 className={styles.h1}>Drabužių Siuvimo Paslaugos - Dažniausi Klausimai</h2>

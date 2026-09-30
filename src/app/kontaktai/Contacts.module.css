@@ -162,3 +162,16 @@
   border-radius: 15px;
   cursor: pointer;
 }
+.contacts a {
+  overflow-wrap: anywhere;
+}
+.address {
+  font-style: inherit;
+}
+.notice {
+  color: red;
+}
+.hoursTitle {
+  font-size: 1.17em;
+  margin: 1em 0;
+}

@@ -1,18 +1,12 @@
 import { ServiceListSchema } from "@/types/schema";
-
+import { BUSINESS_ID, baseAddress } from "./index";
 
 export const priceListSchema: ServiceListSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": BUSINESS_ID,
   "name": "Neringos Siuvimo Studija",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Vytauto g. 80",
-    "addressLocality": "Šiauliai",
-    "postalCode": "77154",
-    "addressCountry": "LT",
-    "addressRegion": "Šiaulių"  
-  },
+  "address": baseAddress,
   "telephone": "+37060055316",
   "priceRange": "€€",
   "image": "https://www.neringos-siuvimo-studija.lt/Images/rankoviu_trumpinimas.webp",
@@ -610,4 +604,4 @@ export const priceListSchema: ServiceListSchema = {
       ],
       
   }
-};
+};

@@ -29,41 +29,8 @@ const nextConfig: NextConfig = {
         destination: '/drabuziu-taisymo-kainos',
         permanent: true,
       },
-      
-      // Nauji nukreipimai nukreipimų grandinėms išvengti
-      
-      // Pataisytas robots.txt nukreipimas - panaikintas nukreipimas į pačią save
-      {
-        source: '/robots.txt',
-        has: [
-          {
-            type: 'host',
-            value: 'neringos-siuvimo-studija.lt',
-          },
-        ],
-        destination: 'https://www.neringos-siuvimo-studija.lt',
-        permanent: true,
-      },
-      
-      // Tiesioginiai sitemap.xml nukreipimai
-      {
-        source: '/sitemap.xml',
-        has: [
-          {
-            type: 'host',
-            value: 'neringos-siuvimo-studija.lt',
-          },
-        ],
-        destination: 'https://www.neringos-siuvimo-studija.lt/sitemap.xml',
-        permanent: true,
-      },
-      {
-        source: '/sitemap.xml/',
-        destination: '/sitemap.xml',
-        permanent: true,
-      },
-      
-      // Tiesioginis pagrindinio domeno nukreipimas
+
+      // Visi adresai be www (įskaitant robots.txt ir sitemap.xml) nukreipiami į www versiją
       {
         source: '/:path*',
         has: [
