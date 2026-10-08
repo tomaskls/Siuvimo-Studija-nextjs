@@ -102,3 +102,24 @@ export const priceList: PriceSection[] = [
 // 10 -> "10€", [15, 20] -> "15-20€"
 export const formatPrice = (price: Price) =>
   Array.isArray(price) ? `${price[0]}-${price[1]}€` : `${price}€`;
+
+// Kaina tekstui (pvz. DUK atsakymams) pagal paslaugų pavadinimus:
+// priceText('Džinsų trumpinimas') -> "10 €", kelios paslaugos -> "10–30 €".
+// Jei paslaugos kainoraštyje nėra, build'as sustoja su klaida, kad tekste neliktų pasenusios kainos.
+export function priceText(...names: string[]) {
+  const bounds = names.flatMap((name) => {
+    const item = priceList.flatMap((section) => section.items).find((i) => i.name === name);
+    if (!item) throw new Error(`Kainoraštyje nėra paslaugos: "${name}"`);
+    return Array.isArray(item.price) ? item.price : [item.price];
+  });
+  const min = Math.min(...bounds);
+  const max = Math.max(...bounds);
+  return min === max ? `${min} €` : `${min}–${max} €`;
+}
+
+// Visos sekcijos kainų intervalas, pvz. sectionPriceText('Užtrauktukų keitimas') -> "10–30 €"
+export function sectionPriceText(title: string) {
+  const section = priceList.find((s) => s.title === title);
+  if (!section) throw new Error(`Kainoraštyje nėra sekcijos: "${title}"`);
+  return priceText(...section.items.map((i) => i.name));
+}
