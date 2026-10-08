@@ -8,7 +8,7 @@ import { priceListSchema } from '../../../schemas/prices';
 import { priceList, formatPrice, PriceSection } from '../../data/prices';
 
 export const metadata: Metadata = {
-    title: "Drabužių taisymo kainos Šiauliuose - 2026 m. įkainiai",
+    title: "Drabužių taisymo kainos Šiauliuose",
     description: "Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis.",
     openGraph: {
         title: 'Drabužių taisymo kainos Šiauliuose',
