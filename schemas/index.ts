@@ -17,6 +17,12 @@ export const baseAddress = {
   addressRegion: "Šiaulių apskritis",
 };
 
+const socialProfiles = [
+  "https://www.facebook.com/neringossiuvimostudija",
+  "https://www.instagram.com/neringossiuvimostudija",
+  "https://www.pinterest.com/neringossiuvimostudija",
+];
+
 export const organizationSchema: OrganizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -33,11 +39,7 @@ export const organizationSchema: OrganizationSchema = {
       areaServed: "LT",
     },
   ],
-  sameAs: [
-    "https://www.facebook.com/neringossiuvimostudija",
-    "https://www.instagram.com/neringossiuvimostudija",
-    "https://www.pinterest.com/neringossiuvimostudija",
-  ],
+  sameAs: socialProfiles,
 };
 
 export const localBusinessSchema: LocalBusinessSchema = {
@@ -65,6 +67,8 @@ export const localBusinessSchema: LocalBusinessSchema = {
   mainEntityOfPage: "https://www.neringos-siuvimo-studija.lt",
   hasMap: "https://www.google.com/maps?q=55.92782411660252,23.315946062172443",
   isAccessibleForFree: true,
+  foundingDate: "2007",
+  sameAs: socialProfiles,
 };
 
 export const siuvimoPaslaugos: ServiceSchema = {

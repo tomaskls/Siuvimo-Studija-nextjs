@@ -6,8 +6,8 @@ export interface ServiceOffer {
   priceCurrency?: string;
   priceSpecification?: {
     "@type": "PriceSpecification";
-    lowPrice?: string;
-    highPrice?: string;
+    minPrice?: string;
+    maxPrice?: string;
     priceCurrency?: string;
   };
   availability: string;
@@ -36,6 +36,7 @@ export interface ServiceListSchema {
   image?: string;
   hasOfferCatalog: {
     "@type": "OfferCatalog";
+    name?: string;
     itemListElement: ServiceType[];
   }
 }
@@ -128,6 +129,8 @@ export interface LocalBusinessSchema extends SchemaBase {
   mainEntityOfPage: string;
   hasMap: string;
   isAccessibleForFree: boolean;
+  foundingDate?: string;
+  sameAs?: string[];
   review?: ReviewSchema[];
   aggregateRating?: AggregateRatingSchema;
 }

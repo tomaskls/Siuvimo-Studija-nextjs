@@ -1,3 +1,5 @@
+import { priceText, sectionPriceText } from '../../data/prices';
+
 export async function getFAQs() {
    
   return [
@@ -9,7 +11,7 @@ export async function getFAQs() {
     {
       id: '2',
       question: 'Kiek kainuoja pakeisti užtrauktuką?',
-      answer: 'Visos kainos nurodytos kainoraštyje.'
+      answer: `Užtrauktuko keitimas kainuoja ${sectionPriceText('Užtrauktukų keitimas')}, priklausomai nuo drabužio: džinsų ir sijono – ${priceText('Džinsų užtrauktuko keitimas', 'Sijono užtrauktuko keitimas')}, vaikiškos striukės ir vyriškų kelnių – ${priceText('Vaikiškos striukės užtrauktuko keitimas', 'Vyr. kelnių užtrauktuko keitimas')}, plonos striukės – ${priceText('Plonos striukės užtrauktuko keitimas')}, žieminės striukės ir puspalčio – ${priceText('Žieminės striukės užtrauktuko keitimas', 'Puspalčio užtrauktuko keitimas')}, palto – ${priceText('Palto užtrauktuko keitimas')}.`
     },
     {
       id: '3',
@@ -18,13 +20,13 @@ export async function getFAQs() {
     },
     {
       id: '4',
-      question: 'Kiek kainuoja?',
-      answer: 'Visos kainos nurodytos kainoraštyje.'
+      question: 'Kiek kainuoja kelnių ir džinsų trumpinimas?',
+      answer: `Džinsų ir kelnių trumpinimas kainuoja ${priceText('Džinsų trumpinimas', 'Kelnių trumpinimas mašina', 'Kelnių trumpinimas su atvartais', 'Kelnių trumpinimas paslėptu dygsniu')}, su juostele – ${priceText('Kelnių trumpinimas su juostele')}, sportinių kelnių su užtrauktukais – ${priceText('Sportinių kelnių su užtrauktukais')}. Kelnių siaurinimas – ${priceText('Kelnių siaurinimas')}, per liemenį – ${priceText('Kelnių siaurinimas per liemenį')}.`
     },
     {
       id: '5',
       question: 'Ar taisote sijonus? Ar taisote švarkus? Ar taisote sukneles? Ar taisote vyriškus kostiumus? Ar taisote paltus? Kiek kainuoja?',
-      answer: 'Taip, taisome. Kainos nurodytos kainoraštyje. Jei kainoraštyje kainos nėra, ji nustatoma individualiai.'
+      answer: `Taip, taisome. Sijono trumpinimas – ${priceText('Sijono trumpinimas')}, siaurinimas – ${priceText('Sijono siaurinimas')}. Švarko rankovių trumpinimas – ${priceText('Švarko rankovių trumpinimas')}, apačios trumpinimas – ${priceText('Švarko apačios trumpinimas')}. Suknelės apačios lenkimas – ${priceText('Suknelės apačios lenkimas')}, siaurinimas per šonines siūles – ${priceText('Suknelės siaurinimas per šonines siūles')}. Vyriško švarko siaurinimas – ${priceText('Vyr. švarko siaurinimas')}, rankovių trumpinimas – ${priceText('Vyr. švarko rankovių trumpinimas')}. Palto apačios lenkimas – ${priceText('Palto apačios lenkimas')}, rankovių trumpinimas – ${priceText('Palto rankovių trumpinimas')}. Jei paslaugos kainoraštyje nėra, kaina nustatoma individualiai.`
     },
     {
       id: '6',
