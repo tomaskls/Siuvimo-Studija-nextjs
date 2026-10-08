@@ -8,7 +8,6 @@ const pages = [
   '/drabuziu-taisymas',
   '/drabuziu-taisymo-kainos',
   '/siuvykla',
-  '/flisiniai-dzemperiai',
   '/gallery',
   '/duk',
   '/kontaktai',

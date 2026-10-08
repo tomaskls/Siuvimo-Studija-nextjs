@@ -14,9 +14,15 @@ const nextConfig: NextConfig = {
         destination: '/siuvykla',
         permanent: true,
       },
+      // Flisinių džemperių puslapis pašalintas, seni adresai nukreipiami į siuvimo puslapį
       {
         source: '/product',
-        destination: '/flisiniai-dzemperiai',
+        destination: '/siuvykla',
+        permanent: true,
+      },
+      {
+        source: '/flisiniai-dzemperiai',
+        destination: '/siuvykla',
         permanent: true,
       },
       {
