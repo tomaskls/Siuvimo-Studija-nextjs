@@ -7,13 +7,12 @@ const BASE_URL = 'https://www.neringos-siuvimo-studija.lt';
 // nuotraukos). Ją atnaujinkite rankiniu būdu, kai keičiate turinį. Neįrašykite
 // build'o datos visiems puslapiams: tada Google pradeda tokias datas ignoruoti.
 const pages: { path: string; lastModified: string }[] = [
-  { path: '', lastModified: '2026-09-30' },
+  { path: '', lastModified: '2026-10-08' },
   { path: '/drabuziu-taisymas', lastModified: '2026-09-30' },
-  { path: '/drabuziu-taisymo-kainos', lastModified: '2026-09-30' },
+  { path: '/drabuziu-taisymo-kainos', lastModified: '2026-10-08' },
   { path: '/siuvykla', lastModified: '2026-09-30' },
-  { path: '/flisiniai-dzemperiai', lastModified: '2026-09-30' },
   { path: '/gallery', lastModified: '2026-09-30' },
-  { path: '/duk', lastModified: '2026-09-30' },
+  { path: '/duk', lastModified: '2026-10-08' },
   { path: '/kontaktai', lastModified: '2026-10-08' },
 ];
 
