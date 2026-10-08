@@ -39,3 +39,55 @@
     margin-left: 5px;
   }
 }
+/* Adresas, darbo laikas ir kontaktai visų puslapių apačioje */
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 25px 20px;
+  background-color: var(--back-color);
+  border-top: 1px solid var(--heading-color);
+  line-height: 1.6;
+}
+.info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.infoTitle {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: var(--heading-color);
+}
+.address {
+  font-style: inherit;
+}
+.link {
+  color: var(--heading-color);
+}
+.link:hover {
+  color: blue;
+}
+.email {
+  overflow-wrap: anywhere;
+}
+.hours {
+  list-style: none;
+  width: 100%;
+  max-width: 230px;
+}
+.hours li {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.time {
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .info {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+  }
+}
