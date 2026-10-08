@@ -2,24 +2,17 @@ import style from './Footer.module.css';
 import React from 'react';
 import { CookieSettingsButton } from './CookieSettingsButton';
 import { business } from '../../data/business';
-import { getGroupedHours } from '../../data/openingHours';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
     return (
         <footer>
-            {/* Pavadinimas, adresas, telefonas ir darbo laikas tekstu kiekviename puslapyje (vietinei / AI paieškai) */}
+            {/* Pavadinimas, adresas ir telefonas tekstu kiekviename puslapyje (vietinei / AI paieškai) */}
             <address className={style.nap}>
                 <p>
                     <span>Neringos Siuvimo Studija</span>
                     <span>{business.street}, {business.city}</span>
                     <a href={`tel:${business.phone}`}>{business.phoneDisplay}</a>
-                </p>
-                <p>
-                    {getGroupedHours().map((group) => (
-                        <span key={group.days}>{group.days} {group.hours}</span>
-                    ))}
-                    <span>Št, Sk nedirbame</span>
                 </p>
             </address>
             <div className={style.footer}>
