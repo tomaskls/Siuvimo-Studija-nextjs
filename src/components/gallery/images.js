@@ -1,5 +1,18 @@
 // Galerijos nuotraukos. Matmenys atitinka tikrus failų matmenis.
 export const galleryImages = [
+  { src: '/imgGallery/2026/pilkas-paltas.webp', alt: 'Pilkas lengvas paltas su trumpesnėmis rankovėmis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/pilkas-paltas-rankoves-detale.webp', alt: 'Pilko palto rankovė su sagomis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/smelio-kostiumelis-su-svarkeliu.webp', alt: 'Smėlio spalvos kostiumėlis: švarkelis, liemenė ir plačios kelnės', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/smelio-liemene-ir-placios-kelnes.webp', alt: 'Smėlio spalvos liemenė ir plačios kelnės', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/atlasine-palaidine.webp', alt: 'Atlasinė palaidinė pūstomis rankovėmis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/rastuota-suknele.webp', alt: 'Raštuota suknelė trumpomis rankovėmis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/rastuota-suknele-detale.webp', alt: 'Raštuotos suknelės detalė su nėriniais', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/pilka-progine-suknele.webp', alt: 'Pilka proginė suknelė su tiulio sijonu', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/sviesi-progine-suknele-su-neriniais.webp', alt: 'Šviesi proginė suknelė su nėriniais', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/melyna-palaidine-su-ornamentu.webp', alt: 'Mėlyna palaidinė su ornamentu ir šviesus sijonas', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/progine-suknele-ir-vyriskas-kostiumas.webp', alt: 'Šviesi proginė suknelė ir rudas vyriškas kostiumas', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/ruda-kostiumo-rankove.webp', alt: 'Rudo vyriško kostiumo rankovės detalė', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/violetine-suknele.webp', alt: 'Violetinė laisvo kirpimo suknelė', width: 900, height: 1600 },
   { src: '/Images/2026/IMG20260804140627.webp', alt: 'Išskirtiniai drabužiai', width: 900, height: 1600 },
   { src: '/Images/2026/IMG20260804140259.webp', alt: 'Išskirtiniai drabužiai', width: 900, height: 1600 },
   { src: '/Images/2026/IMG20260728164955.webp', alt: 'Išskirtiniai drabužiai', width: 900, height: 1600 },

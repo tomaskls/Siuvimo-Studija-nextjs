@@ -38,3 +38,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# originalios nuotraukos (dideli failai); svetainėje naudojamos sumažintos WebP versijos
+/nuotraukos-originalai/

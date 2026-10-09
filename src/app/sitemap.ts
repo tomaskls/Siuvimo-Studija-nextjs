@@ -11,7 +11,7 @@ const pages: { path: string; lastModified: string }[] = [
   { path: '/drabuziu-taisymas', lastModified: '2026-09-30' },
   { path: '/drabuziu-taisymo-kainos', lastModified: '2026-10-08' },
   { path: '/siuvykla', lastModified: '2026-09-30' },
-  { path: '/gallery', lastModified: '2026-09-30' },
+  { path: '/gallery', lastModified: '2026-10-09' },
   { path: '/duk', lastModified: '2026-10-08' },
   { path: '/kontaktai', lastModified: '2026-10-08' },
 ];
