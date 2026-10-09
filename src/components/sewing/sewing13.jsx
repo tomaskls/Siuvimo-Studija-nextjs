@@ -11,7 +11,7 @@ export default function Sewing13() {
                     <p className={style.p}>Individualus užsakymas, modernus dizainas, originalios sagos.</p>
                     <Image className={style.img}
                         src="/imgGallery/2026/IMG20251205100602.webp"
-                        alt="Liemenė"
+                        alt="Pilka dvieilė liemenė"
                         width={900}
                         height={1600}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing13() {
                     <p className={style.p}>Rankovės gali būti pritaikytos prie įvairių rūbų.</p>
                     <Image className={style.img2}
                         src="/imgGallery/2026/IMG20260309163832.webp"
-                        alt="Rankovės"
+                        alt="Permatomos baltos rankovės su sagutėmis"
                         width={900}
                         height={1600}
                         priority={false}

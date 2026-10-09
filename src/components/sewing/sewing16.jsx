@@ -10,7 +10,7 @@ export default function Sewing16() {
                     <h3 className={style.h3}>✨ Suknelė, papuošta rankų darbo kaklo aksesuaru</h3>
                     <Image className={style.img}
                         src="/Images/2026/IMG20260623103455.webp"
-                        alt="Liemenė"
+                        alt="Juoda ilga suknelė su nėriniuota apykakle ir nuleistais pečiais"
                         width={900}
                         height={2100}
                         priority={false}
@@ -20,7 +20,7 @@ export default function Sewing16() {
                     <h3 className={style.h3}>✨ Viskozinė palaidinė ir languotos kelnės</h3>
                     <Image className={style.img2}
                         src="/Images/2026/IMG20260629103703.webp"
-                        alt="Rankovės"
+                        alt="Alyvuogių spalvos palaidinė ir languotos kelnės"
                         width={900}
                         height={2100}
                         priority={false}

@@ -11,7 +11,7 @@ export default function Sewing9() {
                     <p className={style.p}>Plonos vilnos suknelė, pagal kliento nuotrauką</p>
                     <Image className={style.img}
                         src="/imgGallery/1000005211.webp"
-                        alt="Tautinių rūbų siuvimas"
+                        alt="Pilka ilga laisvo kirpimo suknelė"
                         width={900}
                         height={1200}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing9() {
                     <p className={style.p}>Trikotažinis džemperis</p>
                     <Image className={style.img2}
                         src="/imgGallery/1000005316.webp"
-                        alt="Trikotažinis džemperis"
+                        alt="Juodai baltas raštuotas trikotažinis džemperis su užtrauktuku"
                         width={900}
                         height={1200}
                         priority={false}

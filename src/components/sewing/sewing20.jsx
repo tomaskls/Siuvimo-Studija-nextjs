@@ -9,7 +9,7 @@ export default function Sewing20() {
                 <div className={style.content}>
                     <Image className={style.img}
                         src="/Images/2026/IMG20260804140259.webp"
-                        alt="Proginis kostiumėlis"
+                        alt="Žalia ilga suknelė su ornamento aplikacija"
                         width={900}
                         height={1600}
                         priority={false}
@@ -18,7 +18,7 @@ export default function Sewing20() {
                 <div className={style.content} >
                     <Image className={style.img2}
                         src="/Images/2026/IMG20260804140627.webp"
-                        alt="Suknelė"
+                        alt="Žalia ilga suknelė su ornamentu, vaizdas iš nugaros"
                         width={900}
                         height={1600}
                         priority={false}

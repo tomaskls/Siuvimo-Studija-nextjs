@@ -11,7 +11,7 @@ export default function Sewing11() {
                     <p className={style.p}>Funkcionalus siuvimas.</p>
                     <Image className={style.img}
                         src="/imgGallery/2026/IMG_20260203_181518.webp"
-                        alt="Odinis sijonas"
+                        alt="Juodas odinis sijonas"
                         width={900}
                         height={1600}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing11() {
                     <p className={style.p}>Klasikinio audinio švarkelis, dekoruotas rankų darbo aplikacijomis.</p>
                     <Image className={style.img2}
                         src="/imgGallery/2026/IMG_20260304_170627.webp"
-                        alt="Išskirtiniai drabužiai"
+                        alt="Pepito rašto palaidinė su siuvinėtomis gėlėmis"
                         width={900}
                         height={1600}
                         priority={false}

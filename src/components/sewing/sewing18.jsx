@@ -10,7 +10,7 @@ export default function Sewing18() {
                     <h3 className={style.h3}>✨ Lininis kelnių komplektas</h3>
                     <Image className={style.img}
                         src="/Images/2026/IMG20260527091741.webp"
-                        alt="Tautinių rūbų siuvimas"
+                        alt="Dvi sulankstytos juodos palaidinės"
                         width={900}
                         height={1200}
                         priority={false}
@@ -20,7 +20,7 @@ export default function Sewing18() {
                     <h3 className={style.h3}>✨ Lininė suknelė su nėriniais</h3>
                     <Image className={style.img2}
                         src="/Images/2026/IMG20260701100840.webp"
-                        alt="Trikotažinis džemperis"
+                        alt="Pilkos suknelės nėrinių aplikacija iš arti"
                         width={900}
                         height={1200}
                         priority={false}

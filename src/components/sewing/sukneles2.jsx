@@ -11,7 +11,7 @@ export default function Sewing3() {
                     <p className={style.p}>Stilingas komplektas: moderni palaidinė iš eko odos ir prabangus veliūrinis sijonas. Kruopščiai parinktos medžiagos ir apgalvotas dizainas sukuria elegantišką ir puošnų derinį.</p>
                     <Image className={style.img}
                         src="/Images/sventinis_kostiumas.webp"
-                        alt="Stilingas komplektas: moderni palaidinė iš eko odos ir prabangus veliūrinis sijonas. Kruopščiai parinktos medžiagos ir apgalvotas dizainas sukuria elegantišką ir išskirtinį derinį."
+                        alt="Stilingas komplektas: moderni palaidinė iš eko odos ir prabangus veliūrinis sijonas"
                         width={900}
                         height={1200}
                         priority={false}

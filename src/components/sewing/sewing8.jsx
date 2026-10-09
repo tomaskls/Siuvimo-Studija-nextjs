@@ -22,7 +22,7 @@ export default function Sewing8() {
                     <p className={style.p}>Laisvalaikio komplektas - Šortai ir &#34;bomberis&#34;.</p>
                     <Image className={style.img2}
                         src="/imgGallery/lininiai_drabuziai.webp"
-                        alt="Šilkinis sijonas"
+                        alt="Lininiai drabužiai: kombinezonai su gėlių raštu"
                         width={900}
                         height={1200}
                         priority={false}

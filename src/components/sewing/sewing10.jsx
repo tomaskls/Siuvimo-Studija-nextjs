@@ -11,7 +11,7 @@ export default function Sewing10() {
                     <p className={style.p}>Proginė palaidinė su šilkinėmis rankovėmis ir apykakle.</p>
                     <Image className={style.img}
                         src="/imgGallery/2026/IMG_20250724_200643.webp"
-                        alt="Palaidinė su šilko detalėmis"
+                        alt="Tamsiai mėlyna palaidinė su šilko rankovėmis"
                         width={900}
                         height={1600}
                         priority={false}
@@ -22,7 +22,7 @@ export default function Sewing10() {
                     <p className={style.p}>Laisvo kritimo palaidinė. </p>
                     <Image className={style.img2}
                         src="/imgGallery/2026/IMG_20251209_182018.webp"
-                        alt="Puošni palaidinė"
+                        alt="Puošni sidabrinio blizgaus audinio palaidinė"
                         width={900}
                         height={1600}
                         priority={false}

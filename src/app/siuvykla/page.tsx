@@ -54,7 +54,7 @@ export default function Sewing() {
             <div className={style.container}>
                 <Image className={style.img}
                     src="/Images/rubu_siuvimas_900.webp"
-                    alt="Siuvykla Šiauliuose"
+                    alt="Juoda suknelė su geltonais ornamentais, pasiūta siuvykloje Šiauliuose"
                     width={900}
                     height={1350}
                     priority={true}
@@ -73,7 +73,7 @@ export default function Sewing() {
             <div className={`${style.container} ${style.container2}`}>
                 <Image className={style.img2}
                     src="/imgGallery/stilizuotas_vilnonis_kostiumas.webp"
-                    alt="Suknelė su aplikacija"
+                    alt="Stilizuotas vilnonis kostiumas: švarkas su raštuotu šonu ir kelnės"
                     width={900}
                     height={1600}
                     priority={false}
