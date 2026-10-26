@@ -1,5 +1,9 @@
 // Galerijos nuotraukos. Matmenys atitinka tikrus failų matmenis.
 export const galleryImages = [
+  { src: '/imgGallery/2026/oranzine-suknele-su-dirzu.webp', alt: 'Oranžinė tiesaus kirpimo suknelė su rišamu diržu', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/rusvai-raudona-marskiniu-suknele.webp', alt: 'Rusvai raudona marškinių tipo suknelė su diržu', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/pilkai-melynas-kostiumas.webp', alt: 'Pilkai mėlynas kostiumas: švarkas ir plačios kelnės', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/vysnine-suknele-su-neriniais.webp', alt: 'Ilga vyšninės spalvos suknelė su juodais nėriniais', width: 900, height: 1600 },
   { src: '/imgGallery/2026/pilkas-paltas.webp', alt: 'Pilkas lengvas paltas su trumpesnėmis rankovėmis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/pilkas-paltas-rankoves-detale.webp', alt: 'Pilko palto rankovė su sagomis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/smelio-kostiumelis-su-svarkeliu.webp', alt: 'Smėlio spalvos kostiumėlis: švarkelis, liemenė ir plačios kelnės', width: 900, height: 1600 },
