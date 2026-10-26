@@ -41,7 +41,6 @@ export function ConsentManager() {
   };
 
   const handleAcceptAll = () => saveChoice('all');
-  const handleAcceptAnalytics = () => saveChoice('analytics');
   const handleDecline = () => saveChoice('declined');
 
   if (!showConsent) return null;
@@ -67,13 +66,7 @@ export function ConsentManager() {
                   onClick={handleDecline}
                   className={`${styles.button} ${styles.declineButton}`}
                 >
-                  Atmesti visus
-                </button>
-                <button
-                  onClick={handleAcceptAnalytics}
-                  className={`${styles.button} ${styles.analyticsButton}`}
-                >
-                  Tik analitika
+                  Tik būtini
                 </button>
                 <button
                   onClick={handleAcceptAll}
@@ -119,13 +112,7 @@ export function ConsentManager() {
                   onClick={handleDecline}
                   className={`${styles.button} ${styles.declineButton}`}
                 >
-                  Atmesti visus
-                </button>
-                <button
-                  onClick={handleAcceptAnalytics}
-                  className={`${styles.button} ${styles.analyticsButton}`}
-                >
-                  Tik analitika
+                  Tik būtini
                 </button>
                 <button
                   onClick={handleAcceptAll}
