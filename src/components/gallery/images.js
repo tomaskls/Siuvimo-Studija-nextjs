@@ -13,7 +13,6 @@ export const galleryImages = [
   { src: '/imgGallery/2026/progine-suknele-ir-vyriskas-kostiumas.webp', alt: 'Šviesi proginė suknelė ir rudas vyriškas kostiumas', width: 900, height: 1600 },
   { src: '/imgGallery/2026/ruda-kostiumo-rankove.webp', alt: 'Rudo vyriško kostiumo rankovės detalė', width: 900, height: 1600 },
   { src: '/imgGallery/2026/violetine-suknele.webp', alt: 'Violetinė laisvo kirpimo suknelė', width: 900, height: 1600 },
-  { src: '/Images/2026/IMG20260804140627.webp', alt: 'Žalia ilga suknelė su ornamentu, vaizdas iš nugaros', width: 900, height: 1600 },
   { src: '/Images/2026/IMG20260804140259.webp', alt: 'Žalia ilga suknelė su ornamento aplikacija', width: 900, height: 1600 },
   { src: '/Images/2026/IMG20260728164955.webp', alt: 'Ornamento aplikacijos ant žalio audinio', width: 900, height: 1600 },
   { src: '/Images/2026/IMG20260804140833.webp', alt: 'Žalios suknelės ornamento aplikacija iš arti', width: 900, height: 1600 },
