@@ -1,5 +1,6 @@
 // Galerijos nuotraukos. Matmenys atitinka tikrus failų matmenis.
 export const galleryImages = [
+  { src: '/imgGallery/2026/smelio-bomberis-ir-placios-kelnes.webp', alt: 'Smėlio spalvos kostiumėlis: užsegtas bomberis ir plačios kelnės, ant grindų studijos pavadinimo šešėlis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/tvido-svarkelis.webp', alt: 'Šviesiai mėlynas tvido švarkelis su metalo gijomis ir metalinėmis sagomis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/siuvineta-palaidine-su-rozemis.webp', alt: 'Gipiūrinė palaidinė su raudonomis rožėmis ir juodos plačios kelnės', width: 900, height: 1600 },
   { src: '/imgGallery/2026/siuvineta-palaidine-rankoves-detale.webp', alt: 'Gipiūrinės palaidinės rankovė su banguotu kraštu iš arti', width: 900, height: 1600 },
