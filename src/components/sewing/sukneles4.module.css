@@ -110,4 +110,12 @@
   .topText {
     width: 100%;
   }
-  
+  /* Kvadratinė nuotrauka poroje su 9:16 nuotrauka: kompiuterio ekrane apkerpama
+     iki poros aukščio (.img2), paliekant matomą QR kodą ir logotipą.
+     Telefone rodoma visa (ten .img2 aukštis automatinis). */
+  @media (min-width: 761px) {
+    .imgSquare {
+      object-fit: cover;
+      object-position: 71% 50%;
+    }
+  }

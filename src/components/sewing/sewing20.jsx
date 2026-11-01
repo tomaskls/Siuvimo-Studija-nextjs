@@ -16,11 +16,12 @@ export default function Sewing20() {
                     />
                 </div>
                 <div className={style.content} >
-                    <Image className={style.img2}
-                        src="/Images/2026/IMG20260804140627.webp"
-                        alt="Žalia ilga suknelė su ornamentu, vaizdas iš nugaros"
+                    {/* Kvadratinė nuotrauka: kompiuterio ekrane apkerpama iki poros aukščio (.imgSquare) */}
+                    <Image className={`${style.img2} ${style.imgSquare}`}
+                        src="/imgGallery/2026/lekalai-su-studijos-logotipu.webp"
+                        alt="Popieriniai lekalai su studijos logotipu ir žirklės"
                         width={900}
-                        height={1600}
+                        height={850}
                         priority={false}
                     />
                 </div>
