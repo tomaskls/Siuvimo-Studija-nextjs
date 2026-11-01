@@ -12,11 +12,20 @@ import { consentDefaultsScript } from "../components/consent";
 import JsonLd from '../components/JsonLd';
 import { siuvimoPaslaugos, organizationSchema, localBusinessSchema } from "../../schemas/index";
 
+// Tekstas – normalus stilius, antraštės – kursyvas (globals.css, --font-heading).
+// Du fiksuoto storio šriftai vietoj kintamo: ~190 KB vietoj ~350 KB.
+// latin-ext: lietuviškos raidės (ą, č, ę, ė, į, š, ų, ū, ž)
 const font = Merriweather({
-  variable: "--font-merri",
-  style: "italic",
   weight: "400",
-  subsets: ['latin'],
+  style: "normal",
+  subsets: ['latin', 'latin-ext'],
+});
+
+const headingFont = Merriweather({
+  variable: "--font-heading",
+  weight: "700",
+  style: "italic",
+  subsets: ['latin', 'latin-ext'],
 });
 
 
@@ -60,7 +69,7 @@ export default function RootLayout({
         <JsonLd data={siuvimoPaslaugos} />
       </head>
 
-      <body className={font.className}>
+      <body className={`${font.className} ${headingFont.variable}`}>
         <GoogleAnalytics gaId="G-1HRYBXDSTR" />
         <Header />
         <SidebarMenu />
