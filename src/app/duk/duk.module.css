@@ -1,6 +1,12 @@
 .block{
     background-color: var(--back-color);
 }
+/* Plačiame ekrane klausimai 900px stulpeliu centre, kad atsakymus būtų patogu skaityti */
+@media (min-width: 761px) {
+  .block {
+    padding: 0 max(0px, calc((100% - 900px) / 2)) 20px;
+  }
+}
 .h1{
   padding: 10px;
  
