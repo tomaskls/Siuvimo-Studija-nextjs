@@ -53,7 +53,7 @@ export function ConsentManager() {
             <>
               <p className={styles.text}>
                 Mes naudojame slapukus svetainės analitikai ir reklamai. 
-                Jūs galite pasirinkti su kuriais slapukais sutinkate.
+                Jūs galite pasirinkti, su kuriais slapukais sutinkate.
               </p>
               <div className={styles.buttonsContainer}>
                 <button

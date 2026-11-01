@@ -101,7 +101,7 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Proginis kostiumėlis',
-    text: 'Sumažinta pažastis, iš tokios pat spalvos pasiūtos rankovės.',
+    text: 'Sumažinta pažastis, iš tokios pat spalvos audinio pasiūtos rankovės.',
     images: [
       { src: '/imgGallery/2026/IMG_20260220_075355.webp', alt: 'Raudono proginio kostiumėlio taisymas: pasiūtos naujos rankovės', width: 900, height: 1200 },
     ],
@@ -172,7 +172,7 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Palto rankovių trumpinimas',
-    text: 'Dirbtinio kailio paltas pritaikytas pagal kliento pageidavimus - rankovės sutrumpintos 6 cm, išlaikytas originalus dizainas.',
+    text: 'Dirbtinio kailio paltas pritaikytas pagal kliento pageidavimus – rankovės sutrumpintos 6 cm, išlaikytas originalus dizainas.',
     images: [
       { src: '/Images/rankoviu_trumpinimas.webp', alt: 'Dirbtinio kailio palto rankovių trumpinimas', width: 900, height: 1350 },
     ],
@@ -207,14 +207,14 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Suknelės modeliavimas',
-    text: 'Suknelė pritaikyta pagal kliento figūrą - sutrumpinta ir susiaurinta. Išlaikytos originalios suknelės linijos ir dizaino elementai.',
+    text: 'Suknelė pritaikyta pagal kliento figūrą – sutrumpinta ir susiaurinta. Išlaikytos originalios suknelės linijos ir dizaino elementai.',
     images: [
       { src: '/Images/Sukneles_trumpinimas_siaurinimas.webp', alt: 'Suknelės trumpinimo procesas', width: 900, height: 1350 },
     ],
   },
   {
     title: '✂️ Švarko rankovių koregavimas',
-    text: 'Moteriškam švarkui perstatytos rankovės - pakoreguota rankovių padėtis optimaliam gulėjimui ir patogumui. Išlaikytos originalios švarko proporcijos ir elegancija.',
+    text: 'Moteriškam švarkui perstatytos rankovės – pakoreguota rankovių padėtis optimaliam gulėjimui ir patogumui. Išlaikytos originalios švarko proporcijos ir elegancija.',
     images: [
       { src: '/Images/Svarko_peciu_perstatymas.webp', alt: 'Švarko rankovių perstatymo etapai', width: 900, height: 1350 },
     ],
@@ -228,7 +228,7 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Pamušalo įsiuvimas',
-    text: 'Į kailinius įsiutas pamušalas. Suteikiantis papildomą šilumą',
+    text: 'Į kailinius įsiūtas pamušalas, suteikiantis papildomos šilumos.',
     images: [
       { src: '/Images/pamusalo_keitimas.webp', alt: 'Pamušalo įsiuvimas į kailinius', width: 900, height: 1350 },
     ],

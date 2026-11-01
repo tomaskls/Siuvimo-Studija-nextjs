@@ -6,7 +6,7 @@ export async function getFAQs() {
     {
       id: '1',
       question: 'Kokius užtrauktukus keičiate?',
-      answer: 'Keičiame visų tipų užtrauktukus, įskaitant specialius - pūkinėms striukėms, vandeniui atspariems drabužiams, storoms žieminėms striukėms.'
+      answer: 'Keičiame visų tipų užtrauktukus, įskaitant specialius – pūkinėms striukėms, vandeniui atspariems drabužiams, storoms žieminėms striukėms.'
     },
     {
       id: '2',
@@ -16,7 +16,7 @@ export async function getFAQs() {
     {
       id: '3',
       question: 'Ar trumpinate kelnes ir džinsus?',
-      answer: 'Taip, trumpiname kelnes ir džinsus, išlaikant originalų dizainą. Trumpiname su originaliais atvartais, juostelėmis ar paslėptu dygsniu.'
+      answer: 'Taip, trumpiname kelnes ir džinsus, išlaikydami originalų dizainą. Trumpiname su originaliais atvartais, juostelėmis ar paslėptu dygsniu.'
     },
     {
       id: '4',
@@ -51,12 +51,12 @@ export async function getFAQs() {
     {
       id: '10',
       question: 'Ar taisote pažeistus drabužius?',
-      answer: 'Taip, atliekame drabužių lopymą, rekonstrukciją, nuplėšytų siūlių tvarkymą. Stengiamės išsaugoti originalų drabužio dizainą.'
+      answer: 'Taip, atliekame drabužių lopymą, rekonstrukciją, iširusių siūlių taisymą. Stengiamės išsaugoti originalų drabužio dizainą.'
     },
     {
       id: '11',
       question: 'Ar keičiate pamušalus?',
-      answer: 'Taip, keičiame pamušalus išsaugant originalią drabužio konstrukciją.'
+      answer: 'Taip, keičiame pamušalus išsaugodami originalią drabužio konstrukciją.'
     },
     {
       id: '12',
@@ -81,7 +81,7 @@ export async function getFAQs() {
     {
       id: '16',
       question: 'Kiek laiko užtrunka drabužių taisymas?',
-      answer: 'Priklauso nuo darbo sudėtingumo. Paprastas taisymas - 1-2 dienos, sudėtingesni darbai - kelios dienos.'
+      answer: 'Priklauso nuo darbo sudėtingumo. Paprastas taisymas – 1–2 dienos, sudėtingesni darbai – kelios dienos.'
     },
     {
       id: '17',
@@ -107,12 +107,12 @@ export async function getFAQs2() {
     {
       id: '3',
       question: 'Kiek laiko užtrunka drabužio siuvimas?',
-      answer: 'Paprastas modelis užtrunka 1-2 savaites, sudėtingas individualus modelis - 3-4 savaites.'
+      answer: 'Paprastas modelis užtrunka 1–2 savaites, sudėtingas individualus modelis – 3–4 savaites.'
     },
     {
       id: '4',
       question: 'Ar reikalinga išankstinė registracija?',
-      answer: 'Rekomenduojame iš anksto užsiregistruoti konsultacijai, kad nereiketų laukti.'
+      answer: 'Rekomenduojame iš anksto užsiregistruoti konsultacijai, kad nereikėtų laukti.'
     },
     {
       id: '5',
@@ -132,7 +132,7 @@ export async function getFAQs2() {
     {
       id: '8',
       question: 'Kiek kainuoja konsultacija?',
-      answer: 'Pirminė konsultacija yra nemokama. Jos metu aptarsime jūsų pageidavimus ir numatysime tolimesnius veiksmus.'
+      answer: 'Pirminė konsultacija yra nemokama. Jos metu aptarsime jūsų pageidavimus ir numatysime tolesnius veiksmus.'
     },
     {
       id: '9',

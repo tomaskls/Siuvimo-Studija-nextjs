@@ -9,7 +9,7 @@ const navLinks = [
   { href: '/siuvykla', label: 'Siuvimas' },
   { href: '/gallery', label: 'Galerija' },
   { href: '/drabuziu-taisymo-kainos', label: 'Kainos' },
-  { href: '/duk', label: 'D.U.K.' },
+  { href: '/duk', label: 'DUK' },
   { href: '/kontaktai', label: 'Kontaktai' },
 ];
 

@@ -124,7 +124,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Vienetinių lekalų konstravimas",
           description:
-            "Individualių lekalų kūrimas ir konstravimas pagal kliento matmenis. Paruošiame lekalus tolimesniam drabužių siuvimui, pritaikome pagal individualius kūno ypatumus.",
+            "Individualių lekalų kūrimas ir konstravimas pagal kliento matmenis. Paruošiame lekalus tolesniam drabužių siuvimui, pritaikome pagal individualius kūno ypatumus.",
         },
       },
       {
