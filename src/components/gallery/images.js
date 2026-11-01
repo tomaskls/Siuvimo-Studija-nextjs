@@ -1,8 +1,8 @@
 // Galerijos nuotraukos. Matmenys atitinka tikrus failų matmenis.
 export const galleryImages = [
   { src: '/imgGallery/2026/tvido-svarkelis.webp', alt: 'Šviesiai mėlynas tvido švarkelis su kišenėlėmis', width: 900, height: 1600 },
-  { src: '/imgGallery/2026/siuvineta-palaidine-su-rozemis.webp', alt: 'Permatoma siuvinėta palaidinė su raudonomis rožėmis ir juodos plačios kelnės', width: 900, height: 1600 },
-  { src: '/imgGallery/2026/siuvineta-palaidine-rankoves-detale.webp', alt: 'Siuvinėtos palaidinės rankovė su raudonomis rožėmis iš arti', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/siuvineta-palaidine-su-rozemis.webp', alt: 'Gipiūrinė palaidinė su raudonomis rožėmis ir juodos plačios kelnės', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/siuvineta-palaidine-rankoves-detale.webp', alt: 'Gipiūrinės palaidinės rankovė su banguotu kraštu iš arti', width: 900, height: 1600 },
   { src: '/imgGallery/2026/lekalai-su-studijos-logotipu.webp', alt: 'Popieriniai lekalai su studijos logotipu ir žirklės', width: 900, height: 850 },
   { src: '/imgGallery/2026/lekalai-ant-audinio.webp', alt: 'Lekalų kontūrai ant rudo audinio ir matavimo juostos', width: 900, height: 1601 },
   { src: '/imgGallery/2026/ilga-suknele-su-neriniu-apykakle.webp', alt: 'Ilga rudai raudona suknelė su juodų nėrinių apykakle ir rankogaliais', width: 900, height: 1600 },
