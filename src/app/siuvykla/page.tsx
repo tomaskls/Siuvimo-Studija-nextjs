@@ -3,34 +3,7 @@ import { Zirkles, Adata } from '../../components/svg';
 import style from './Sewing.module.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import Sewing1 from "../../components/sewing/liemene";
-import Sewing2 from "../../components/sewing/suknele";
-import Sewing3 from '../../components/sewing/sukneles2';
-import Sewing4 from '../../components/sewing/sukneles3';
-import Sewing5 from '../../components/sewing/sukneles4';
-import Sewing6 from '../../components/sewing/baltaskostiumelis';
-import Sewing7 from '../../components/sewing/sewing7';
-import Sewing8 from '../../components/sewing/sewing8';
-import Sewing9 from '../../components/sewing/sewing9';
-import Sewing10 from '../../components/sewing/sewing10';
-import Sewing11 from '../../components/sewing/sewing11';
-import Sewing12 from '../../components/sewing/sewing12';
-import Sewing13 from '../../components/sewing/sewing13';
-import Sewing14 from '../../components/sewing/sewing14';
-import Sewing15 from '../../components/sewing/sewing15';
-import Sewing16 from '../../components/sewing/sewing16';
-import Sewing17 from '../../components/sewing/sewing17';
-import Sewing18 from '../../components/sewing/sewing18';
-import Sewing19 from '../../components/sewing/sewing19';
-import Sewing20 from '../../components/sewing/sewing20';
-import Sewing21 from '../../components/sewing/sewing21';
-import Sewing22 from '../../components/sewing/sewing22';
-import Sewing23 from '../../components/sewing/sewing23';
-import Sewing24 from '../../components/sewing/sewing24';
-import Sewing25 from '../../components/sewing/sewing25';
-import Sewing26 from '../../components/sewing/sewing26';
-import Sewing27 from '../../components/sewing/sewing27';
-import Sewing28 from '../../components/sewing/sewing28';
+import SewingExamples from '../../components/sewing/SewingExamples';
 import Link from 'next/link';
 
 
@@ -93,34 +66,7 @@ export default function Sewing() {
                 </div>
             </div>
             <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
-            <Sewing21 />
-            <Sewing22 />
-            <Sewing23 />
-            <Sewing24 />
-            <Sewing25 />
-            <Sewing26 />
-            <Sewing27 />
-            <Sewing28 />
-            <Sewing19 />
-            <Sewing20 />
-            <Sewing14 />
-            <Sewing15 />
-            <Sewing16 />
-            <Sewing17 />
-            <Sewing18 />
-            <Sewing13 />
-            <Sewing12 />
-            <Sewing11 />
-            <Sewing10 />
-            <Sewing9 />
-            <Sewing8 />
-            <Sewing6 />
-            <Sewing7 />
-            <Sewing5 />
-            <Sewing4 />
-            <Sewing1 />
-            <Sewing2 />
-            <Sewing3 />
+            <SewingExamples />
             <div className={style.link}>
         <span>Daugiau pavyzdžių rasite čia &gt;</span>
     <Link href="/gallery">
