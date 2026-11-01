@@ -50,7 +50,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: flex-end;
+      /* vienodo aukščio kortelės: antraštės viršuje vienoje linijoje,
+         nuotraukos apačioje (žr. .img / .img2 margin-top: auto) */
+      align-items: stretch;
       padding-top: 50px;
       padding-left: 10px;
       padding-right: 10px;
@@ -81,10 +83,12 @@
     .img {
       width: 450px;
       height: 800px;
+      margin-top: auto;
     }
     .img2 {
       width: 450px;
       height: 800px;
+      margin-top: auto;
     }
     @media (min-width: 761px) and (max-width: 1020px) {
       .container {
