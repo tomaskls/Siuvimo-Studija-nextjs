@@ -1,6 +1,6 @@
 // Galerijos nuotraukos. Matmenys atitinka tikrus failų matmenis.
 export const galleryImages = [
-  { src: '/imgGallery/2026/tvido-svarkelis.webp', alt: 'Šviesiai mėlynas tvido švarkelis su kišenėlėmis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/tvido-svarkelis.webp', alt: 'Šviesiai mėlynas tvido švarkelis su metalo gijomis ir metalinėmis sagomis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/siuvineta-palaidine-su-rozemis.webp', alt: 'Gipiūrinė palaidinė su raudonomis rožėmis ir juodos plačios kelnės', width: 900, height: 1600 },
   { src: '/imgGallery/2026/siuvineta-palaidine-rankoves-detale.webp', alt: 'Gipiūrinės palaidinės rankovė su banguotu kraštu iš arti', width: 900, height: 1600 },
   { src: '/imgGallery/2026/lekalai-su-studijos-logotipu.webp', alt: 'Popieriniai lekalai su studijos logotipu ir žirklės', width: 900, height: 850 },
@@ -21,7 +21,7 @@ export const galleryImages = [
   { src: '/imgGallery/2026/rastuota-suknele-detale.webp', alt: 'Originalios suknelės detalė: ant audinio perkelta fotografija ir nėrinių apdaila', width: 900, height: 1600 },
   { src: '/imgGallery/2026/pilka-progine-suknele.webp', alt: 'Pilka proginė suknelė su tiulio sijonu', width: 900, height: 1600 },
   { src: '/imgGallery/2026/sviesi-progine-suknele-su-neriniais.webp', alt: 'Šviesi proginė suknelė su nėriniais', width: 900, height: 1600 },
-  { src: '/imgGallery/2026/melyna-palaidine-su-ornamentu.webp', alt: 'Mėlyna palaidinė su ornamentu ir šviesus sijonas', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/melyna-palaidine-su-ornamentu.webp', alt: 'Lininis komplektas: mėlyna palaidinė su ornamento aplikacija ir šviesus sijonas', width: 900, height: 1600 },
   { src: '/imgGallery/2026/progine-suknele-ir-vyriskas-kostiumas.webp', alt: 'Šviesi proginė suknelė ir rudas vyriškas kostiumas', width: 900, height: 1600 },
   { src: '/imgGallery/2026/ruda-kostiumo-rankove.webp', alt: 'Rudo vyriško kostiumo rankovės detalė', width: 900, height: 1600 },
   { src: '/imgGallery/2026/violetine-suknele.webp', alt: 'Violetinė klasikinio kirpimo laisvo silueto suknelė', width: 900, height: 1600 },
