@@ -21,7 +21,7 @@ export async function getFAQs() {
     {
       id: '4',
       question: 'Kiek kainuoja kelnių ir džinsų trumpinimas?',
-      answer: `Džinsų ir kelnių trumpinimas kainuoja ${priceText('Džinsų trumpinimas', 'Kelnių trumpinimas mašina', 'Kelnių trumpinimas su atvartais', 'Kelnių trumpinimas paslėptu dygsniu')}, su juostele – ${priceText('Kelnių trumpinimas su juostele')}, sportinių kelnių su užtrauktukais – ${priceText('Sportinių kelnių su užtrauktukais')}. Kelnių siaurinimas – ${priceText('Kelnių siaurinimas')}, per liemenį – ${priceText('Kelnių siaurinimas per liemenį')}.`
+      answer: `Džinsų ir kelnių trumpinimas kainuoja ${priceText('Džinsų trumpinimas', 'Kelnių trumpinimas mašina', 'Kelnių trumpinimas su atvartais', 'Kelnių trumpinimas paslėptu dygsniu')}, su juostele – ${priceText('Kelnių trumpinimas su juostele')}, sportinių kelnių su užtrauktukais – ${priceText('Sportinių kelnių su užtrauktukais')}, plačių kelnių – ${priceText('Plačių kelnių trumpinimas')}, plačių kelnių su atvartais – ${priceText('Plačių kelnių su atvartais trumpinimas')}. Kelnių siaurinimas – ${priceText('Kelnių siaurinimas')}, per liemenį – ${priceText('Kelnių siaurinimas per liemenį')}.`
     },
     {
       id: '5',

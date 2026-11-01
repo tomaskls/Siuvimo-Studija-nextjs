@@ -17,6 +17,8 @@ export const priceList: PriceSection[] = [
       { name: 'Kelnių trumpinimas su atvartais', price: 10 },
       { name: 'Sportinių kelnių su užtrauktukais', price: 12 },
       { name: 'Kelnių trumpinimas paslėptu dygsniu', price: 10 },
+      { name: 'Plačių kelnių trumpinimas', price: 12 },
+      { name: 'Plačių kelnių su atvartais trumpinimas', price: 15 },
       { name: 'Kelnių siaurinimas per liemenį', price: [15, 20] },
       { name: 'Kelnių siaurinimas', price: [20, 30] },
     ],
@@ -55,7 +57,7 @@ export const priceList: PriceSection[] = [
     title: 'Vyr. kostiumų taisymas',
     items: [
       { name: 'Vyr. švarko siaurinimas', price: 20 },
-      { name: 'Vyr. švarko rankovių trumpinimas', price: 25 },
+      { name: 'Vyr. švarko rankovių trumpinimas', price: 30 },
       { name: 'Vyr. švarko apačios trumpinimas', price: 20 },
       { name: 'Vyr. švarko rankovių perstatymas', price: 40 },
       { name: 'Kelnių apačios lenkimas su juostele', price: 12 },
