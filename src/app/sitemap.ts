@@ -9,10 +9,10 @@ const BASE_URL = 'https://www.neringos-siuvimo-studija.lt';
 const pages: { path: string; lastModified: string }[] = [
   { path: '', lastModified: '2026-10-08' },
   { path: '/drabuziu-taisymas', lastModified: '2026-09-30' },
-  { path: '/drabuziu-taisymo-kainos', lastModified: '2026-10-08' },
+  { path: '/drabuziu-taisymo-kainos', lastModified: '2026-11-01' },
   { path: '/siuvykla', lastModified: '2026-09-30' },
   { path: '/gallery', lastModified: '2026-10-26' },
-  { path: '/duk', lastModified: '2026-10-08' },
+  { path: '/duk', lastModified: '2026-11-01' },
   { path: '/kontaktai', lastModified: '2026-10-08' },
 ];
 
