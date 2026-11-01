@@ -48,10 +48,10 @@ body {
   }
 }
 @media (min-width: 761px) {
+  /* Turinys iki 1200px pločio, centre; siauresniame ekrane – per visą plotį */
   .mainContainer {
-    width: 1000px;
-    margin-left: calc(50% - 500px);
-    margin-right: calc(50% - 500px);
+    max-width: 1200px;
+    margin: 0 auto;
     height: 100vh;
   }
   .space {
@@ -59,12 +59,5 @@ body {
   }
   body {
     background-color: whitesmoke;
-  }
-}
-@media (min-width: 761px) and (max-width: 1020px) {
-  .mainContainer {
-    max-width: 100%;
-    height: 100vh;
-    margin: 0;
   }
 }
