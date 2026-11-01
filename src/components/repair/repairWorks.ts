@@ -4,6 +4,14 @@ import type { RepairWork } from "./RepairCard";
 export const repairWorks: RepairWork[] = [
   {
     variant: 'proginiu',
+    title: '✂️ Paltų siaurinimas, rankovių trumpinimas',
+    src: '/imgGallery/2026/palto-siaurinimas-rankoviu-trumpinimas.webp',
+    alt: 'Smėlio spalvos palto su kailine apykakle siaurinimas ir rankovių trumpinimas',
+    width: 900,
+    height: 2010,
+  },
+  {
+    variant: 'proginiu',
     title: '✂️ Vestuvinių suknelių taisymas',
     src: '/imgGallery/2026/IMG20260629100251.webp',
     alt: 'Vestuvinės suknelės nuleistais pečiais taisymas',
