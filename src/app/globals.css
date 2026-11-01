@@ -17,6 +17,17 @@ body h1 {
   color: var(--heading-color);
   font-weight: 700;
 }
+/* Antraštės kursyvu (layout.tsx: headingFont), tekstas – normaliu stiliumi */
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-style: italic;
+}
+/* Mygtukai pagal nutylėjimą nepaveldi puslapio šrifto */
+button {
+  font: inherit;
+}
 
 body {
   background-color: white;
