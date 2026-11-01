@@ -164,14 +164,14 @@ export const repairWorks: Work[] = [
     ],
   },
   {
-    title: '✨ Odinės striukės taisymas',
+    title: '✂️ Odinės striukės taisymas',
     text: 'Odinės striukės įplyšimas sutaisytas ir nepastebimai restauruotas.',
     images: [
       { src: '/Images/odiniu_rubu_taisymas.webp', alt: 'Odinės striukės taisymas: prieš ir po', width: 900, height: 1350 },
     ],
   },
   {
-    title: '🔄 Užtrauktuko keitimas',
+    title: '✂️ Užtrauktuko keitimas',
     text: 'Kokybiškai atliktas paslėpto užtrauktuko keitimas kelnėse.',
     images: [
       { src: '/Images/uztrauktuku_taisymas.webp', alt: 'Užtrauktukų keitimas', width: 900, height: 1350 },
@@ -192,28 +192,28 @@ export const repairWorks: Work[] = [
     ],
   },
   {
-    title: '✨ Suknelės modeliavimas',
+    title: '✂️ Suknelės modeliavimas',
     text: 'Suknelė pritaikyta pagal kliento figūrą - sutrumpinta ir susiaurinta. Išlaikytos originalios suknelės linijos ir dizaino elementai.',
     images: [
       { src: '/Images/Sukneles_trumpinimas_siaurinimas.webp', alt: 'Suknelės trumpinimo procesas', width: 900, height: 1350 },
     ],
   },
   {
-    title: '✨ Švarko rankovių koregavimas',
+    title: '✂️ Švarko rankovių koregavimas',
     text: 'Moteriškam švarkui perstatytos rankovės - pakoreguota rankovių padėtis optimaliam gulėjimui ir patogumui. Išlaikytos originalios švarko proporcijos ir elegancija.',
     images: [
       { src: '/Images/Svarko_peciu_perstatymas.webp', alt: 'Švarko rankovių perstatymo etapai', width: 900, height: 1350 },
     ],
   },
   {
-    title: '🔄 Užtrauktuko keitimas',
+    title: '✂️ Užtrauktuko keitimas',
     text: 'Pūkinės striukės užtrauktukas pakeistas nauju, specialiai pritaikytu storiems pūkiniams drabužiams.',
     images: [
       { src: '/Images/striukes_uztrauktuko_keitimas.webp', alt: 'Striukės užtrauktuko keitimo etapai', width: 900, height: 1350 },
     ],
   },
   {
-    title: '✨ Pamušalo įsiuvimas',
+    title: '✂️ Pamušalo įsiuvimas',
     text: 'Į kailinius įsiutas pamušalas. Suteikiantis papildomą šilumą',
     images: [
       { src: '/Images/pamusalo_keitimas.webp', alt: 'Pamušalo įsiuvimas į kailinius', width: 900, height: 1350 },
