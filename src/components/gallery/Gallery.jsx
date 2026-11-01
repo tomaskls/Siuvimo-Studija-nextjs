@@ -12,7 +12,7 @@ const Pictures = () => {
   return (
     <div className={style.picturesContainer}>
       <h1 className={style.title}>Mūsų darbų galerija</h1>
-      <p className={style.descr}>Siuvimo darbų pavyzdžiai. Pamatykite, kokius drabužius pasiuvome mūsų klientams</p>
+      <p className={style.descr}>Siuvimo darbų pavyzdžiai. Pamatykite, kokius drabužius pasiuvome savo klientams.</p>
       <div className={style.imageGrid}>
         {galleryImages.map((image, index) => (
           <button

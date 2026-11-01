@@ -94,7 +94,7 @@ export const sewingWorks: Work[] = [
       { lead: 'Saulės ir paukščio motyvas:', text: 'Didysis ratas su spinduliais primena tradicinį saulės arba segmentinės žvaigždės simbolį, kuris baltų kultūroje reiškia gyvybę, šviesą ir pasaulio tvarką. Šalia esančios tamsios formos primena stilizuotus paukščius arba gyvybės medžio šakas, kurios dažnai sutinkamos lietuvių tautiniuose drabužiuose (prijuostėse, delmonuose) bei verpstėse.' },
       { lead: 'Tautinė mandala:', text: 'Šiuolaikiniame kontekste tokie geometriniai, simetriški apskritimų deriniai dar vadinami tautinėmis mandalomis. Jie sujungia baltiškąją geometriją ir universalią sakralinę struktūrą.' },
     ],
-    text: 'Šis dizainas puikiai iliustruoja, kaip „Neringos siuvimo studija“ pritaiko etno elementus moderniai, kasdienei ar proginiai aprangai.',
+    text: 'Šis dizainas puikiai iliustruoja, kaip „Neringos siuvimo studija“ pritaiko etninius elementus moderniai, kasdienei ar proginei aprangai.',
     images: [
       { src: '/Images/2026/IMG20260804140833.webp', alt: 'Žalios suknelės ornamento aplikacija iš arti', width: 900, height: 1600 },
       { src: '/Images/2026/IMG20260728164955.webp', alt: 'Ornamento aplikacijos ant žalio audinio', width: 900, height: 1600 },
@@ -216,7 +216,7 @@ export const sewingWorks: Work[] = [
   },
   {
     title: '✨ Tautinių rūbų siuvimas',
-    text: 'Plonos vilnos suknelė, pagal kliento nuotrauką',
+    text: 'Plonos vilnos suknelė pagal kliento nuotrauką',
     images: [
       { src: '/imgGallery/1000005211.webp', alt: 'Pilka ilga laisvo kirpimo suknelė', width: 900, height: 1200 },
     ],
@@ -230,7 +230,7 @@ export const sewingWorks: Work[] = [
   },
   {
     title: '✨ Proginė suknelė',
-    text: 'Pagal klientės pateiktą nuotrauką, pasiūta suknelė. Pritaikyta klientės figūrai.',
+    text: 'Pagal klientės pateiktą nuotrauką pasiūta suknelė, pritaikyta jos figūrai.',
     images: [
       { src: '/imgGallery/progine_suknele_juoda_balta.webp', alt: 'Juodai balta proginė suknelė', width: 900, height: 1200 },
     ],
@@ -244,7 +244,7 @@ export const sewingWorks: Work[] = [
   },
   {
     title: '✨ Kostiumėlio siuvimas',
-    text: 'Pasiūtas proginis kostiumėlis. Panaudotos skirtingų faktūrų medžiagos, to paties atspalvio.',
+    text: 'Pasiūtas proginis kostiumėlis. Panaudotos skirtingų faktūrų, bet to paties atspalvio medžiagos.',
     images: [
       { src: '/imgGallery/Baltas_kostiumelis.webp', alt: 'Baltas kostiumėlis: palaidinė ir kelnės', width: 900, height: 1600 },
     ],

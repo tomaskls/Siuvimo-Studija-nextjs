@@ -8,10 +8,10 @@ import MapEmbed from './MapEmbed';
 
 export const metadata: Metadata = {
     title: "Kontaktai | Neringos Siuvimo Studija Šiauliuose",
-    description: "Mus rasite adresu: Vytauto g. 80, Šiauliai. Skambinkite tel: +370 600 55316. Reikalinga profesionali konsultacija? Susisiekite su mumis jau šiandien! ",
+    description: "Mus rasite adresu: Vytauto g. 80, Šiauliai. Skambinkite tel. +370 600 55316. Reikalinga profesionali konsultacija? Susisiekite su mumis jau šiandien! ",
     openGraph: {
         title: 'Kontaktai',
-        description: 'Mus rasite adresu: Vytauto g. 80, Šiauliai. Skambinkite tel: +370 600 55316 ', 
+        description: 'Mus rasite adresu: Vytauto g. 80, Šiauliai. Skambinkite tel. +370 600 55316 ',
         url: 'https://www.neringos-siuvimo-studija.lt/kontaktai',
         siteName: 'Neringos Siuvimo Studija',
         type: 'website',
@@ -37,7 +37,7 @@ export default function Contacts() {
                 </div>
                 <div className={style.contacts}>
                     <h1>Kontaktai</h1>
-                    <a href="tel:+37060055316">Skambinkite tel: +370 600 55316</a>
+                    <a href="tel:+37060055316">Skambinkite tel. +370 600 55316</a>
                     <address className={style.address}>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</address>
                     <p className={style.notice}>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
                 </div>
@@ -55,7 +55,7 @@ export default function Contacts() {
                         {openingHours.map((day) => (
                             <tr key={day.schemaDay}>
                                 <td className={style.eilute}>{day.name}</td>
-                                <td className={`${style.eilute} ${style.time}`}>{formatTime(day.opens)} - {formatTime(day.closes)}</td>
+                                <td className={`${style.eilute} ${style.time}`}>{formatTime(day.opens)}–{formatTime(day.closes)}</td>
                             </tr>
                         ))}
                         <tr>
@@ -64,7 +64,7 @@ export default function Contacts() {
                         </tr>
                         <tr>
                             <td className={style.eilute}>Pietų pertrauka</td>
-                            <td className={`${style.eilute} ${style.time}`}>{formatTime(lunchBreak.start)} - {formatTime(lunchBreak.end)}</td>
+                            <td className={`${style.eilute} ${style.time}`}>{formatTime(lunchBreak.start)}–{formatTime(lunchBreak.end)}</td>
                         </tr>
                     </tbody>
                 </table>

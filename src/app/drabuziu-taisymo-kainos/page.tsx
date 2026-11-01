@@ -9,10 +9,10 @@ import { priceList, formatPrice, PriceSection } from '../../data/prices';
 
 export const metadata: Metadata = {
     title: "Drabužių taisymo kainos Šiauliuose",
-    description: "Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis.",
+    description: "Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas – konkurencingomis kainomis.",
     openGraph: {
         title: 'Drabužių taisymo kainos Šiauliuose',
-        description: 'Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas - konkurencingomis kainomis. Peržiūrėkite mūsų kainoraštį!',
+        description: 'Greitas ir profesionalus drabužių taisymas Šiauliuose. Kelnių palenkimas, užtrauktukų keitimas, siuvimas ir taisymas – konkurencingomis kainomis. Peržiūrėkite mūsų kainoraštį!',
         url: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymo-kainos',
         siteName: 'Neringos Siuvimo Studija',
         type: 'website',
