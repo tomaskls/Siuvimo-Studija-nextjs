@@ -30,7 +30,8 @@
     max-width: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* viršuje: šalia aukštesnės kortelės antraštės lieka vienoje linijoje */
+    justify-content: flex-start;
     align-items: center;
     padding-top: 10px;
     gap: 20px;

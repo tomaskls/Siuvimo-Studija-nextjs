@@ -11,6 +11,14 @@ export const repairWorks: RepairWork[] = [
     height: 2010,
   },
   {
+    variant: 'kostiumo',
+    title: '✂️ Puspalčių siaurinimas, rankovių trumpinimas',
+    src: '/imgGallery/2026/puspalcio-siaurinimas-rankoviu-trumpinimas.webp',
+    alt: 'Pilkšvai smėlio spalvos dvieilio puspalčio siaurinimas ir rankovių trumpinimas',
+    width: 900,
+    height: 1600,
+  },
+  {
     variant: 'proginiu',
     title: '✂️ Vestuvinių suknelių taisymas',
     src: '/imgGallery/2026/IMG20260629100251.webp',
