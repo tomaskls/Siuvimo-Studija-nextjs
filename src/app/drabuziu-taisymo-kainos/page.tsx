@@ -34,10 +34,17 @@ const [firstSection, ...otherSections] = priceList;
 function PriceListSection({ section }: { section: PriceSection }) {
     return (
         <div className={style.list}>
-            <h3 className={style.h3}>{section.title}:</h3>
-            {section.items.map((item) => (
-                <p key={item.name} className={style.p}>{item.name} - {formatPrice(item.price)}</p>
-            ))}
+            <h3 className={style.h3}>{section.title}</h3>
+            <table className={style.table}>
+                <tbody>
+                    {section.items.map((item) => (
+                        <tr key={item.name}>
+                            <td>{item.name}</td>
+                            <td className={style.price}>{formatPrice(item.price)}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 }

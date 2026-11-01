@@ -101,9 +101,9 @@ export const priceList: PriceSection[] = [
   },
 ];
 
-// 10 -> "10€", [15, 20] -> "15-20€"
+// 10 -> "10 €", [15, 20] -> "15–20 €" (kaip priceText)
 export const formatPrice = (price: Price) =>
-  Array.isArray(price) ? `${price[0]}-${price[1]}€` : `${price}€`;
+  Array.isArray(price) ? `${price[0]}–${price[1]} €` : `${price} €`;
 
 // Kaina tekstui (pvz. DUK atsakymams) pagal paslaugų pavadinimus:
 // priceText('Džinsų trumpinimas') -> "10 €", kelios paslaugos -> "10–30 €".
