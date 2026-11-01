@@ -101,4 +101,9 @@
       }
     }
   }
+  /* Antraštės ir teksto blokas virš poros nuotraukų: visada per visą plotį,
+     kad trumpas tekstas neatsistotų šalia nuotraukų */
+  .topText {
+    width: 100%;
+  }
   
