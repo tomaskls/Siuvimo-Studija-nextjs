@@ -194,7 +194,7 @@ export const sewingWorks: Work[] = [
     ],
   },
   {
-    title: '✨ Ekskliuzyviniai rūbai',
+    title: '✨ Išskirtiniai rūbai',
     text: 'Klasikinio audinio švarkelis, dekoruotas rankų darbo aplikacijomis.',
     images: [
       { src: '/imgGallery/2026/IMG_20260304_170627.webp', alt: 'Pepito rašto palaidinė su siuvinėtomis gėlėmis', width: 900, height: 1600 },

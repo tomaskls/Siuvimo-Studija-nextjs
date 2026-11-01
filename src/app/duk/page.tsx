@@ -51,9 +51,9 @@ export default async function FAQPage() {
   return (
     <div className={styles.block}>
       <JsonLd data={faqSchema} />
-      <h1 className={styles.h1}>Drabužių Taisymo Paslaugos - Dažniausi Klausimai</h1>
+      <h1 className={styles.h1}>Drabužių taisymas – dažniausi klausimai</h1>
       <FAQList faqs={faqs} />
-      <h2 className={styles.h1}>Drabužių Siuvimo Paslaugos - Dažniausi Klausimai</h2>
+      <h2 className={styles.h1}>Drabužių siuvimas – dažniausi klausimai</h2>
       <FAQList faqs={faqs2} />
     </div>
   );

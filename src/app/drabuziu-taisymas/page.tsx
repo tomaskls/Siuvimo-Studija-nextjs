@@ -10,11 +10,11 @@ import { repairWorks } from '../../components/repair/repairWorks';
 
 
 export const metadata: Metadata = {
-    title: "Rūbų Remonto Dirbtuvės | Drabužių taisykla Šiauliuose",
-    description: "Profesionalus drabužių taisymas  Šiauliuose.Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite!",
+    title: "Rūbų remonto dirbtuvės | Drabužių taisykla Šiauliuose",
+    description: "Profesionalus drabužių taisymas Šiauliuose. Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite!",
     openGraph: {
-        title: 'Rūbų Remonto Dirbtuvės',
-        description: 'Profesionalus drabužių taisymas  Šiauliuose.Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite ir suteikite savo drabužiams antrą gyvenimą!',
+        title: 'Rūbų remonto dirbtuvės',
+        description: 'Profesionalus drabužių taisymas Šiauliuose. Trumpiname, ilginame, siauriname, keičiame užtrauktukus ir atliekame kitus remonto darbus. Užsukite ir suteikite savo drabužiams antrą gyvenimą!',
         url: 'https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas',
         siteName: 'Neringos Siuvimo Studija',
         type: 'website',
@@ -45,7 +45,7 @@ export default function Repair() {
                     priority={true}
                 />
                 <div className={style.content}>
-                    <h1 className={style.h2}>Rūbų Taisymas</h1>
+                    <h1 className={style.h2}>Rūbų taisymas</h1>
                     <p className={style.p}>Ar jūsų mėgstamiausia suknelė prarado būrį sagų? O gal madingos kelnytės tapo per ilgos? Mūsų drabužių taisymas - tai lyg stebuklų dirbtuvės jūsų spintai! Ateikite pas mus ir mes paverčiame bet kokį &quot;oops&quot; į &quot;wow&quot;!</p>
                     <ul className={style.repairList}>
                         <li><ScissorsIcon /> Drabužių taisymas ir pritaikymas</li>
@@ -65,7 +65,7 @@ export default function Repair() {
                     <div className={style.svg}><Siulai /></div>
                 </div>
             </div>
-            <h2 className={style.darbu}>Darbų Pavyzdžiai</h2>
+            <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
             <WorkExamples works={repairWorks} initialCount={13} photoRatio="2 / 3" />
             <div className={style.dukContainer}>
     <p>Turite klausimų?</p>

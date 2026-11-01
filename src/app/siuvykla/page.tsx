@@ -9,11 +9,11 @@ import Link from 'next/link';
 
 
 export const metadata: Metadata = {
-    title: "Drabužių siuvykla Šiauliuose - Kokybiškos siuvimo paslaugos",
+    title: "Drabužių siuvykla Šiauliuose – kokybiškos siuvimo paslaugos",
     description: "Siuvimas Šiauliai. Individualus suknelių, kelnių, kostiumėlių ir kitų drabužių siuvimas pagal Jūsų figūrą ir pageidavimus.",
     openGraph: {
         title: 'Siuvykla Šiauliuose',
-        description: 'Siuvykla Šiauliuose.Individualus siuvimas.Eksliuzyviniai rūbai. Tvarus siuvimas. Funkcionalus siuvimas. Ergonomiška apranga. Drabužių dizainas',
+        description: 'Siuvykla Šiauliuose. Individualus siuvimas. Išskirtiniai rūbai. Tvarus siuvimas. Funkcionalus siuvimas. Ergonomiška apranga. Drabužių dizainas',
         url: 'https://www.neringos-siuvimo-studija.lt/siuvykla',
         siteName: 'Neringos Siuvimo Studija',
         type: 'website',
@@ -61,7 +61,7 @@ export default function Sewing() {
                     priority={false}
                 />
                 <div className={style.content}>
-                    <h2 className={style.h2}>Modeliavimas išskirtiniai drabužiai jums</h2>
+                    <h2 className={style.h2}>Modeliavimas – išskirtiniai drabužiai jums</h2>
                     <p className={style.p}>„Nuo idėjos iki podiumo - mūsų modeliavimo paslaugos jūsų sėkmei!“ Ieškote tobulo drabužio, bet nerandate jo parduotuvėje? Laikas sukurti jį patiems! Mūsų modeliavimo paslauga leis jums realizuoti savo kūrybines vizijas ir sukurti drabužį, kuris bus unikalus, stilingas ir puikiai pritaikytas būtent jums.</p>
                     <div className={style.svg} ><Adata /></div>
                 </div>
