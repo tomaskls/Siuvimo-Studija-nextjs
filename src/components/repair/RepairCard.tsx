@@ -3,6 +3,7 @@ import Image from 'next/image';
 import rankoviu from './rankoviu.module.css';
 import kostiumo from './kostiumo.module.css';
 import proginiu from './proginiu.module.css';
+import { Zirkles } from '../svg';
 
 const styles = { rankoviu, kostiumo, proginiu };
 
@@ -28,6 +29,13 @@ export default function RepairCard({ variant, title, text, src, alt, width, heig
                 width={width}
                 height={height}
             />
+            {/* Žirklės užpildo tuščią vietą po trumpesne nuotrauka; rodomos tik tipams,
+                kurių CSS aprašo .filler (kostiumo), kai šalia stovi aukštesnė kortelė */}
+            {style.filler && (
+                <div className={style.filler} aria-hidden="true">
+                    <div className={style.fillerIcon}><Zirkles /></div>
+                </div>
+            )}
         </div>
     );
 }
