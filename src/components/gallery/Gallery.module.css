@@ -6,9 +6,6 @@
   margin-bottom: 20px;
   margin-left: 10px;
 }
-.noScroll {
-  overflow: hidden;
-}
 .imageGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -33,81 +30,6 @@
 .galleryImage:hover {
   transform: scale(1.05);
 }
-/* Peržiūros langas: nuotrauka, aprašymas, rodyklės ir uždarymo mygtukas */
-.fullscreenOverlay {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 60px 70px 16px;
-  background-color: rgba(0, 0, 0, 0.95);
-  z-index: 10;
-}
-.figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-  max-height: 100%;
-}
-.fullscreenImage {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: calc(100vh - 150px);
-  max-height: calc(100dvh - 150px);
-  object-fit: contain;
-}
-.caption {
-  max-width: 600px;
-  margin-top: 10px;
-  color: #f1d9ab;
-  font-size: 0.9em;
-  line-height: 1.4;
-  text-align: center;
-}
-.counter {
-  display: block;
-  margin-top: 2px;
-  opacity: 0.7;
-}
-.closeButton,
-.navButton {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.45);
-  color: white;
-  cursor: pointer;
-}
-.closeButton:hover,
-.navButton:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.closeButton {
-  top: 10px;
-  right: 10px;
-}
-.navButton {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.prev {
-  left: 12px;
-}
-.next {
-  right: 12px;
-}
-/* Gretimos nuotraukos tik įkeliamos, nerodomos */
-.preload {
-  display: none;
-}
 .title {
   display: flex;
   margin-bottom: 15px;
@@ -130,18 +52,5 @@
   }
   .galleryImage:hover {
     transform: none;
-  }
-  /* Rodyklės ant nuotraukos kraštų, verčiama ir braukiant */
-  .fullscreenOverlay {
-    padding: 60px 0 16px;
-  }
-  .caption {
-    padding: 0 16px;
-  }
-  .prev {
-    left: 6px;
-  }
-  .next {
-    right: 6px;
   }
 }
