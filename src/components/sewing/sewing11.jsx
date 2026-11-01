@@ -18,7 +18,7 @@ export default function Sewing11() {
                     />
                 </div>
                 <div className={style.content} >
-                    <h3 className={style.h3}>✨ Eksliuzivyniai rūbai</h3>
+                    <h3 className={style.h3}>✨ Ekskliuzyviniai rūbai</h3>
                     <p className={style.p}>Klasikinio audinio švarkelis, dekoruotas rankų darbo aplikacijomis.</p>
                     <Image className={style.img2}
                         src="/imgGallery/2026/IMG_20260304_170627.webp"
