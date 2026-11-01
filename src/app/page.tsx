@@ -3,6 +3,7 @@ import style from "../app/page.module.css";
 import Image from "next/image";
 import { Adata } from '../components/svg';
 import { Siulai, ScissorsIcon } from '../components/svg';
+import Reviews from '../components/reviews/Reviews';
 
 
 export default function Page() {
@@ -48,6 +49,7 @@ export default function Page() {
           <div className={style.svg}><Siulai /></div>
         </div>
       </div>
+      <Reviews />
     </>
   );
 }

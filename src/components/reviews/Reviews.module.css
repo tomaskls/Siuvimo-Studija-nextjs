@@ -1,0 +1,91 @@
+.section {
+  background-color: var(--back-color);
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+.title {
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+/* Kompiuteryje – stulpeliai skirtingo aukščio kortelėms (masonry) */
+.list {
+  columns: 3;
+  column-gap: 20px;
+  text-align: left;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  padding: 22px 22px 18px;
+  background-color: #fffaf1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(101, 67, 33, 0.12);
+}
+/* Didelė dekoratyvi kabutė dešiniajame kampe */
+.card::before {
+  content: '“';
+  position: absolute;
+  top: 4px;
+  right: 16px;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--text-color);
+  opacity: 0.15;
+}
+.stars {
+  color: #c08a2b;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.text {
+  line-height: 1.6;
+}
+.author {
+  margin-top: auto;
+  padding-top: 14px;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: bold;
+}
+.author::before {
+  content: '— ';
+}
+.more {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+@media (min-width: 761px) and (max-width: 1020px) {
+  .list {
+    columns: 2;
+  }
+}
+/* Telefone – kortelės braukiamos į šoną, kitos kortelės kraštas matosi */
+@media (max-width: 760px) {
+  .section {
+    padding: 30px 0 25px;
+  }
+  .title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .list {
+    columns: auto;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 16px;
+    padding: 4px 16px 14px;
+  }
+  .card {
+    flex: 0 0 85%;
+    margin-bottom: 0;
+    scroll-snap-align: start;
+  }
+}
