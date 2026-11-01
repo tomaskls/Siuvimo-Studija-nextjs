@@ -122,7 +122,7 @@ export interface LocalBusinessSchema extends SchemaBase {
   geo: GeoCoordinates;
   openingHoursSpecification: OpeningHoursSpecification[];
   telephone: string;
-  email: string;
+  email?: string;
   url: string;
   paymentAccepted: string[];
   currenciesAccepted: string;

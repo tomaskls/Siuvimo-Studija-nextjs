@@ -38,7 +38,6 @@ export default function Contacts() {
                 <div className={style.contacts}>
                     <h1>Kontaktai</h1>
                     <a href="tel:+37060055316">Skambinkite tel: +370 600 55316</a>
-                    <a href="mailto:neringos.siuvimo.studija@gmail.com">neringos.siuvimo.studija@gmail.com</a>
                     <address className={style.address}>Mus rasite adresu: <br />Vytauto g. 80 <br />Šiauliai</address>
                     <p className={style.notice}>Planuojate apsilankyti? Mums būtų malonu, jei prieš tai paskambintumėte.<br />Taip galėsime užtikrinti, kad Jums nereikės laukti.</p>
                 </div>

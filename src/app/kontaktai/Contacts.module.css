@@ -165,7 +165,7 @@
   overflow-wrap: anywhere;
 }
 @media (min-width: 761px) {
-  /* Mygtukai bent 300px, bet ilgesnis tekstas (el. paštas) jų neperlaužia */
+  /* Mygtukai bent 300px, bet ilgesnis tekstas jų neperlaužia */
   .contacts a {
     width: fit-content;
     min-width: 300px;

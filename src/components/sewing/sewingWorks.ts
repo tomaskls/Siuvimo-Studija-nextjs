@@ -40,7 +40,7 @@ export const sewingWorks: Work[] = [
     text: 'Sodrios plytinės spalvos elegantiško silueto suknelė.',
     images: [
       { src: '/imgGallery/2026/rusvai-raudona-marskiniu-suknele.webp', alt: 'Plytinės spalvos itališkos vilnos marškinių tipo suknelė su diržu', width: 900, height: 1600 },
-      { src: '/imgGallery/2026/lekalai-ant-audinio.webp', alt: 'Plytinės spalvos itališkos vilnos audinys su lekalų kontūrais ir matavimo juostos', width: 900, height: 1601 },
+      { src: '/imgGallery/2026/lekalai-ant-audinio.webp', alt: 'Plytinės spalvos itališkos vilnos audinys su lekalų kontūrais', width: 900, height: 1601 },
     ],
   },
   {
@@ -100,7 +100,7 @@ export const sewingWorks: Work[] = [
       { src: '/Images/2026/IMG20260728164955.webp', alt: 'Ornamento aplikacijos ant žalio audinio', width: 900, height: 1600 },
       { src: '/Images/2026/IMG20260804140259.webp', alt: 'Žalia ilga suknelė su ornamento aplikacija', width: 900, height: 1600 },
       // Kvadratinė nuotrauka: apkerpama taip, kad liktų matomas QR kodas ir logotipas
-      { src: '/imgGallery/2026/lekalai-su-studijos-logotipu.webp', alt: 'Popieriniai lekalai su studijos logotipu ir žirklės', width: 900, height: 850, position: '71% 50%' },
+      { src: '/imgGallery/2026/lekalai-su-studijos-logotipu.webp', alt: 'Popieriniai drabužio lekalai', width: 900, height: 850, position: '71% 50%' },
     ],
   },
   {
