@@ -1,5 +1,13 @@
 // Galerijos nuotraukos. Matmenys atitinka tikrus failų matmenis.
 export const galleryImages = [
+  { src: '/imgGallery/2026/tvido-svarkelis.webp', alt: 'Šviesiai mėlynas tvido švarkelis su kišenėlėmis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/siuvineta-palaidine-su-rozemis.webp', alt: 'Permatoma siuvinėta palaidinė su raudonomis rožėmis ir juodos plačios kelnės', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/siuvineta-palaidine-rankoves-detale.webp', alt: 'Siuvinėtos palaidinės rankovė su raudonomis rožėmis iš arti', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/lekalai-su-studijos-logotipu.webp', alt: 'Popieriniai lekalai su studijos logotipu ir žirklės', width: 900, height: 850 },
+  { src: '/imgGallery/2026/lekalai-ant-audinio.webp', alt: 'Lekalų kontūrai ant rudo audinio ir matavimo juostos', width: 900, height: 1601 },
+  { src: '/imgGallery/2026/ilga-suknele-su-neriniu-apykakle.webp', alt: 'Ilga rudai raudona suknelė su juodų nėrinių apykakle ir rankogaliais', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/suknele-su-neriniais-detale.webp', alt: 'Suknelės rankovė su nėrinių rankogaliu ir nėrinių apykaklė iš arti', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/tamsiai-pilkas-dvieilis-paltas.webp', alt: 'Tamsiai pilkas dvieilis paltas', width: 900, height: 1907 },
   { src: '/imgGallery/2026/oranzine-suknele-su-dirzu.webp', alt: 'Oranžinė tiesaus kirpimo suknelė su rišamu diržu', width: 900, height: 1600 },
   { src: '/imgGallery/2026/rusvai-raudona-marskiniu-suknele.webp', alt: 'Rusvai raudona marškinių tipo suknelė su diržu', width: 900, height: 1600 },
   { src: '/imgGallery/2026/pilkai-melynas-kostiumas.webp', alt: 'Pilkai mėlynas kostiumas: švarkas ir plačios kelnės', width: 900, height: 1600 },
