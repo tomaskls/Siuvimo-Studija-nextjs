@@ -6,10 +6,14 @@ export default function Sewing22() {
     return (
         <>
             <div className={style.container}>
+                <div className={style.topText}>
+                    <h3 className={style.h4}>✨ Proginė suknelė</h3>
+                    <p className={style.p}>Suknelė dvaro tematika su gipiūriniais aksesuarais.</p>
+                </div>
                 <div className={style.content}>
                     <Image className={style.img}
                         src="/imgGallery/2026/ilga-suknele-su-neriniu-apykakle.webp"
-                        alt="Ilga rudai raudona suknelė su juodų nėrinių apykakle ir rankogaliais"
+                        alt="Rudai raudona proginė suknelė dvaro stiliumi su juoda gipiūrine apykakle ir rankogaliais"
                         width={900}
                         height={1600}
                         priority={false}
@@ -18,7 +22,7 @@ export default function Sewing22() {
                 <div className={style.content} >
                     <Image className={style.img2}
                         src="/imgGallery/2026/suknele-su-neriniais-detale.webp"
-                        alt="Suknelės rankovė su nėrinių rankogaliu ir nėrinių apykaklė iš arti"
+                        alt="Proginės suknelės gipiūrinė apykaklė ir rankovė su gipiūriniu rankogaliu iš arti"
                         width={900}
                         height={1600}
                         priority={false}
