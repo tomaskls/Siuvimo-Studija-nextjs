@@ -18,6 +18,20 @@ export const repairWorks: Work[] = [
     ],
   },
   {
+    title: '✂️ Tvido švarko rankovių perstatymas',
+    images: [
+      { src: '/imgGallery/2026/tvido-svarko-rankoviu-perstatymas.webp', alt: 'Tvido švarkas su atsiūtomis rankovėmis taisymo metu', width: 900, height: 1600 },
+      { src: '/imgGallery/2026/tvido-svarkas-po-rankoviu-perstatymo.webp', alt: 'Tvido švarkas po rankovių perstatymo', width: 900, height: 1600 },
+    ],
+  },
+  {
+    title: '✂️ Vyriško švarko rankovių trumpinimas',
+    images: [
+      { src: '/imgGallery/2026/svarko-rankoves-pries-trumpinima.webp', alt: 'Pilko vyriško švarko rankovė prieš trumpinimą', width: 900, height: 1600 },
+      { src: '/imgGallery/2026/svarko-rankoves-trumpinimas-detale.webp', alt: 'Švarko rankovės galas su kilpomis sagoms ir pažymėtu nauju ilgiu', width: 900, height: 1600 },
+    ],
+  },
+  {
     title: '✂️ Vestuvinių suknelių taisymas',
     images: [
       { src: '/imgGallery/2026/IMG20260629100251.webp', alt: 'Vestuvinės suknelės nuleistais pečiais taisymas', width: 537, height: 1200 },
