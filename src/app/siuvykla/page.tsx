@@ -28,6 +28,7 @@ import Sewing22 from '../../components/sewing/sewing22';
 import Sewing23 from '../../components/sewing/sewing23';
 import Sewing24 from '../../components/sewing/sewing24';
 import Sewing25 from '../../components/sewing/sewing25';
+import Sewing26 from '../../components/sewing/sewing26';
 import Link from 'next/link';
 
 
@@ -95,6 +96,7 @@ export default function Sewing() {
             <Sewing23 />
             <Sewing24 />
             <Sewing25 />
+            <Sewing26 />
             <Sewing19 />
             <Sewing20 />
             <Sewing14 />
