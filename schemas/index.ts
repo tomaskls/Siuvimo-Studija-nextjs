@@ -60,7 +60,7 @@ export const localBusinessSchema: LocalBusinessSchema = {
   },
   openingHoursSpecification: getOpeningHoursSpecification(),
   telephone: "+37060055316",
-  email: "neringos.siuvimo.studija@gmail.com",
+  // El. pašto adresas sąmoningai neskelbiamas: klientai jo neturi matyti (nei puslapyje, nei paieškoje)
   url: "https://www.neringos-siuvimo-studija.lt",
   paymentAccepted: ["Cash", "BankTransfer"],
   currenciesAccepted: "EUR",
