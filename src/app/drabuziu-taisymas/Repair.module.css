@@ -90,14 +90,6 @@
   .h2 {
     font-size: 1.7em;
   }
-  .repairContainer{
-    background-color: var(--back-color);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10px;
-  }
   .darbu{
     padding-top: 40px;
     padding-bottom: 20px;

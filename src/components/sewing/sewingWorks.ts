@@ -1,26 +1,10 @@
+import type { Work } from '../works/types';
+
 // Darbų pavyzdžiai puslapyje /siuvykla (rodomi šia tvarka, naujausi – viršuje).
-// Naują darbą įrašykite sąrašo pradžioje. Iš karto rodomi pirmieji SewingExamples.tsx INITIAL_COUNT darbų,
-// kiti – paspaudus „Rodyti daugiau darbų“.
-// images: 1 nuotrauka – siaura kortelė, 2 – plati, 3 ir daugiau – per visą eilutę.
-// Miniatiūros apkerpamos iki 9:16; position – kuri nuotraukos vieta lieka matoma (CSS object-position).
+// Naują darbą įrašykite sąrašo pradžioje. Kiek darbų rodoma iš karto – siuvykla/page.tsx initialCount.
+// Miniatiūros apkerpamos iki 9:16 (photoRatio), visa nuotrauka matoma peržiūroje.
 
-export interface SewingImage {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  position?: string;
-}
-
-export interface SewingWork {
-  title: string;
-  text?: string;
-  // Sąrašas su paryškinta pradžia, pvz. { lead: 'Saulės motyvas:', text: 'reiškia…' }
-  details?: { lead: string; text: string }[];
-  images: SewingImage[];
-}
-
-export const sewingWorks: SewingWork[] = [
+export const sewingWorks: Work[] = [
   {
     title: '✨ Gipiūrinė palaidinė',
     text: 'Individualus užsakymas teminiam vakarėliui.',
