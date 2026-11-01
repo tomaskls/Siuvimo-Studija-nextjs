@@ -66,7 +66,7 @@ export default function Repair() {
                 </div>
             </div>
             <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
-            <WorkExamples works={repairWorks} initialCount={13} photoRatio="2 / 3" />
+            <WorkExamples works={repairWorks} initialCount={15} photoRatio="2 / 3" />
             <div className={style.dukContainer}>
     <p>Turite klausimų?</p>
     <p>Skambinkite: <a className={style.phone} href="tel:+37060055316">+370 600 55316</a></p>
