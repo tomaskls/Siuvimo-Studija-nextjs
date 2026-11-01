@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 import Link from 'next/link';
-import RepairCard from '../../components/repair/RepairCard';
+import WorkExamples from '../../components/works/WorkExamples';
 import { repairWorks } from '../../components/repair/repairWorks';
 
 
@@ -66,11 +66,7 @@ export default function Repair() {
                 </div>
             </div>
             <h2 className={style.darbu}>Darbų Pavyzdžiai</h2>
-            <div className={style.repairContainer}>
-                {repairWorks.map((work) => (
-                    <RepairCard key={work.src} {...work} />
-                ))}
-            </div>
+            <WorkExamples works={repairWorks} initialCount={13} photoRatio="2 / 3" />
             <div className={style.dukContainer}>
     <p>Turite klausimų?</p>
     <p>Skambinkite: <a className={style.phone} href="tel:+37060055316">+370 600 55316</a></p>

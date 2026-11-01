@@ -1,34 +1,39 @@
 "use client";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import style from './SewingExamples.module.css';
-import { sewingWorks } from './sewingWorks';
+import style from './WorkExamples.module.css';
+import type { Work } from './types';
 import Lightbox from '../lightbox/Lightbox';
 
-// Kiek darbų rodoma iš karto; kiti – paspaudus „Rodyti daugiau darbų“.
-// 11 – kad paskutinė eilutė būtų pilna (pridėjus darbą su kitu nuotraukų skaičiumi, gali tekti keisti)
-const INITIAL_COUNT = 11;
+interface Props {
+    works: Work[];
+    // Kiek darbų rodoma iš karto; kiti – paspaudus „Rodyti daugiau darbų“.
+    // Parinkta taip, kad paskutinė eilutė būtų pilna (pridėjus darbą, gali tekti keisti).
+    initialCount: number;
+    // Miniatiūrų proporcija (CSS aspect-ratio); visa nuotrauka matoma peržiūroje
+    photoRatio: string;
+}
 
-// Peržiūroje verčiamos visų darbų nuotraukos iš eilės;
-// firstImageIndex – kiekvieno darbo pirmosios nuotraukos numeris toje eilėje
-const allImages = sewingWorks.flatMap((work) => work.images);
-const firstImageIndex = sewingWorks.map((_, i) =>
-    sewingWorks.slice(0, i).reduce((sum, work) => sum + work.images.length, 0)
-);
-
-export default function SewingExamples() {
+export default function WorkExamples({ works, initialCount, photoRatio }: Props) {
     const [showAll, setShowAll] = useState(false);
     // Atidarytos nuotraukos numeris; null – peržiūra uždaryta
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
+    // Peržiūroje verčiamos visų darbų nuotraukos iš eilės;
+    // firstImageIndex – kiekvieno darbo pirmosios nuotraukos numeris toje eilėje
+    const allImages = works.flatMap((work) => work.images);
+    const firstImageIndex = works.map((_, i) =>
+        works.slice(0, i).reduce((sum, work) => sum + work.images.length, 0)
+    );
+
     return (
         <>
             <div className={style.grid}>
-                {sewingWorks.map((work, i) => (
+                {works.map((work, i) => (
                     <article
                         key={work.images[0].src}
                         className={`${style.card} ${work.images.length === 2 ? style.wide : ''} ${work.images.length > 2 ? style.full : ''}`}
-                        hidden={!showAll && i >= INITIAL_COUNT}
+                        hidden={!showAll && i >= initialCount}
                     >
                         <h3 className={style.title}>{work.title}</h3>
                         {work.details && (
@@ -55,7 +60,7 @@ export default function SewingExamples() {
                                         height={image.height}
                                         sizes="(max-width: 760px) 50vw, 250px"
                                         className={style.photo}
-                                        style={{ objectPosition: image.position }}
+                                        style={{ aspectRatio: photoRatio, objectPosition: image.position }}
                                     />
                                 </button>
                             ))}
@@ -63,10 +68,10 @@ export default function SewingExamples() {
                     </article>
                 ))}
             </div>
-            {!showAll && (
+            {!showAll && works.length > initialCount && (
                 <div className={style.moreWrap}>
                     <button type="button" className={style.more} onClick={() => setShowAll(true)}>
-                        Rodyti daugiau darbų ({sewingWorks.length - INITIAL_COUNT})
+                        Rodyti daugiau darbų ({works.length - initialCount})
                     </button>
                 </div>
             )}

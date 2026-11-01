@@ -3,7 +3,8 @@ import { Zirkles, Adata } from '../../components/svg';
 import style from './Sewing.module.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
-import SewingExamples from '../../components/sewing/SewingExamples';
+import WorkExamples from '../../components/works/WorkExamples';
+import { sewingWorks } from '../../components/sewing/sewingWorks';
 import Link from 'next/link';
 
 
@@ -66,7 +67,7 @@ export default function Sewing() {
                 </div>
             </div>
             <h2 className={style.darbu}>Darbų pavyzdžiai</h2>
-            <SewingExamples />
+            <WorkExamples works={sewingWorks} initialCount={11} photoRatio="9 / 16" />
             <div className={style.link}>
         <span>Daugiau pavyzdžių rasite čia &gt;</span>
     <Link href="/gallery">

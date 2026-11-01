@@ -1,8 +1,10 @@
 /* Darbų kortelės: kompiuteryje 4 stulpeliai, telefone 2.
-   1 nuotrauka – vienas stulpelis, 2 – du, daugiau – visa eilutė (žr. sewingWorks.ts) */
+   1 nuotrauka – vienas stulpelis, 2 – du, daugiau – visa eilutė (žr. types.ts) */
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  /* Jei plati kortelė netelpa eilutės gale, tuščią vietą užpildo kita siaura kortelė */
+  grid-auto-flow: dense;
   gap: 20px;
   padding: 30px 20px 20px;
   background-color: var(--back-color);
@@ -50,6 +52,11 @@
   gap: 10px;
   margin-top: auto;
 }
+/* Visos eilutės kortelėje nuotraukos tokio pat dydžio kaip kitose: po keturias eilutėje */
+.full .photos {
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+}
 .photoButton {
   display: block;
   width: 100%;
@@ -62,7 +69,6 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 9 / 16;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -102,7 +108,6 @@
   }
   /* Telefone daugiau nei dvi nuotraukos – po dvi eilutėje */
   .full .photos {
-    grid-auto-flow: row;
     grid-template-columns: repeat(2, 1fr);
   }
 }
