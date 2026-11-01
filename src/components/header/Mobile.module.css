@@ -7,12 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   width: 100%;
   height: 30px;
-  background-color: #d7c095;
-  color: black;
+  /* Tamsi juosta išsiskiria kaip mygtukas „skambinti“ */
+  background-color: var(--text-color);
+  color: #f1d9ab;
   text-align: center;
   font-size: 1.1em;
+  font-weight: bold;
   text-decoration: none;
   line-height: 1.5;
 }
