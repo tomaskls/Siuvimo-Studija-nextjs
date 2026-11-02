@@ -83,21 +83,21 @@ export function ConsentManager() {
                 <div className={styles.detailsSection}>
                   <h3 className={styles.detailsSectionTitle}>Būtinieji slapukai</h3>
                   <p className={styles.detailsSectionText}>
-                    Šie slapukai yra būtini svetainės veikimui ir negali būti išjungti.
+                    Šie slapukai yra būtini, kad svetainė veiktų, ir negali būti išjungti.
                   </p>
                 </div>
                 <div className={styles.detailsSection}>
                   <h3 className={styles.detailsSectionTitle}>Analitiniai slapukai</h3>
                   <p className={styles.detailsSectionText}>
                     Padeda mums suprasti, kaip lankytojai naudojasi svetaine. 
-                    Naudojame Google Analytics.
+                    Naudojame „Google Analytics“.
                   </p>
                 </div>
                 <div className={styles.detailsSection}>
                   <h3 className={styles.detailsSectionTitle}>Reklaminiai slapukai</h3>
                   <p className={styles.detailsSectionText}>
-                    Naudojami rodyti jums pritaikytą reklamą. 
-                    Šie slapukai seka jūsų naršymą skirtingose svetainėse.
+                    Naudojami rodyti Jums pritaikytą reklamą.
+                    Šie slapukai seka Jūsų naršymą skirtingose svetainėse.
                   </p>
                 </div>
               </div>

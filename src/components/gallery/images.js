@@ -46,7 +46,7 @@ export const galleryImages = [
   { src: '/imgGallery/2026/IMG20260604121759.webp', alt: 'Smėlio spalvos palaidinė ir kelnės', width: 1834, height: 4096 },
   { src: '/imgGallery/2026/IMG20260623103704.webp', alt: 'Juoda ilga suknelė su nėriniuota apykakle, vaizdas iš šono', width: 1834, height: 4096 },
   { src: '/imgGallery/2026/IMG20260615092749.webp', alt: 'Ilga raštuota suknelė su kaklo kaspinu', width: 1200, height: 2680 },
-  { src: '/imgGallery/2026/IMG_20260304_170627.webp', alt: 'Pepito rašto palaidinė su siuvinėtomis gėlėmis', width: 900, height: 1600 },
+  { src: '/imgGallery/2026/IMG_20260304_170627.webp', alt: 'Pepito rašto švarkelis su siuvinėtomis gėlėmis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/IMG_20250724_200643.webp', alt: 'Tamsiai mėlyna palaidinė su šilko rankovėmis', width: 900, height: 1600 },
   { src: '/imgGallery/2026/IMG_20251209_182018.webp', alt: 'Puošni sidabrinio blizgaus audinio palaidinė', width: 900, height: 1600 },
   { src: '/imgGallery/2026/IMG_20260308_194120.webp', alt: 'Terakotos spalvos proginis kostiumėlis: palaidinė ir kelnės', width: 900, height: 1600 },

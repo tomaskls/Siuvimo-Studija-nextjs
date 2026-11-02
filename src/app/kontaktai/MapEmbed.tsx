@@ -32,7 +32,7 @@ export default function MapEmbed() {
                 Rodyti žemėlapį
             </button>
             <a href={MAP_LINK} target="_blank" rel="noopener noreferrer">
-                Atidaryti Google Maps
+                Atidaryti „Google Maps“
             </a>
         </div>
     );
