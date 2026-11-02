@@ -115,7 +115,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Aplikacijos ant drabužių",
           description:
-            "Aplikacijos ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal jūsų pageidavimus.",
+            "Aplikacijos ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal Jūsųpageidavimus.",
         },
       },
       {
@@ -160,7 +160,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Kelnių taisymas",
           description:
-            "Kelnių siaurinimas, trumpinimas ir kiti taisymo darbai. Pritaikome kelnes pagal jūsų figūrą, atliekame džinsų ir klasikinių kelnių taisymą, patobuliname pagal jūsų pageidavimus.",
+            "Kelnių siaurinimas, trumpinimas ir kiti taisymo darbai. Pritaikome kelnes pagal Jūsųfigūrą, atliekame džinsų ir klasikinių kelnių taisymą, patobuliname pagal Jūsųpageidavimus.",
         },
       },
       {
@@ -169,7 +169,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Sijonų taisymas",
           description:
-            "Profesionalus sijonų taisymas, įskaitant siaurinimą, trumpinimą, juosmens koregavimą. Pritaikome sijonus pagal jūsų figūrą ir pageidavimus.",
+            "Profesionalus sijonų taisymas, įskaitant siaurinimą, trumpinimą, juosmens koregavimą. Pritaikome sijonus pagal Jūsųfigūrą ir pageidavimus.",
         },
       },
     ],

@@ -80,7 +80,7 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Kailiniai',
-    text: 'Patrumpintos rankovės, padaryta papildoma kilpa sagai, siūlių sutvirtinimas',
+    text: 'Patrumpintos rankovės, padaryta papildoma kilpa sagai, sutvirtintos siūlės',
     images: [
       { src: '/imgGallery/2026/IMG20260121172501.webp', alt: 'Kailiniai', width: 900, height: 1200 },
     ],
@@ -123,7 +123,7 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Striukės rankovių ilginimas',
-    text: 'Pailgintos striukės rankovės Rib trikotažu',
+    text: 'Pailgintos striukės rankovės rifliuotu trikotažu',
     images: [
       { src: '/Images/striukes.webp', alt: 'Striukės rankovių ilginimas', width: 900, height: 1187 },
     ],
@@ -207,7 +207,7 @@ export const repairWorks: Work[] = [
   },
   {
     title: '✂️ Suknelės modeliavimas',
-    text: 'Suknelė pritaikyta pagal kliento figūrą – sutrumpinta ir susiaurinta. Išlaikytos originalios suknelės linijos ir dizaino elementai.',
+    text: 'Suknelė pritaikyta pagal klientės figūrą – sutrumpinta ir susiaurinta. Išlaikytos originalios suknelės linijos ir dizaino elementai.',
     images: [
       { src: '/Images/Sukneles_trumpinimas_siaurinimas.webp', alt: 'Suknelės trumpinimo procesas', width: 900, height: 1350 },
     ],

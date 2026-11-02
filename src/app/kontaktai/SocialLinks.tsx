@@ -3,7 +3,7 @@ import Image from 'next/image';
 import style from './Contacts.module.css';
 
 const socialLinks = [
-  { name: 'Facebook', label: 'Sekite mus Facebook', url: 'https://www.facebook.com/neringossiuvimostudija', icon: '/icons/facebook_icon.png' },
+  { name: 'Facebook', label: 'Sekite mus „Facebook“', url: 'https://www.facebook.com/neringossiuvimostudija', icon: '/icons/facebook_icon.png' },
   { name: 'Instagram', label: 'Instagram', url: 'https://www.instagram.com/neringossiuvimostudija', icon: '/icons/instagram_logo.webp' },
   { name: 'Pinterest', label: 'Pinterest', url: 'https://www.pinterest.com/neringossiuvimostudija', icon: '/icons/Pinterest.svg.png' },
 ];

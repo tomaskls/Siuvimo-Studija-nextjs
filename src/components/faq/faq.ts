@@ -11,7 +11,7 @@ export async function getFAQs() {
     {
       id: '2',
       question: 'Kiek kainuoja pakeisti užtrauktuką?',
-      answer: `Užtrauktuko keitimas kainuoja ${sectionPriceText('Užtrauktukų keitimas')}, priklausomai nuo drabužio: džinsų ir sijono – ${priceText('Džinsų užtrauktuko keitimas', 'Sijono užtrauktuko keitimas')}, vaikiškos striukės ir vyriškų kelnių – ${priceText('Vaikiškos striukės užtrauktuko keitimas', 'Vyr. kelnių užtrauktuko keitimas')}, plonos striukės – ${priceText('Plonos striukės užtrauktuko keitimas')}, žieminės striukės ir puspalčio – ${priceText('Žieminės striukės užtrauktuko keitimas', 'Puspalčio užtrauktuko keitimas')}, palto – ${priceText('Palto užtrauktuko keitimas')}.`
+      answer: `Užtrauktuko keitimas kainuoja ${sectionPriceText('Užtrauktukų keitimas')}, kaina priklauso nuo drabužio:džinsų ir sijono – ${priceText('Džinsų užtrauktuko keitimas', 'Sijono užtrauktuko keitimas')}, vaikiškos striukės ir vyriškų kelnių – ${priceText('Vaikiškos striukės užtrauktuko keitimas', 'Vyr. kelnių užtrauktuko keitimas')}, plonos striukės – ${priceText('Plonos striukės užtrauktuko keitimas')}, žieminės striukės ir puspalčio – ${priceText('Žieminės striukės užtrauktuko keitimas', 'Puspalčio užtrauktuko keitimas')}, palto – ${priceText('Palto užtrauktuko keitimas')}.`
     },
     {
       id: '3',
@@ -122,7 +122,7 @@ export async function getFAQs2() {
     {
       id: '6',
       question: 'Ar galite kopijuoti jau turimo drabužio modelį?',
-      answer: 'Taip, galime sukurti naują drabužį pagal jūsų mėgstamo drabužio modelį, pritaikydami jį pagal jūsų pageidavimus.'
+      answer: 'Taip, galime sukurti naują drabužį pagal Jūsųmėgstamo drabužio modelį, pritaikydami jį pagal Jūsųpageidavimus.'
     },
     {
       id: '7',
@@ -132,7 +132,7 @@ export async function getFAQs2() {
     {
       id: '8',
       question: 'Kiek kainuoja konsultacija?',
-      answer: 'Pirminė konsultacija yra nemokama. Jos metu aptarsime jūsų pageidavimus ir numatysime tolesnius veiksmus.'
+      answer: 'Pirminė konsultacija yra nemokama. Jos metu aptarsime Jūsųpageidavimus ir numatysime tolesnius veiksmus.'
     },
     {
       id: '9',

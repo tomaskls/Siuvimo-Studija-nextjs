@@ -75,7 +75,7 @@ export const sewingWorks: Work[] = [
   },
   {
     title: '✨ Klasikinis tvido švarkelis',
-    text: 'Modernus tvido švarkelis su metalo gijomis, puoštas metalinėmis sagomis.',
+    text: 'Klasikinis tvido švarkelis su metalo gijomis, puoštas metalinėmis sagomis.',
     images: [
       { src: '/imgGallery/2026/tvido-svarkelis.webp', alt: 'Šviesiai mėlynas tvido švarkelis su metalo gijomis ir metalinėmis sagomis', width: 900, height: 1600 },
     ],
@@ -90,11 +90,11 @@ export const sewingWorks: Work[] = [
   {
     title: '✨ Unikalus rūbas',
     details: [
-      { lead: 'Tai individualus užsakymas,', text: 'kurtas pasipuošti renginio vedėjai.' },
+      { lead: 'Tai individualus užsakymas,', text: 'sukurtas pasipuošti renginio vedėjai.' },
       { lead: 'Saulės ir paukščio motyvas:', text: 'Didysis ratas su spinduliais primena tradicinį saulės arba segmentinės žvaigždės simbolį, kuris baltų kultūroje reiškia gyvybę, šviesą ir pasaulio tvarką. Šalia esančios tamsios formos primena stilizuotus paukščius arba gyvybės medžio šakas, kurios dažnai sutinkamos lietuvių tautiniuose drabužiuose (prijuostėse, delmonuose) bei verpstėse.' },
       { lead: 'Tautinė mandala:', text: 'Šiuolaikiniame kontekste tokie geometriniai, simetriški apskritimų deriniai dar vadinami tautinėmis mandalomis. Jie sujungia baltiškąją geometriją ir universalią sakralinę struktūrą.' },
     ],
-    text: 'Šis dizainas puikiai iliustruoja, kaip „Neringos siuvimo studija“ pritaiko etninius elementus moderniai, kasdienei ar proginei aprangai.',
+    text: 'Šis dizainas puikiai iliustruoja, kaip „Neringos Siuvimo Studija“ pritaiko etninius elementus moderniai, kasdienei ar proginei aprangai.',
     images: [
       { src: '/Images/2026/IMG20260804140833.webp', alt: 'Žalios suknelės ornamento aplikacija iš arti', width: 900, height: 1600 },
       { src: '/Images/2026/IMG20260728164955.webp', alt: 'Ornamento aplikacijos ant žalio audinio', width: 900, height: 1600 },
@@ -147,7 +147,7 @@ export const sewingWorks: Work[] = [
     ],
   },
   {
-    title: '✨ Lininis kelnių komplektas',
+    title: '✨ Lininis komplektas',
     images: [
       { src: '/Images/2026/IMG20260527091741.webp', alt: 'Dvi sulankstytos juodos palaidinės', width: 900, height: 1200 },
     ],
@@ -197,7 +197,7 @@ export const sewingWorks: Work[] = [
     title: '✨ Išskirtiniai rūbai',
     text: 'Klasikinio audinio švarkelis, dekoruotas rankų darbo aplikacijomis.',
     images: [
-      { src: '/imgGallery/2026/IMG_20260304_170627.webp', alt: 'Pepito rašto palaidinė su siuvinėtomis gėlėmis', width: 900, height: 1600 },
+      { src: '/imgGallery/2026/IMG_20260304_170627.webp', alt: 'Pepito rašto švarkelis su siuvinėtomis gėlėmis', width: 900, height: 1600 },
     ],
   },
   {
