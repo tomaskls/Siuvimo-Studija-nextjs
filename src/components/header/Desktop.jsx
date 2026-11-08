@@ -7,6 +7,7 @@ const navLinks = [
   { href: '/', label: 'Studija' },
   { href: '/drabuziu-taisymas', label: 'Taisymas' },
   { href: '/siuvykla', label: 'Siuvimas' },
+  { href: '/konstravimas', label: 'Konstravimas' },
   { href: '/gallery', label: 'Galerija' },
   { href: '/drabuziu-taisymo-kainos', label: 'Kainos' },
   { href: '/duk', label: 'DUK' },
