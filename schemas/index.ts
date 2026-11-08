@@ -98,6 +98,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           name: "Drabužių taisymas",
           description:
             "Profesionalus drabužių taisymas ir persiuvimas. Atliekame įvairių drabužių taisymo darbus: suknelių, marškinių, švarkų koregavimą pagal figūrą.",
+          url: "https://www.neringos-siuvimo-studija.lt/drabuziu-taisymas",
         },
       },
       {
@@ -107,6 +108,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           name: "Individualus siuvimas",
           description:
             "Individualus drabužių siuvimas pagal kliento pageidavimus ir išmatavimus. Siuvame sukneles, sijonus, kelnes, švarkus ir kitus drabužius iš kliento arba mūsų siūlomų audinių.",
+          url: "https://www.neringos-siuvimo-studija.lt/siuvykla",
         },
       },
       {
@@ -115,7 +117,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Aplikacijos ant drabužių",
           description:
-            "Aplikacijos ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal Jūsųpageidavimus.",
+            "Aplikacijos ant drabužių, dekoravimas. Atliekame įvairius aplikavimo darbus ant marškinėlių, striukių, kelnių ir kitų drabužių. Galime sukurti unikalų dizainą pagal Jūsų pageidavimus.",
         },
       },
       {
@@ -125,6 +127,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           name: "Vienetinių lekalų konstravimas",
           description:
             "Individualių lekalų kūrimas ir konstravimas pagal kliento matmenis. Paruošiame lekalus tolesniam drabužių siuvimui, pritaikome pagal individualius kūno ypatumus.",
+          url: "https://www.neringos-siuvimo-studija.lt/konstravimas",
         },
       },
       {
@@ -160,7 +163,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Kelnių taisymas",
           description:
-            "Kelnių siaurinimas, trumpinimas ir kiti taisymo darbai. Pritaikome kelnes pagal Jūsųfigūrą, atliekame džinsų ir klasikinių kelnių taisymą, patobuliname pagal Jūsųpageidavimus.",
+            "Kelnių siaurinimas, trumpinimas ir kiti taisymo darbai. Pritaikome kelnes pagal Jūsų figūrą, atliekame džinsų ir klasikinių kelnių taisymą, patobuliname pagal Jūsų pageidavimus.",
         },
       },
       {
@@ -169,7 +172,7 @@ export const siuvimoPaslaugos: ServiceSchema = {
           "@type": "Service",
           name: "Sijonų taisymas",
           description:
-            "Profesionalus sijonų taisymas, įskaitant siaurinimą, trumpinimą, juosmens koregavimą. Pritaikome sijonus pagal Jūsųfigūrą ir pageidavimus.",
+            "Profesionalus sijonų taisymas, įskaitant siaurinimą, trumpinimą, juosmens koregavimą. Pritaikome sijonus pagal Jūsų figūrą ir pageidavimus.",
         },
       },
     ],

@@ -43,7 +43,7 @@ export default function Sewing() {
                 />
                 <div className={style.content}>
                     <h1 className={style.h2}>Ateik su idėja, išeik su drabužiu!</h1>
-                    <p className={style.p}>Kiekvienas turi savo unikalų stilių, bet ne visada lengva jį rasti parduotuvėje. Čia mes įžengiame į žaidimą – siuvame pagal Jūsųnorus ir poreikius. Nesvarbu, ar tai būtų kostiumas su per dideliais atlapais, suknelė, kuri privers suktis galvas kiekvienu žingsniu, ar džemperis, kuriame norėtumėt praleisti visą žiemą, mes pasirūpinsime, kad tai taptų realybe.</p>
+                    <p className={style.p}>Kiekvienas turi savo unikalų stilių, bet ne visada lengva jį rasti parduotuvėje. Čia mes įžengiame į žaidimą – siuvame pagal Jūsų norus ir poreikius. Nesvarbu, ar tai būtų kostiumas su per dideliais atlapais, suknelė, kuri privers suktis galvas kiekvienu žingsniu, ar džemperis, kuriame norėtumėt praleisti visą žiemą, mes pasirūpinsime, kad tai taptų realybe.</p>
                     <ul className={style.repairList}>
                         <li>Drabužių modeliavimas ir siuvimas</li>
                         <li>Apranga pagal užsakymą</li>
@@ -62,7 +62,7 @@ export default function Sewing() {
                 />
                 <div className={style.content}>
                     <h2 className={style.h2}>Modeliavimas – išskirtiniai drabužiai Jums</h2>
-                    <p className={style.p}>„Nuo idėjos iki podiumo – mūsų modeliavimo paslaugos Jūsųsėkmei!“ Ieškote tobulo drabužio, bet nerandate jo parduotuvėje? Laikas sukurti jį patiems! Mūsų modeliavimo paslauga leis Jums realizuoti savo kūrybines vizijas ir sukurti drabužį, kuris bus unikalus, stilingas ir puikiai pritaikytas būtent Jums.</p>
+                    <p className={style.p}>„Nuo idėjos iki podiumo – mūsų modeliavimo paslaugos Jūsų sėkmei!“ Ieškote tobulo drabužio, bet nerandate jo parduotuvėje? Laikas sukurti jį patiems! Mūsų modeliavimo paslauga leis Jums realizuoti savo kūrybines vizijas ir sukurti drabužį, kuris bus unikalus, stilingas ir puikiai pritaikytas būtent Jums.</p>
                     <div className={style.svg} ><Adata /></div>
                 </div>
             </div>

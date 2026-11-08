@@ -7,14 +7,14 @@ const BASE_URL = 'https://www.neringos-siuvimo-studija.lt';
 // nuotraukos). Ją atnaujinkite rankiniu būdu, kai keičiate turinį. Neįrašykite
 // build'o datos visiems puslapiams: tada Google pradeda tokias datas ignoruoti.
 const pages: { path: string; lastModified: string }[] = [
-  { path: '', lastModified: '2026-11-01' },
-  { path: '/drabuziu-taisymas', lastModified: '2026-11-01' },
+  { path: '', lastModified: '2026-11-02' },
+  { path: '/drabuziu-taisymas', lastModified: '2026-11-08' },
   { path: '/drabuziu-taisymo-kainos', lastModified: '2026-11-01' },
-  { path: '/siuvykla', lastModified: '2026-11-01' },
+  { path: '/siuvykla', lastModified: '2026-11-08' },
   { path: '/konstravimas', lastModified: '2026-11-08' },
-  { path: '/gallery', lastModified: '2026-11-01' },
-  { path: '/duk', lastModified: '2026-11-01' },
-  { path: '/kontaktai', lastModified: '2026-11-01' },
+  { path: '/gallery', lastModified: '2026-11-02' },
+  { path: '/duk', lastModified: '2026-11-08' },
+  { path: '/kontaktai', lastModified: '2026-11-02' },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
