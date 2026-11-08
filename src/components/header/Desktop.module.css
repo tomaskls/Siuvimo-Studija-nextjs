@@ -75,16 +75,18 @@
   border-color: aliceblue;
   transform: scale(1.15);
 }
-@media (min-width: 761px) and (max-width: 1252px) {
+/* Prilipusioje juostoje pavadinimas rodomas tik tada, kai telpa šalia visų mygtukų */
+@media (min-width: 761px) and (max-width: 1440px) {
   .neringos.visible {
     display: none;
   }
 }
-@media (min-width: 761px) and (max-width: 1020px) {
+/* Siauresniame ekrane mažesni mygtukai, kad visi tilptų vienoje eilutėje */
+@media (min-width: 761px) and (max-width: 1100px) {
   .navButton {
-    padding: 5px 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    padding: 4px 10px;
+    margin-left: 3px;
+    margin-right: 3px;
     font-size: 14px;
   }
 }

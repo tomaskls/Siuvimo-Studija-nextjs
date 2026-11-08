@@ -9,6 +9,7 @@ const menuLinks = [
   { href: '/drabuziu-taisymo-kainos', label: 'Kainos' },
   { href: '/drabuziu-taisymas', label: 'Taisymas' },
   { href: '/siuvykla', label: 'Siuvimas' },
+  { href: '/konstravimas', label: 'Konstravimas' },
   { href: '/duk', label: 'DUK' },
   { href: '/gallery', label: 'Galerija' },
   { href: '/kontaktai', label: 'Kontaktai' },
