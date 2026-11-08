@@ -166,6 +166,8 @@ export interface ServiceSchema extends SchemaBase {
         "@type": "Service";
         name: string;
         description: string;
+        // Paslaugos puslapis, jei toks yra
+        url?: string;
       };
     }[];
   };

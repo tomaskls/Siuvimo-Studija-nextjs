@@ -46,7 +46,7 @@ export default function Repair() {
                 />
                 <div className={style.content}>
                     <h1 className={style.h2}>Rūbų taisymas</h1>
-                    <p className={style.p}>Ar Jūsųmėgstamiausia suknelė prarado būrį sagų? O gal madingos kelnytės tapo per ilgos? Mūsų drabužių taisymas – tai lyg stebuklų dirbtuvės Jūsųspintai! Ateikite pas mus – bet kokį „oops“ paversime „wow“!</p>
+                    <p className={style.p}>Ar Jūsų mėgstamiausia suknelė prarado būrį sagų? O gal madingos kelnytės tapo per ilgos? Mūsų drabužių taisymas – tai lyg stebuklų dirbtuvės Jūsų spintai! Ateikite pas mus – bet kokį „oops“ paversime „wow“!</p>
                     <ul className={style.repairList}>
                         <li><ScissorsIcon /> Drabužių taisymas ir pritaikymas</li>
                         <li><ScissorsIcon /> Kelnių trumpinimas/pailginimas</li>
